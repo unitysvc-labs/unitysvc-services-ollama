@@ -5,7 +5,7 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "261.7K"
+    "pull_count": "261.8K"
   },
   "display_name": "Notus (BYOE)",
   "name": "notus",
@@ -14,7 +14,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.468014Z",

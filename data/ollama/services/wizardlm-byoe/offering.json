@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "General use model based on Llama 2.",
   "details": {
-    "pull_count": "410.4K"
+    "pull_count": "410.5K"
   },
   "display_name": "Wizardlm (BYOE)",
   "name": "wizardlm",
@@ -11,7 +11,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.454580Z",

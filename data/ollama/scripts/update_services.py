@@ -122,19 +122,10 @@ def determine_service_type(model_name: str, capabilities: list[str]) -> str:
     return "llm"
 
 
-def determine_capabilities_tags(capabilities: list[str]) -> list[str]:
-    """Convert ollama capabilities to service tags."""
-    tags = ["ai", "ollama"]
-    cap_set = {c.lower() for c in capabilities}
-    if "vision" in cap_set:
-        tags.append("vision")
-    if "tools" in cap_set:
-        tags.append("function_calling")
-    if "thinking" in cap_set:
-        tags.append("thinking")
-    if "embedding" in cap_set:
-        tags.append("embedding")
-    return tags
+def determine_tags(variant: str) -> list[str]:
+    """Return valid tags for the service variant."""
+    # TagEnum allows: byok, byoe, ai, gateway, managed
+    return ["ai", variant]
 
 
 def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
@@ -145,8 +136,7 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
 
         service_type = determine_service_type(model_name, model["capabilities"])
         display_name = model_name.replace("-", " ").replace("_", " ").title()
-        tags = determine_capabilities_tags(model["capabilities"])
-        tags.append("byoe")
+        tags = determine_tags("byoe")
 
         details = {}
         if model["sizes"]:
@@ -182,9 +172,7 @@ def iter_cloud_models(models: list[dict]) -> Iterator[dict]:
 
         service_type = determine_service_type(model_name, model["capabilities"])
         display_name = model_name.replace("-", " ").replace("_", " ").title()
-        tags = determine_capabilities_tags(model["capabilities"])
-        tags.append("byok")
-        tags.append("cloud")
+        tags = determine_tags("byok")
 
         details = {}
         if model["sizes"]:

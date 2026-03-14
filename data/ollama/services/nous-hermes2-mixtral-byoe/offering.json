@@ -5,7 +5,7 @@
     "available_sizes": [
       "8x7b"
     ],
-    "pull_count": "307.3K"
+    "pull_count": "307.4K"
   },
   "display_name": "Nous Hermes2 Mixtral (BYOE)",
   "name": "nous-hermes2-mixtral",
@@ -14,7 +14,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.456713Z",

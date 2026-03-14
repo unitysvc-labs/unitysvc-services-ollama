@@ -5,7 +5,7 @@
     "available_sizes": [
       "13b"
     ],
-    "pull_count": "418.6K"
+    "pull_count": "418.7K"
   },
   "display_name": "Nexusraven (BYOE)",
   "name": "nexusraven",
@@ -14,7 +14,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.450467Z",

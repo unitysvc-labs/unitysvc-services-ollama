@@ -6,7 +6,7 @@
       "16b",
       "236b"
     ],
-    "pull_count": "591.3K"
+    "pull_count": "591.4K"
   },
   "display_name": "Deepseek V2 (BYOE)",
   "name": "deepseek-v2",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.391101Z",

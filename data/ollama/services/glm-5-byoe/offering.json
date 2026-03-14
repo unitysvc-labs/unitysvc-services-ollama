@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "A strong reasoning and agentic model from Z.ai with 744B total parameters (40B active), built for complex systems engineering and long-horizon tasks.",
   "details": {
-    "pull_count": "109.1K"
+    "pull_count": "109.2K"
   },
   "display_name": "Glm 5 (BYOE)",
   "name": "glm-5",
@@ -11,7 +11,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.230627Z",

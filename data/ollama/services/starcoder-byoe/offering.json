@@ -8,7 +8,7 @@
       "7b",
       "15b"
     ],
-    "pull_count": "607.2K"
+    "pull_count": "607.3K"
   },
   "display_name": "Starcoder (BYOE)",
   "name": "starcoder",
@@ -17,7 +17,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.419724Z",

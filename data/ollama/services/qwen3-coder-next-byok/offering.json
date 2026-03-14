@@ -14,10 +14,7 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
-    "function_calling",
-    "byok",
-    "cloud"
+    "byok"
   ],
   "time_created": "2026-03-09T18:48:13.486081Z",
   "upstream_access_interfaces": {

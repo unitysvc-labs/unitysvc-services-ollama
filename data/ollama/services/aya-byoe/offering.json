@@ -6,7 +6,7 @@
       "8b",
       "35b"
     ],
-    "pull_count": "543.7K"
+    "pull_count": "543.8K"
   },
   "display_name": "Aya (BYOE)",
   "name": "aya",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.395074Z",

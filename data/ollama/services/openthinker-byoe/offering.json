@@ -6,7 +6,7 @@
       "7b",
       "32b"
     ],
-    "pull_count": "859K"
+    "pull_count": "859.1K"
   },
   "display_name": "Openthinker (BYOE)",
   "name": "openthinker",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.360472Z",

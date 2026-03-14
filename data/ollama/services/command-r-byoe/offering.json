@@ -8,7 +8,7 @@
     "available_sizes": [
       "35b"
     ],
-    "pull_count": "832.1K"
+    "pull_count": "832.2K"
   },
   "display_name": "Command R (BYOE)",
   "name": "command-r",
@@ -17,8 +17,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
-    "function_calling",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.378448Z",

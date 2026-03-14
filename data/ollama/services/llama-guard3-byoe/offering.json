@@ -6,7 +6,7 @@
       "1b",
       "8b"
     ],
-    "pull_count": "478.1K"
+    "pull_count": "478.2K"
   },
   "display_name": "Llama Guard3 (BYOE)",
   "name": "llama-guard3",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.386932Z",

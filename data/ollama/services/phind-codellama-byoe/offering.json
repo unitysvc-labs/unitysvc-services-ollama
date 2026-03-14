@@ -5,7 +5,7 @@
     "available_sizes": [
       "34b"
     ],
-    "pull_count": "469.6K"
+    "pull_count": "469.7K"
   },
   "display_name": "Phind Codellama (BYOE)",
   "name": "phind-codellama",
@@ -14,7 +14,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.444239Z",

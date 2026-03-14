@@ -5,7 +5,7 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "562.6K"
+    "pull_count": "562.7K"
   },
   "display_name": "Codeqwen (BYOE)",
   "name": "codeqwen",
@@ -14,7 +14,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.397582Z",

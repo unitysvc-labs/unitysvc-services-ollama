@@ -11,7 +11,7 @@
       "8b",
       "14b"
     ],
-    "pull_count": "605.9K"
+    "pull_count": "606K"
   },
   "display_name": "Ministral 3 (Cloud)",
   "name": "ministral-3",
@@ -20,11 +20,7 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
-    "vision",
-    "function_calling",
-    "byok",
-    "cloud"
+    "byok"
   ],
   "time_created": "2026-03-09T18:48:13.487794Z",
   "upstream_access_interfaces": {

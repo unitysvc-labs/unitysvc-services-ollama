@@ -6,7 +6,7 @@
       "7b",
       "13b"
     ],
-    "pull_count": "458.8K"
+    "pull_count": "458.9K"
   },
   "display_name": "Yarn Llama2 (BYOE)",
   "name": "yarn-llama2",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.437718Z",

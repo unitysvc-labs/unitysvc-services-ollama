@@ -8,7 +8,7 @@
       "7b",
       "20b"
     ],
-    "pull_count": "479K"
+    "pull_count": "479.1K"
   },
   "display_name": "Internlm2 (BYOE)",
   "name": "internlm2",
@@ -17,7 +17,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.398242Z",

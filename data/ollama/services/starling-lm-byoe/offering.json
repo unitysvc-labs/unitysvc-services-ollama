@@ -5,7 +5,7 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "471.8K"
+    "pull_count": "471.9K"
   },
   "display_name": "Starling Lm (BYOE)",
   "name": "starling-lm",
@@ -14,7 +14,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.430749Z",

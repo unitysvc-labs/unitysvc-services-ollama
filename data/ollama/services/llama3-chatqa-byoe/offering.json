@@ -6,7 +6,7 @@
       "8b",
       "70b"
     ],
-    "pull_count": "503.1K"
+    "pull_count": "503.2K"
   },
   "display_name": "Llama3 Chatqa (BYOE)",
   "name": "llama3-chatqa",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.403633Z",

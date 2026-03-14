@@ -6,7 +6,7 @@
   "currency": "USD",
   "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder\u2013decoder architecture.",
   "details": {
-    "pull_count": "123.6K"
+    "pull_count": "123.7K"
   },
   "display_name": "Glm Ocr (BYOE)",
   "name": "glm-ocr",
@@ -15,9 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
-    "vision",
-    "function_calling",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.261537Z",

@@ -7,7 +7,7 @@
       "8b",
       "20b"
     ],
-    "pull_count": "207.7K"
+    "pull_count": "207.8K"
   },
   "display_name": "Sailor2 (BYOE)",
   "name": "sailor2",
@@ -16,7 +16,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.439243Z",

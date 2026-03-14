@@ -6,7 +6,7 @@
       "1.5b",
       "9b"
     ],
-    "pull_count": "512.5K"
+    "pull_count": "512.6K"
   },
   "display_name": "Yi Coder (BYOE)",
   "name": "yi-coder",
@@ -15,7 +15,6 @@
   "status": "ready",
   "tags": [
     "ai",
-    "ollama",
     "byoe"
   ],
   "time_created": "2026-03-09T18:48:13.388860Z",
