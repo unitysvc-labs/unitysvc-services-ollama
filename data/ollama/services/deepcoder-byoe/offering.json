@@ -1,0 +1,33 @@
+{
+  "currency": "USD",
+  "description": "DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available.",
+  "details": {
+    "available_sizes": [
+      "1.5b",
+      "14b"
+    ],
+    "pull_count": "706K"
+  },
+  "display_name": "Deepcoder (BYOE)",
+  "name": "deepcoder",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.297720Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "deepcoder"
+      }
+    }
+  }
+}

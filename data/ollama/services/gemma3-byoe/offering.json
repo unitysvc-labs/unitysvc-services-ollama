@@ -1,0 +1,40 @@
+{
+  "capabilities": [
+    "vision"
+  ],
+  "currency": "USD",
+  "description": "The current, most capable model that runs on a single GPU.",
+  "details": {
+    "available_sizes": [
+      "270m",
+      "1b",
+      "4b",
+      "12b",
+      "27b"
+    ],
+    "pull_count": "33.3M"
+  },
+  "display_name": "Gemma3 (BYOE)",
+  "name": "gemma3",
+  "schema": "offering_v1",
+  "service_type": "vision_language_model",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "vision",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.305681Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "gemma3"
+      }
+    }
+  }
+}

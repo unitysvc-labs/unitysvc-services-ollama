@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "tools"
+  ],
+  "currency": "USD",
+  "description": "Phi-4-mini brings significant enhancements in multilingual support, reasoning, and mathematics, and now, the long-awaited function calling feature is finally supported.",
+  "details": {
+    "available_sizes": [
+      "3.8b"
+    ],
+    "pull_count": "948.9K"
+  },
+  "display_name": "Phi4 Mini (BYOE)",
+  "name": "phi4-mini",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "function_calling",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.356239Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "phi4-mini"
+      }
+    }
+  }
+}

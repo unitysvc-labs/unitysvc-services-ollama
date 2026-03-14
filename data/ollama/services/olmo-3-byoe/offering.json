@@ -1,0 +1,33 @@
+{
+  "currency": "USD",
+  "description": "Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+  "details": {
+    "available_sizes": [
+      "7b",
+      "32b"
+    ],
+    "pull_count": "212K"
+  },
+  "display_name": "Olmo 3 (BYOE)",
+  "name": "olmo-3",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.259970Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "olmo-3"
+      }
+    }
+  }
+}

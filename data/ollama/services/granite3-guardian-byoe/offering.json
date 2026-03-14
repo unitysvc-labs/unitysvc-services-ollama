@@ -1,0 +1,33 @@
+{
+  "currency": "USD",
+  "description": "The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.",
+  "details": {
+    "available_sizes": [
+      "2b",
+      "8b"
+    ],
+    "pull_count": "178K"
+  },
+  "display_name": "Granite3 Guardian (BYOE)",
+  "name": "granite3-guardian",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.455614Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "granite3-guardian"
+      }
+    }
+  }
+}

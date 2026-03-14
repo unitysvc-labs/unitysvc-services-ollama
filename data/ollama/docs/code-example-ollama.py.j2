@@ -1,0 +1,33 @@
+import os
+from ollama import Client
+
+# pip install ollama
+
+SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+UNITYSVC_API_KEY = os.environ.get("UNITYSVC_API_KEY")
+MODEL = os.environ.get("MODEL", "{{offering.name}}")
+
+client = Client(
+    host=SERVICE_BASE_URL,
+    headers={"Authorization": f"Bearer {UNITYSVC_API_KEY}"},
+)
+
+# Basic chat
+response = client.chat(
+    model=MODEL,
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Say this is a test"},
+    ],
+)
+print(response.message.content)
+
+# Streaming chat
+stream = client.chat(
+    model=MODEL,
+    messages=[{"role": "user", "content": "Tell me a short story"}],
+    stream=True,
+)
+for chunk in stream:
+    print(chunk.message.content, end="", flush=True)
+print()

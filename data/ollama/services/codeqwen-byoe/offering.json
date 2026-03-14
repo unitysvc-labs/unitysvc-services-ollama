@@ -1,0 +1,32 @@
+{
+  "currency": "USD",
+  "description": "CodeQwen1.5 is a large language model pretrained on a large amount of code data.",
+  "details": {
+    "available_sizes": [
+      "7b"
+    ],
+    "pull_count": "562.6K"
+  },
+  "display_name": "Codeqwen (BYOE)",
+  "name": "codeqwen",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.397582Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "codeqwen"
+      }
+    }
+  }
+}

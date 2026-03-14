@@ -1,0 +1,32 @@
+{
+  "currency": "USD",
+  "description": "Solar Pro Preview: an advanced large language model (LLM) with 22 billion parameters designed to fit into a single GPU",
+  "details": {
+    "available_sizes": [
+      "22b"
+    ],
+    "pull_count": "278.3K"
+  },
+  "display_name": "Solar Pro (BYOE)",
+  "name": "solar-pro",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.427880Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "solar-pro"
+      }
+    }
+  }
+}

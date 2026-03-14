@@ -1,0 +1,32 @@
+{
+  "currency": "USD",
+  "description": "MistralLite is a fine-tuned model based on Mistral with enhanced capabilities of processing long contexts.",
+  "details": {
+    "available_sizes": [
+      "7b"
+    ],
+    "pull_count": "262.6K"
+  },
+  "display_name": "Mistrallite (BYOE)",
+  "name": "mistrallite",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.470615Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "mistrallite"
+      }
+    }
+  }
+}

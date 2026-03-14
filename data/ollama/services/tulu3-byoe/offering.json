@@ -1,0 +1,33 @@
+{
+  "currency": "USD",
+  "description": "T\u00fclu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI.",
+  "details": {
+    "available_sizes": [
+      "8b",
+      "70b"
+    ],
+    "pull_count": "237.5K"
+  },
+  "display_name": "Tulu3 (BYOE)",
+  "name": "tulu3",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.427098Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "tulu3"
+      }
+    }
+  }
+}

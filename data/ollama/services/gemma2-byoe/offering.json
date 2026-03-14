@@ -1,0 +1,34 @@
+{
+  "currency": "USD",
+  "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
+  "details": {
+    "available_sizes": [
+      "2b",
+      "9b",
+      "27b"
+    ],
+    "pull_count": "17.7M"
+  },
+  "display_name": "Gemma2 (BYOE)",
+  "name": "gemma2",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.316627Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "gemma2"
+      }
+    }
+  }
+}

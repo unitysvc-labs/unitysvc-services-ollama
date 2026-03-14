@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "embedding"
+  ],
+  "currency": "USD",
+  "description": "Embedding model from BAAI mapping texts to vectors.",
+  "details": {
+    "available_sizes": [
+      "335m"
+    ],
+    "pull_count": "213.1K"
+  },
+  "display_name": "Bge Large (BYOE)",
+  "name": "bge-large",
+  "schema": "offering_v1",
+  "service_type": "embedding",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "embedding",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.453856Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "bge-large"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "capabilities": [
+    "tools",
+    "thinking"
+  ],
+  "currency": "USD",
+  "description": "NVIDIA Nemotron 3 Super is a 120B open MoE model activating just 12B parameters to deliver maximum compute efficiency and accuracy for complex multi-agent applications.",
+  "details": {
+    "available_sizes": [
+      "120b"
+    ],
+    "pull_count": "28.1K"
+  },
+  "display_name": "Nemotron 3 Super (BYOE)",
+  "name": "nemotron-3-super",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "function_calling",
+    "thinking",
+    "byoe"
+  ],
+  "time_created": "2026-03-14T23:10:45.734132Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "nemotron-3-super"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "currency": "USD",
+  "description": "An upgraded version of DeekSeek-V2  that integrates the general and coding abilities of both DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct.",
+  "details": {
+    "available_sizes": [
+      "236b"
+    ],
+    "pull_count": "176.4K"
+  },
+  "display_name": "Deepseek V2.5 (BYOE)",
+  "name": "deepseek-v2.5",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.457954Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "deepseek-v2.5"
+      }
+    }
+  }
+}

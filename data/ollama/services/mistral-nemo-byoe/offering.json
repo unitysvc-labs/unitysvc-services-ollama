@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "tools"
+  ],
+  "currency": "USD",
+  "description": "A state-of-the-art 12B model with 128k context length, built by Mistral AI in collaboration with NVIDIA.",
+  "details": {
+    "available_sizes": [
+      "12b"
+    ],
+    "pull_count": "3.5M"
+  },
+  "display_name": "Mistral Nemo (BYOE)",
+  "name": "mistral-nemo",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "function_calling",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.345477Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "mistral-nemo"
+      }
+    }
+  }
+}

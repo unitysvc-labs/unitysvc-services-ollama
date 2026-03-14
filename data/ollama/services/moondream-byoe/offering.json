@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "vision"
+  ],
+  "currency": "USD",
+  "description": "moondream2 is a small vision language model designed to run efficiently on edge devices.",
+  "details": {
+    "available_sizes": [
+      "1.8b"
+    ],
+    "pull_count": "729.8K"
+  },
+  "display_name": "Moondream (BYOE)",
+  "name": "moondream",
+  "schema": "offering_v1",
+  "service_type": "vision_language_model",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "vision",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.380406Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "moondream"
+      }
+    }
+  }
+}

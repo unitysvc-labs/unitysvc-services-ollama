@@ -1,0 +1,34 @@
+{
+  "currency": "USD",
+  "description": "\ud83e\ude90 A family of small models with 135M, 360M, and 1.7B parameters, trained on a new high-quality dataset.",
+  "details": {
+    "available_sizes": [
+      "135m",
+      "360m",
+      "1.7b"
+    ],
+    "pull_count": "1.1M"
+  },
+  "display_name": "Smollm (BYOE)",
+  "name": "smollm",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.362979Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "smollm"
+      }
+    }
+  }
+}

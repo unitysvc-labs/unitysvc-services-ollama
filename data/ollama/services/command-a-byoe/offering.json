@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "tools"
+  ],
+  "currency": "USD",
+  "description": "111 billion parameter model optimized for demanding enterprises that require fast, secure, and high-quality AI",
+  "details": {
+    "available_sizes": [
+      "111b"
+    ],
+    "pull_count": "146.4K"
+  },
+  "display_name": "Command A (BYOE)",
+  "name": "command-a",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "function_calling",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.302445Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "command-a"
+      }
+    }
+  }
+}

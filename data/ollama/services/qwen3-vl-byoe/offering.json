@@ -1,0 +1,45 @@
+{
+  "capabilities": [
+    "vision",
+    "tools",
+    "thinking"
+  ],
+  "currency": "USD",
+  "description": "The most powerful vision-language model in the Qwen model family to date.",
+  "details": {
+    "available_sizes": [
+      "2b",
+      "4b",
+      "8b",
+      "30b",
+      "32b",
+      "235b"
+    ],
+    "pull_count": "2.1M"
+  },
+  "display_name": "Qwen3 Vl (BYOE)",
+  "name": "qwen3-vl",
+  "schema": "offering_v1",
+  "service_type": "vision_language_model",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "vision",
+    "function_calling",
+    "thinking",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.239168Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "qwen3-vl"
+      }
+    }
+  }
+}

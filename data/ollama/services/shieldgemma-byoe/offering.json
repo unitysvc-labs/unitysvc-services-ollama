@@ -1,0 +1,34 @@
+{
+  "currency": "USD",
+  "description": "ShieldGemma is set of instruction tuned models for evaluating the safety of text prompt input and text output responses against a set of defined safety policies.",
+  "details": {
+    "available_sizes": [
+      "2b",
+      "9b",
+      "27b"
+    ],
+    "pull_count": "430K"
+  },
+  "display_name": "Shieldgemma (BYOE)",
+  "name": "shieldgemma",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.392470Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "shieldgemma"
+      }
+    }
+  }
+}

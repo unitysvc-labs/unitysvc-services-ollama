@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "tools"
+  ],
+  "currency": "USD",
+  "description": "FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling.",
+  "details": {
+    "available_sizes": [
+      "270m"
+    ],
+    "pull_count": "89.2K"
+  },
+  "display_name": "Functiongemma (BYOE)",
+  "name": "functiongemma",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "function_calling",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.267238Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "functiongemma"
+      }
+    }
+  }
+}

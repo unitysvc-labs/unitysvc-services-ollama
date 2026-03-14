@@ -1,0 +1,41 @@
+{
+  "capabilities": [
+    "vision",
+    "tools"
+  ],
+  "currency": "USD",
+  "description": "The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware.",
+  "details": {
+    "available_sizes": [
+      "3b",
+      "8b",
+      "14b"
+    ],
+    "pull_count": "605.9K"
+  },
+  "display_name": "Ministral 3 (Cloud)",
+  "name": "ministral-3",
+  "schema": "offering_v1",
+  "service_type": "vision_language_model",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "vision",
+    "function_calling",
+    "byok",
+    "cloud"
+  ],
+  "time_created": "2026-03-09T18:48:13.487794Z",
+  "upstream_access_interfaces": {
+    "Ollama Cloud API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.OLLAMA_API_KEY }",
+      "base_url": "https://api.ollama.com",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "ministral-3"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "capabilities": [
+    "vision",
+    "tools"
+  ],
+  "currency": "USD",
+  "description": "An update to Mistral Small that improves on function calling, instruction following, and less repetition errors.",
+  "details": {
+    "available_sizes": [
+      "24b"
+    ],
+    "pull_count": "1.4M"
+  },
+  "display_name": "Mistral Small3.2 (BYOE)",
+  "name": "mistral-small3.2",
+  "schema": "offering_v1",
+  "service_type": "vision_language_model",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "ollama",
+    "vision",
+    "function_calling",
+    "byoe"
+  ],
+  "time_created": "2026-03-09T18:48:13.284763Z",
+  "upstream_access_interfaces": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.{{ api_key_secret }} }",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "mistral-small3.2"
+      }
+    }
+  }
+}
