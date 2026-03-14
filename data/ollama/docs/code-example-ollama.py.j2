@@ -7,9 +7,13 @@ SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
 UNITYSVC_API_KEY = os.environ.get("UNITYSVC_API_KEY")
 MODEL = os.environ.get("MODEL", "{{offering.name}}")
 
+headers = {}
+if UNITYSVC_API_KEY:
+    headers["Authorization"] = f"Bearer {UNITYSVC_API_KEY}"
+
 client = Client(
     host=SERVICE_BASE_URL,
-    headers={"Authorization": f"Bearer {UNITYSVC_API_KEY}"},
+    headers=headers,
 )
 
 # Basic chat

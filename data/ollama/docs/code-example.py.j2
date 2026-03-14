@@ -6,10 +6,9 @@ UNITYSVC_API_KEY = os.environ.get("UNITYSVC_API_KEY")
 SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
 MODEL = os.environ.get("MODEL", "{{offering.name}}")
 
-headers = {
-    "Authorization": f"Bearer {UNITYSVC_API_KEY}",
-    "Content-Type": "application/json"
-}
+headers = {"Content-Type": "application/json"}
+if UNITYSVC_API_KEY:
+    headers["Authorization"] = f"Bearer {UNITYSVC_API_KEY}"
 
 data = {
     "model": MODEL,
