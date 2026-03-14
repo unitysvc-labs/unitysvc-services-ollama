@@ -5,7 +5,7 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "587.9K"
+    "pull_count": "588K"
   },
   "display_name": "Openchat (BYOE)",
   "name": "openchat",
@@ -20,6 +20,7 @@
   "upstream_access_interfaces": {
     "Ollama API": {
       "access_method": "http",
+      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ base_url }}",
       "rate_limits": [],
       "routing_key": {

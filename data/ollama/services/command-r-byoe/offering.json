@@ -8,7 +8,7 @@
     "available_sizes": [
       "35b"
     ],
-    "pull_count": "832.3K"
+    "pull_count": "832.4K"
   },
   "display_name": "Command R (BYOE)",
   "name": "command-r",
@@ -23,6 +23,7 @@
   "upstream_access_interfaces": {
     "Ollama API": {
       "access_method": "http",
+      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ base_url }}",
       "rate_limits": [],
       "routing_key": {
