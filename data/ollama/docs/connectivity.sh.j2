@@ -1,18 +1,4 @@
-curl "$SERVICE_BASE_URL" \
-  -H "Content-Type: application/json" \
+# Test that the Ollama server is reachable by listing available models
+curl -sf "${SERVICE_BASE_URL%/}/api/tags" \
   ${UNITYSVC_API_KEY:+-H "Authorization: Bearer $UNITYSVC_API_KEY"} \
-  -d @- <<EOF
-{
-  "model": "${MODEL:-{{offering.name}}}",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a helpful assistant."
-    },
-    {
-      "role": "user",
-      "content": "Say this is a test"
-    }
-  ]
-}
-EOF
+  | head -c 500
