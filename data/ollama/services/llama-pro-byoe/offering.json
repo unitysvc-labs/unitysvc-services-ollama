@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics.",
   "details": {
-    "pull_count": "425.4K"
+    "pull_count": "427K"
   },
   "display_name": "Llama Pro (BYOE)",
   "name": "llama-pro",
