@@ -89,7 +89,7 @@
   "user_access_interfaces": {
     "Ollama API": {
       "access_method": "http",
-      "base_url": "${GATEWAY_BASE_URL}/p/ollama/qwen3-coder-next",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/qwen3-coder-next",
       "routing_key": {
         "model": "qwen3-coder-next"
       }

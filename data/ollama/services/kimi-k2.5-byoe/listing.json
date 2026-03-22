@@ -89,7 +89,7 @@
   "user_access_interfaces": {
     "Ollama API": {
       "access_method": "http",
-      "base_url": "${GATEWAY_BASE_URL}/p/ollama/kimi-k2.5",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/kimi-k2.5",
       "routing_key": {
         "model": "kimi-k2.5"
       }

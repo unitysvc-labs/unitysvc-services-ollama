@@ -89,7 +89,7 @@
   "user_access_interfaces": {
     "Ollama API": {
       "access_method": "http",
-      "base_url": "${GATEWAY_BASE_URL}/p/ollama/lfm2.5-thinking",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/lfm2.5-thinking",
       "routing_key": {
         "model": "lfm2.5-thinking"
       }

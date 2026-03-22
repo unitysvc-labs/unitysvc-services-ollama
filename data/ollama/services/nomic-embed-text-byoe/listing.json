@@ -89,7 +89,7 @@
   "user_access_interfaces": {
     "Ollama API": {
       "access_method": "http",
-      "base_url": "${GATEWAY_BASE_URL}/p/ollama/nomic-embed-text",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/nomic-embed-text",
       "routing_key": {
         "model": "nomic-embed-text"
       }
