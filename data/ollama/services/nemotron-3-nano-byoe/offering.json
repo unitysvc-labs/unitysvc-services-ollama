@@ -4,12 +4,13 @@
     "thinking"
   ],
   "currency": "USD",
-  "description": "Nemotron 3 Nano - A new Standard for Efficient, Open, and Intelligent Agentic Models",
+  "description": "Nemotron-3-Nano is a new Standard for Efficient, Open, and Intelligent Agentic Models, now updated with a 4B parameter count model.",
   "details": {
     "available_sizes": [
+      "4b",
       "30b"
     ],
-    "pull_count": "215.4K"
+    "pull_count": "262.6K"
   },
   "display_name": "Nemotron 3 Nano (BYOE)",
   "name": "nemotron-3-nano",
