@@ -21,7 +21,7 @@
     "byoe"
   ],
   "time_created": "2026-03-14T23:10:45.734132Z",
-  "upstream_access_interfaces": {
+  "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
       "api_key": "{% if api_key_secret %}${ customer_secrets.{{ api_key_secret }} }{% else %}{% endif %}",

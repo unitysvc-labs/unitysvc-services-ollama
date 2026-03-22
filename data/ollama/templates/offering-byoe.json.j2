@@ -11,7 +11,7 @@
   "capabilities": {{ capabilities | tojson }},
 {%- endif %}
   "details": {{ details | tojson }},
-  "upstream_access_interfaces": {
+  "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
       "base_url": "{% raw %}{{ base_url }}{% endraw %}",
