@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "A language model created by combining two fine-tuned Llama 2 70B models into one.",
   "details": {
-    "pull_count": "237.2K"
+    "pull_count": "298.4K"
   },
   "display_name": "Goliath (BYOE)",
   "name": "goliath",
