@@ -14,7 +14,7 @@
   "display_name": "Granite3.2 Vision (BYOE)",
   "name": "granite3.2-vision",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

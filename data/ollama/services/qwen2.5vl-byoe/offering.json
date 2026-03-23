@@ -16,7 +16,7 @@
   "display_name": "Qwen2.5Vl (BYOE)",
   "name": "qwen2.5vl",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

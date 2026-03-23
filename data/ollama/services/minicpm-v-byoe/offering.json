@@ -13,7 +13,7 @@
   "display_name": "Minicpm V (BYOE)",
   "name": "minicpm-v",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

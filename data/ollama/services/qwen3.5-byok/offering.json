@@ -21,7 +21,7 @@
   "display_name": "Qwen3.5 (Cloud)",
   "name": "qwen3.5",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

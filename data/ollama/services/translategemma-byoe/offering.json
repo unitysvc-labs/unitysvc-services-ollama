@@ -15,7 +15,7 @@
   "display_name": "Translategemma (BYOE)",
   "name": "translategemma",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

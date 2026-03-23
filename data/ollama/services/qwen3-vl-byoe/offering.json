@@ -20,7 +20,7 @@
   "display_name": "Qwen3 Vl (BYOE)",
   "name": "qwen3-vl",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

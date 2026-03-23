@@ -13,7 +13,7 @@
   "display_name": "Deepseek Ocr (BYOE)",
   "name": "deepseek-ocr",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

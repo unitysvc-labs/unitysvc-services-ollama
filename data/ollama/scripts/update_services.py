@@ -118,7 +118,7 @@ def determine_service_type(model_name: str, capabilities: list[str]) -> str:
     if any(kw in name_lower or kw in " ".join(caps_lower) for kw in EMBEDDING_KEYWORDS):
         return "embedding"
     if any(kw in name_lower or kw in " ".join(caps_lower) for kw in VISION_KEYWORDS):
-        return "vision_language_model"
+        return "llm"  # vision is a capability, not a service type
     return "llm"
 
 

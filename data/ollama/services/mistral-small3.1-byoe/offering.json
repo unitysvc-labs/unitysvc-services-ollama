@@ -14,7 +14,7 @@
   "display_name": "Mistral Small3.1 (BYOE)",
   "name": "mistral-small3.1",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",

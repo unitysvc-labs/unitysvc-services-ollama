@@ -14,7 +14,7 @@
   "display_name": "Devstral Small 2 (Cloud)",
   "name": "devstral-small-2",
   "schema": "offering_v1",
-  "service_type": "vision_language_model",
+  "service_type": "llm",
   "status": "ready",
   "tags": [
     "ai",
