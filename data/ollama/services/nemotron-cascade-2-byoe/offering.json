@@ -1,0 +1,35 @@
+{
+  "capabilities": [
+    "tools",
+    "thinking"
+  ],
+  "currency": "USD",
+  "description": "An open 30B MoE model from NVIDIA with 3B activated parameters that delivers strong reasoning and agentic capabilities.",
+  "details": {
+    "available_sizes": [
+      "30b"
+    ],
+    "pull_count": "12.6K"
+  },
+  "display_name": "Nemotron Cascade 2 (BYOE)",
+  "name": "nemotron-cascade-2",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "byoe"
+  ],
+  "time_created": "2026-03-24T03:09:55.264413Z",
+  "upstream_access_config": {
+    "Ollama API": {
+      "access_method": "http",
+      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ api_key_secret }} }{% else %}{% endif %}",
+      "base_url": "{{ base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "nemotron-cascade-2"
+      }
+    }
+  }
+}
