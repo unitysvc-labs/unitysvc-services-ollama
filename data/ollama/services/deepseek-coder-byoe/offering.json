@@ -7,7 +7,7 @@
       "6.7b",
       "33b"
     ],
-    "pull_count": "3.3M"
+    "pull_count": "3.5M"
   },
   "display_name": "Deepseek Coder (BYOE)",
   "name": "deepseek-coder",
@@ -22,7 +22,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

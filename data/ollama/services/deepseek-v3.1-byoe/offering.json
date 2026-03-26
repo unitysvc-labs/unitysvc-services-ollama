@@ -9,7 +9,7 @@
     "available_sizes": [
       "671b"
     ],
-    "pull_count": "448K"
+    "pull_count": "502.9K"
   },
   "display_name": "Deepseek V3.1 (BYOE)",
   "name": "deepseek-v3.1",
@@ -24,7 +24,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

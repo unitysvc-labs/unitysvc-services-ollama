@@ -6,7 +6,7 @@
   "currency": "USD",
   "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder\u2013decoder architecture.",
   "details": {
-    "pull_count": "124K"
+    "pull_count": "155.5K"
   },
   "display_name": "Glm Ocr (BYOE)",
   "name": "glm-ocr",
@@ -21,7 +21,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

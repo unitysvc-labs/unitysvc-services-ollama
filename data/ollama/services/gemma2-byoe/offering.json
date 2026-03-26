@@ -7,7 +7,7 @@
       "9b",
       "27b"
     ],
-    "pull_count": "17.7M"
+    "pull_count": "18.8M"
   },
   "display_name": "Gemma2 (BYOE)",
   "name": "gemma2",
@@ -22,7 +22,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {
