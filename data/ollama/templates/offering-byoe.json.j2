@@ -14,8 +14,8 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "base_url": "{% raw %}{{ base_url }}{% endraw %}",
-      "api_key": "{% raw %}{% if api_key_secret %}${ customer_secrets.{{ api_key_secret }} }{% else %}{% endif %}{% endraw %}",
+      "base_url": "{% raw %}{{ params.base_url }}{% endraw %}",
+      "api_key": "{% raw %}{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}{% endraw %}",
       "rate_limits": [],
       "routing_key": {"model": "{{ offering_name }}"}
     }
