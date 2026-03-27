@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "Qwen3-Coder-Next is a coding-focused language model from Alibaba's Qwen team, optimized for agentic coding workflows and local development.",
   "details": {
-    "pull_count": "788.7K"
+    "pull_count": "914.1K"
   },
   "display_name": "Qwen3 Coder Next (BYOE)",
   "name": "qwen3-coder-next",
@@ -20,7 +20,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

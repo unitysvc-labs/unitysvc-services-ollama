@@ -6,7 +6,7 @@
       "10.7b",
       "34b"
     ],
-    "pull_count": "526.6K"
+    "pull_count": "698.7K"
   },
   "display_name": "Nous Hermes2 (BYOE)",
   "name": "nous-hermes2",
@@ -21,7 +21,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {
