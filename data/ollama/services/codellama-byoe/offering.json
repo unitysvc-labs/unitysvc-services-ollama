@@ -8,7 +8,7 @@
       "34b",
       "70b"
     ],
-    "pull_count": "4.5M"
+    "pull_count": "4.8M"
   },
   "display_name": "Codellama (BYOE)",
   "name": "codellama",
@@ -23,7 +23,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

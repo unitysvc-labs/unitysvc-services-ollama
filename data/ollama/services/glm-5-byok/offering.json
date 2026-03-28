@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "A strong reasoning and agentic model from Z.ai with 744B total parameters (40B active), built for complex systems engineering and long-horizon tasks.",
   "details": {
-    "pull_count": "109.2K"
+    "pull_count": "140K"
   },
   "display_name": "Glm 5 (Cloud)",
   "name": "glm-5",

@@ -6,7 +6,7 @@
       "0.5b",
       "1.5b"
     ],
-    "pull_count": "434.1K"
+    "pull_count": "613.5K"
   },
   "display_name": "Reader Lm (BYOE)",
   "name": "reader-lm",
@@ -21,7 +21,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {
