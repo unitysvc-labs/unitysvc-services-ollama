@@ -6,7 +6,7 @@
       "7b",
       "13b"
     ],
-    "pull_count": "466.2K"
+    "pull_count": "657.6K"
   },
   "display_name": "Xwinlm (BYOE)",
   "name": "xwinlm",
@@ -21,7 +21,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {
