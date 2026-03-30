@@ -6,7 +6,7 @@
       "1.5b",
       "14b"
     ],
-    "pull_count": "706.1K"
+    "pull_count": "783.3K"
   },
   "display_name": "Deepcoder (BYOE)",
   "name": "deepcoder",
@@ -21,7 +21,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

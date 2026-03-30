@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "Kimi K2.5 is an open-source, native multimodal agentic model that seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.",
   "details": {
-    "pull_count": "151K"
+    "pull_count": "198.2K"
   },
   "display_name": "Kimi K2.5 (BYOE)",
   "name": "kimi-k2.5",
@@ -17,7 +17,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {
