@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "A high-performing open embedding model with a large token context window.",
   "details": {
-    "pull_count": "57.7M"
+    "pull_count": "61.7M"
   },
   "display_name": "Nomic Embed Text (BYOE)",
   "name": "nomic-embed-text",
@@ -20,7 +20,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

@@ -9,7 +9,7 @@
       "8b",
       "70b"
     ],
-    "pull_count": "478.7K"
+    "pull_count": "718.6K"
   },
   "display_name": "Llama3 Groq Tool Use (BYOE)",
   "name": "llama3-groq-tool-use",
@@ -24,7 +24,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {

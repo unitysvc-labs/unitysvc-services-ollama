@@ -2,7 +2,7 @@
   "currency": "USD",
   "description": "General use model based on Llama 2.",
   "details": {
-    "pull_count": "410.8K"
+    "pull_count": "636.8K"
   },
   "display_name": "Wizardlm (BYOE)",
   "name": "wizardlm",
@@ -17,7 +17,7 @@
   "upstream_access_config": {
     "Ollama API": {
       "access_method": "http",
-      "api_key": "{% if api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
       "base_url": "{{ params.base_url }}",
       "rate_limits": [],
       "routing_key": {
