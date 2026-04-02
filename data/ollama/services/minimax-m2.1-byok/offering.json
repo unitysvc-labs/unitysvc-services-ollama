@@ -1,8 +1,11 @@
 {
+  "capabilities": [
+    "tools"
+  ],
   "currency": "USD",
   "description": "Exceptional multilingual capabilities to elevate code engineering",
   "details": {
-    "pull_count": "24.4K"
+    "pull_count": "34.1K"
   },
   "display_name": "Minimax M2.1 (Cloud)",
   "name": "minimax-m2.1",
