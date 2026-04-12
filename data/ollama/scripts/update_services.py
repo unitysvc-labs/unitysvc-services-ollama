@@ -17,7 +17,7 @@ from typing import Iterator
 import requests
 from bs4 import BeautifulSoup
 
-from unitysvc_services import populate_from_iterator
+from unitysvc_sellers.template_populate import populate_from_iterator
 
 # Provider Configuration
 PROVIDER_NAME = "ollama"
