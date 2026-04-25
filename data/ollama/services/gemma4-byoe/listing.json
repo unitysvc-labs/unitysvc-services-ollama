@@ -79,7 +79,7 @@
   "status": "ready",
   "time_created": "2026-04-03T03:14:12.547270Z",
   "user_access_interfaces": {
-    "Ollama API": {
+    "ollama_api": {
       "access_method": "http",
       "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/gemma4",
       "routing_key": {

@@ -23,7 +23,7 @@
   ],
   "time_created": "2026-03-09T18:48:13.492639Z",
   "upstream_access_config": {
-    "Ollama Cloud API": {
+    "ollama_cloud_api": {
       "access_method": "http",
       "api_key": "${ customer_secrets.OLLAMA_API_KEY }",
       "base_url": "https://api.ollama.com",

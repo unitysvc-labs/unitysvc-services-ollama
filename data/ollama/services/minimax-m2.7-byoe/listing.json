@@ -79,7 +79,7 @@
   "status": "ready",
   "time_created": "2026-04-03T03:14:12.546718Z",
   "user_access_interfaces": {
-    "Ollama API": {
+    "ollama_api": {
       "access_method": "http",
       "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/minimax-m2.7",
       "routing_key": {
