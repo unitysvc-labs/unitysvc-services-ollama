@@ -12,7 +12,7 @@
 {%- endif %}
   "details": {{ details | tojson }},
   "upstream_access_config": {
-    "Ollama Cloud API": {
+    "ollama_cloud_api": {
       "access_method": "http",
       "base_url": "https://api.ollama.com",
       "api_key": "${ customer_secrets.{{ env_api_key_name }} }",
