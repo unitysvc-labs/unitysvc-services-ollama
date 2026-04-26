@@ -17,7 +17,28 @@ from typing import Iterator
 import requests
 from bs4 import BeautifulSoup
 
+from unitysvc_sellers.model_data import ModelDataFetcher, ModelDataLookup
 from unitysvc_sellers.template_populate import populate_from_iterator
+
+# Shared fetcher — instantiated once so the in-process LRU cache amortises
+# across every model yielded by both BYOE and cloud iterators.
+_FETCHER = ModelDataFetcher()
+
+
+def _attach_canonical_metadata(details: dict, model_name: str) -> None:
+    """Look up canonical context_length/parameter_count for ``model_name``.
+
+    Always writes both keys (post-PR-#863 the platform validator requires
+    presence; ``null`` is the canonical "unknown" marker).  Records
+    ``metadata_sources`` provenance only when a fetcher actually returned
+    a source for at least one field.
+    """
+    canonical = ModelDataLookup.get_canonical_metadata(model_name, fetcher=_FETCHER)
+    details["context_length"] = canonical["context_length"]
+    details["parameter_count"] = canonical["parameter_count"]
+    sources = {k: v for k, v in canonical["sources"].items() if v}
+    if sources:
+        details["metadata_sources"] = sources
 
 # Provider Configuration
 PROVIDER_NAME = "ollama"
@@ -143,6 +164,8 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
             details["available_sizes"] = model["sizes"]
         if model["pull_count"]:
             details["pull_count"] = model["pull_count"]
+        if service_type == "llm":
+            _attach_canonical_metadata(details, model_name)
 
         yield {
             "name": f"{model_name}-byoe",
@@ -179,6 +202,8 @@ def iter_cloud_models(models: list[dict]) -> Iterator[dict]:
             details["available_sizes"] = model["sizes"]
         if model["pull_count"]:
             details["pull_count"] = model["pull_count"]
+        if service_type == "llm":
+            _attach_canonical_metadata(details, model_name)
 
         yield {
             "name": f"{model_name}-byok",

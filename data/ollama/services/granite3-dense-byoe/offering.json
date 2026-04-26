@@ -9,7 +9,9 @@
       "2b",
       "8b"
     ],
-    "pull_count": "928.6K"
+    "pull_count": "928.6K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Granite3 Dense (BYOE)",
   "name": "granite3-dense",

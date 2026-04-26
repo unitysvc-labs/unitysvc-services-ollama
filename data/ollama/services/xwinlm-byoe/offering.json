@@ -6,7 +6,9 @@
       "7b",
       "13b"
     ],
-    "pull_count": "878.5K"
+    "pull_count": "878.5K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Xwinlm (BYOE)",
   "name": "xwinlm",

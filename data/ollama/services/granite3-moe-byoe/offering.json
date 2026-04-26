@@ -9,7 +9,9 @@
       "1b",
       "3b"
     ],
-    "pull_count": "871.5K"
+    "pull_count": "871.5K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Granite3 Moe (BYOE)",
   "name": "granite3-moe",

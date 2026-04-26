@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "199.5K"
+    "pull_count": "199.5K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Marco O1 (BYOE)",
   "name": "marco-o1",

@@ -6,7 +6,9 @@
       "7b",
       "13b"
     ],
-    "pull_count": "870K"
+    "pull_count": "870K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Yarn Llama2 (BYOE)",
   "name": "yarn-llama2",

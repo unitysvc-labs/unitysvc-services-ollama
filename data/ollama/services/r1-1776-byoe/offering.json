@@ -6,7 +6,9 @@
       "70b",
       "671b"
     ],
-    "pull_count": "396.1K"
+    "pull_count": "396.1K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "R1 1776 (BYOE)",
   "name": "r1-1776",

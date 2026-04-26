@@ -5,7 +5,9 @@
     "available_sizes": [
       "8x7b"
     ],
-    "pull_count": "499.6K"
+    "pull_count": "499.6K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Notux (BYOE)",
   "name": "notux",

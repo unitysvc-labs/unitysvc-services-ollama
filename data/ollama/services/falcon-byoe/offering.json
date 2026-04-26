@@ -7,7 +7,9 @@
       "40b",
       "180b"
     ],
-    "pull_count": "1M"
+    "pull_count": "1M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Falcon (BYOE)",
   "name": "falcon",

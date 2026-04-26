@@ -6,7 +6,9 @@
   "currency": "USD",
   "description": "Advancing the Coding Capability",
   "details": {
-    "pull_count": "93.1K"
+    "pull_count": "93.1K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Glm 4.7 (Cloud)",
   "name": "glm-4.7",

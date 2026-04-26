@@ -11,7 +11,9 @@
       "8b",
       "14b"
     ],
-    "pull_count": "1M"
+    "pull_count": "1M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Ministral 3 (Cloud)",
   "name": "ministral-3",

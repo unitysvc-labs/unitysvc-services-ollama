@@ -7,7 +7,9 @@
       "7.8b",
       "32b"
     ],
-    "pull_count": "488.9K"
+    "pull_count": "488.9K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Exaone3.5 (BYOE)",
   "name": "exaone3.5",

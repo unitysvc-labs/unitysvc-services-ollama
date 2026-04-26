@@ -6,7 +6,9 @@
       "8x7b",
       "8x22b"
     ],
-    "pull_count": "1.7M"
+    "pull_count": "1.7M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Dolphin Mixtral (BYOE)",
   "name": "dolphin-mixtral",

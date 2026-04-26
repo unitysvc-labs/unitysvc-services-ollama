@@ -9,7 +9,9 @@
     "available_sizes": [
       "120b"
     ],
-    "pull_count": "243.9K"
+    "pull_count": "243.9K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Nemotron 3 Super (Cloud)",
   "name": "nemotron-3-super",

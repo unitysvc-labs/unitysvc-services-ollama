@@ -6,7 +6,9 @@
       "7b",
       "13b"
     ],
-    "pull_count": "857.1K"
+    "pull_count": "857.1K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Orca2 (BYOE)",
   "name": "orca2",

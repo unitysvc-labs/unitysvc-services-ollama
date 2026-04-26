@@ -5,7 +5,9 @@
     "available_sizes": [
       "1.1b"
     ],
-    "pull_count": "4.7M"
+    "pull_count": "4.7M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Tinyllama (BYOE)",
   "name": "tinyllama",

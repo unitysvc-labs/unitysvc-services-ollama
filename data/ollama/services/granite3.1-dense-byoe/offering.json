@@ -3,13 +3,15 @@
     "tools"
   ],
   "currency": "USD",
-  "description": "The IBM Granite 2B and 8B models are text-only dense LLMs trained on over 12 trillion tokens of data, demonstrated significant improvements over their predecessors in performance and speed in IBM\u2019s initial testing.",
+  "description": "The IBM Granite 2B and 8B models are text-only dense LLMs trained on over 12 trillion tokens of data, demonstrated significant improvements over their predecessors in performance and speed in IBM’s initial testing.",
   "details": {
     "available_sizes": [
       "2b",
       "8b"
     ],
-    "pull_count": "926.2K"
+    "pull_count": "926.2K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Granite3.1 Dense (BYOE)",
   "name": "granite3.1-dense",

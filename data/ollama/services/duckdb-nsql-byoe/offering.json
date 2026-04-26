@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "489.3K"
+    "pull_count": "489.3K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Duckdb Nsql (BYOE)",
   "name": "duckdb-nsql",

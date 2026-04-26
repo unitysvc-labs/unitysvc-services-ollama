@@ -5,7 +5,9 @@
     "available_sizes": [
       "2.7b"
     ],
-    "pull_count": "1.4M"
+    "pull_count": "1.4M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Phi (BYOE)",
   "name": "phi",

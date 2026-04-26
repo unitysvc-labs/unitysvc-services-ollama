@@ -8,7 +8,9 @@
     "available_sizes": [
       "1.8b"
     ],
-    "pull_count": "1.1M"
+    "pull_count": "1.1M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Moondream (BYOE)",
   "name": "moondream",

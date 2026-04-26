@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "487K"
+    "pull_count": "487K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Bespoke Minicheck (BYOE)",
   "name": "bespoke-minicheck",

@@ -5,7 +5,9 @@
     "available_sizes": [
       "13b"
     ],
-    "pull_count": "480.7K"
+    "pull_count": "480.7K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Wizard Vicuna (BYOE)",
   "name": "wizard-vicuna",

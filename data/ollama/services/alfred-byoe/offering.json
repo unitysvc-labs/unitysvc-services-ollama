@@ -5,7 +5,9 @@
     "available_sizes": [
       "40b"
     ],
-    "pull_count": "222.9K"
+    "pull_count": "222.9K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Alfred (BYOE)",
   "name": "alfred",

@@ -11,7 +11,9 @@
       "27b",
       "35b"
     ],
-    "pull_count": "504.8K"
+    "pull_count": "504.8K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Qwen3.6 (BYOE)",
   "name": "qwen3.6",

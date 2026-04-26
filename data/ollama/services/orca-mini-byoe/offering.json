@@ -8,7 +8,9 @@
       "13b",
       "70b"
     ],
-    "pull_count": "2.8M"
+    "pull_count": "2.8M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Orca Mini (BYOE)",
   "name": "orca-mini",

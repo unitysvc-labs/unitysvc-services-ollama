@@ -5,7 +5,9 @@
     "available_sizes": [
       "13b"
     ],
-    "pull_count": "473.2K"
+    "pull_count": "473.2K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Open Orca Platypus2 (BYOE)",
   "name": "open-orca-platypus2",

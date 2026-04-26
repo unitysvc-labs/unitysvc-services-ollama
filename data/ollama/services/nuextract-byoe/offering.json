@@ -5,7 +5,9 @@
     "available_sizes": [
       "3.8b"
     ],
-    "pull_count": "491.8K"
+    "pull_count": "491.8K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Nuextract (BYOE)",
   "name": "nuextract",

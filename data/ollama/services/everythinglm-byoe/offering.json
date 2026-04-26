@@ -5,7 +5,9 @@
     "available_sizes": [
       "13b"
     ],
-    "pull_count": "524.5K"
+    "pull_count": "524.5K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Everythinglm (BYOE)",
   "name": "everythinglm",

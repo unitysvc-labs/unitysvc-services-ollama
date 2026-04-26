@@ -5,7 +5,9 @@
     "available_sizes": [
       "1.1b"
     ],
-    "pull_count": "667K"
+    "pull_count": "667K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Tinydolphin (BYOE)",
   "name": "tinydolphin",

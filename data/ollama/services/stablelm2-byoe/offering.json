@@ -6,7 +6,9 @@
       "1.6b",
       "12b"
     ],
-    "pull_count": "932K"
+    "pull_count": "932K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Stablelm2 (BYOE)",
   "name": "stablelm2",

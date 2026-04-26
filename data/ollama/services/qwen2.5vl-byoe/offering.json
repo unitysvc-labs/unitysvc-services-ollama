@@ -11,7 +11,9 @@
       "32b",
       "72b"
     ],
-    "pull_count": "1.8M"
+    "pull_count": "1.8M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Qwen2.5Vl (BYOE)",
   "name": "qwen2.5vl",

@@ -7,7 +7,9 @@
       "13b",
       "70b"
     ],
-    "pull_count": "848.5K"
+    "pull_count": "848.5K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Stable Beluga (BYOE)",
   "name": "stable-beluga",

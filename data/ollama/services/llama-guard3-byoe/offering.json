@@ -6,7 +6,9 @@
       "1b",
       "8b"
     ],
-    "pull_count": "906.4K"
+    "pull_count": "906.4K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Llama Guard3 (BYOE)",
   "name": "llama-guard3",

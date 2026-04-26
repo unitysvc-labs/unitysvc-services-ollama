@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "486.2K"
+    "pull_count": "486.2K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Mistrallite (BYOE)",
   "name": "mistrallite",

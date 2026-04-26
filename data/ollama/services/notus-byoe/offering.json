@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "500.1K"
+    "pull_count": "500.1K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Notus (BYOE)",
   "name": "notus",

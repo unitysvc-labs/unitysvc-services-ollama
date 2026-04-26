@@ -7,7 +7,9 @@
       "8b",
       "20b"
     ],
-    "pull_count": "377.1K"
+    "pull_count": "377.1K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Sailor2 (BYOE)",
   "name": "sailor2",

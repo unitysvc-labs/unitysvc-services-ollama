@@ -1,11 +1,13 @@
 {
   "currency": "USD",
-  "description": "A fine-tuned version of Deepseek-R1-Distilled-Qwen-1.5B that surpasses the performance of OpenAI\u2019s o1-preview with just 1.5B parameters on popular math evaluations.",
+  "description": "A fine-tuned version of Deepseek-R1-Distilled-Qwen-1.5B that surpasses the performance of OpenAI’s o1-preview with just 1.5B parameters on popular math evaluations.",
   "details": {
     "available_sizes": [
       "1.5b"
     ],
-    "pull_count": "1.2M"
+    "pull_count": "1.2M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Deepscaler (BYOE)",
   "name": "deepscaler",

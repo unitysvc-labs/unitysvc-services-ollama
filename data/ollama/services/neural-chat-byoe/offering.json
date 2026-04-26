@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "970.4K"
+    "pull_count": "970.4K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Neural Chat (BYOE)",
   "name": "neural-chat",

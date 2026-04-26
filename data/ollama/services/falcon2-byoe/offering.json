@@ -5,7 +5,9 @@
     "available_sizes": [
       "11b"
     ],
-    "pull_count": "497.6K"
+    "pull_count": "497.6K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Falcon2 (BYOE)",
   "name": "falcon2",

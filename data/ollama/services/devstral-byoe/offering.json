@@ -8,7 +8,9 @@
     "available_sizes": [
       "24b"
     ],
-    "pull_count": "926.5K"
+    "pull_count": "926.5K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Devstral (BYOE)",
   "name": "devstral",

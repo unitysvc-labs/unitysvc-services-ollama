@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "828K"
+    "pull_count": "828K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Yarn Mistral (BYOE)",
   "name": "yarn-mistral",

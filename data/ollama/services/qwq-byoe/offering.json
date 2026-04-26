@@ -8,7 +8,9 @@
     "available_sizes": [
       "32b"
     ],
-    "pull_count": "2.2M"
+    "pull_count": "2.2M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Qwq (BYOE)",
   "name": "qwq",

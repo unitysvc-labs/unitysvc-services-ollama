@@ -6,7 +6,9 @@
   "currency": "USD",
   "description": "MiniMax M2 is a high-efficiency large language model built for coding and agentic workflows.",
   "details": {
-    "pull_count": "102.4K"
+    "pull_count": "102.4K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Minimax M2 (Cloud)",
   "name": "minimax-m2",

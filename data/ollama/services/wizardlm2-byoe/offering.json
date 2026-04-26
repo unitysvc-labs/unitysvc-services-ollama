@@ -6,7 +6,9 @@
       "7b",
       "8x22b"
     ],
-    "pull_count": "1.1M"
+    "pull_count": "1.1M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Wizardlm2 (BYOE)",
   "name": "wizardlm2",

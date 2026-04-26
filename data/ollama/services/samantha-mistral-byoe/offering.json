@@ -5,7 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "905.6K"
+    "pull_count": "905.6K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Samantha Mistral (BYOE)",
   "name": "samantha-mistral",

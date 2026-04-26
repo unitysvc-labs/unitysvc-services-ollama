@@ -4,13 +4,15 @@
     "thinking"
   ],
   "currency": "USD",
-  "description": "OpenAI\u2019s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
+  "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
   "details": {
     "available_sizes": [
       "20b",
       "120b"
     ],
-    "pull_count": "9.1M"
+    "pull_count": "9.1M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Gpt Oss (BYOE)",
   "name": "gpt-oss",

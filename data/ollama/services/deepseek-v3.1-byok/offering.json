@@ -9,7 +9,9 @@
     "available_sizes": [
       "671b"
     ],
-    "pull_count": "657.1K"
+    "pull_count": "657.1K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Deepseek V3.1 (Cloud)",
   "name": "deepseek-v3.1",

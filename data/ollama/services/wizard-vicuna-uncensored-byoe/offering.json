@@ -7,7 +7,9 @@
       "13b",
       "30b"
     ],
-    "pull_count": "1.1M"
+    "pull_count": "1.1M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Wizard Vicuna Uncensored (BYOE)",
   "name": "wizard-vicuna-uncensored",

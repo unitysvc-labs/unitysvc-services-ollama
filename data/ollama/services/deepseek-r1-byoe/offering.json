@@ -15,7 +15,9 @@
       "70b",
       "671b"
     ],
-    "pull_count": "83.7M"
+    "pull_count": "83.7M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Deepseek R1 (BYOE)",
   "name": "deepseek-r1",

@@ -14,7 +14,9 @@
       "26b",
       "31b"
     ],
-    "pull_count": "5.4M"
+    "pull_count": "5.4M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Gemma4 (Cloud)",
   "name": "gemma4",

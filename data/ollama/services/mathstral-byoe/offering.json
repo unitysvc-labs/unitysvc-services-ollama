@@ -1,11 +1,13 @@
 {
   "currency": "USD",
-  "description": "Math\u03a3tral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.",
+  "description": "MathΣtral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.",
   "details": {
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "506.2K"
+    "pull_count": "506.2K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Mathstral (BYOE)",
   "name": "mathstral",

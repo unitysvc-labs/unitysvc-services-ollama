@@ -5,7 +5,9 @@
     "available_sizes": [
       "70b"
     ],
-    "pull_count": "572.3K"
+    "pull_count": "572.3K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Reflection (BYOE)",
   "name": "reflection",

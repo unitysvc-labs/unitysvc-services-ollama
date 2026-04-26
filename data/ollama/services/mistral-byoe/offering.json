@@ -8,7 +8,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "28.6M"
+    "pull_count": "28.6M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Mistral (BYOE)",
   "name": "mistral",

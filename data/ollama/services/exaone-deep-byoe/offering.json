@@ -7,7 +7,9 @@
       "7.8b",
       "32b"
     ],
-    "pull_count": "724.7K"
+    "pull_count": "724.7K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Exaone Deep (BYOE)",
   "name": "exaone-deep",

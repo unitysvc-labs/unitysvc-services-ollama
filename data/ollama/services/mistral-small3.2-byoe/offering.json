@@ -9,7 +9,9 @@
     "available_sizes": [
       "24b"
     ],
-    "pull_count": "1.8M"
+    "pull_count": "1.8M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Mistral Small3.2 (BYOE)",
   "name": "mistral-small3.2",

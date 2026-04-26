@@ -6,7 +6,9 @@
       "8b",
       "70b"
     ],
-    "pull_count": "928.7K"
+    "pull_count": "928.7K",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Llama3 Chatqa (BYOE)",
   "name": "llama3-chatqa",

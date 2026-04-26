@@ -8,7 +8,9 @@
       "7b",
       "10b"
     ],
-    "pull_count": "2.5M"
+    "pull_count": "2.5M",
+    "context_length": null,
+    "parameter_count": null
   },
   "display_name": "Falcon3 (BYOE)",
   "name": "falcon3",
