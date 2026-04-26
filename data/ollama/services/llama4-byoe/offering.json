@@ -10,9 +10,9 @@
       "16x17b",
       "128x17b"
     ],
-    "pull_count": "1.6M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.6M"
   },
   "display_name": "Llama4 (BYOE)",
   "name": "llama4",

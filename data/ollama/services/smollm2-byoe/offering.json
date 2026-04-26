@@ -10,9 +10,9 @@
       "360m",
       "1.7b"
     ],
-    "pull_count": "3.3M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "3.3M"
   },
   "display_name": "Smollm2 (BYOE)",
   "name": "smollm2",

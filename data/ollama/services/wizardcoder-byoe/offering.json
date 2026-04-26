@@ -5,9 +5,9 @@
     "available_sizes": [
       "33b"
     ],
-    "pull_count": "946.8K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "946.8K"
   },
   "display_name": "Wizardcoder (BYOE)",
   "name": "wizardcoder",

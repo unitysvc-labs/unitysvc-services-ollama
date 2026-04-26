@@ -6,9 +6,9 @@
   "currency": "USD",
   "description": "DeepSeek-V3.2, a model that harmonizes high computational efficiency with superior reasoning and agent performance.",
   "details": {
-    "pull_count": "85.7K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "85.7K"
   },
   "display_name": "Deepseek V3.2 (BYOE)",
   "name": "deepseek-v3.2",

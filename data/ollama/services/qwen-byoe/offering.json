@@ -12,9 +12,9 @@
       "72b",
       "110b"
     ],
-    "pull_count": "6.6M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "6.6M"
   },
   "display_name": "Qwen (BYOE)",
   "name": "qwen",

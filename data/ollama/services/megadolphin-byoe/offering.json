@@ -5,9 +5,9 @@
     "available_sizes": [
       "120b"
     ],
-    "pull_count": "527.1K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "527.1K"
   },
   "display_name": "Megadolphin (BYOE)",
   "name": "megadolphin",

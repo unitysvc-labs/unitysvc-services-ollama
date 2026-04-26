@@ -5,9 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "888.8K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "888.8K"
   },
   "display_name": "Starling Lm (BYOE)",
   "name": "starling-lm",

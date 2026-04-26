@@ -6,9 +6,9 @@
       "1.5b",
       "14b"
     ],
-    "pull_count": "854.2K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "854.2K"
   },
   "display_name": "Deepcoder (BYOE)",
   "name": "deepcoder",

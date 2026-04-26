@@ -8,9 +8,9 @@
     "available_sizes": [
       "70b"
     ],
-    "pull_count": "481.2K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "481.2K"
   },
   "display_name": "Firefunction V2 (BYOE)",
   "name": "firefunction-v2",

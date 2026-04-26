@@ -8,9 +8,9 @@
     "available_sizes": [
       "270m"
     ],
-    "pull_count": "150.7K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "150.7K"
   },
   "display_name": "Functiongemma (BYOE)",
   "name": "functiongemma",

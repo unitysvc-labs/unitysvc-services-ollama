@@ -16,9 +16,9 @@
       "35b",
       "122b"
     ],
-    "pull_count": "7.1M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "7.1M"
   },
   "display_name": "Qwen3.5 (Cloud)",
   "name": "qwen3.5",

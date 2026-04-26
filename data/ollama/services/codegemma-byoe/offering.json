@@ -6,9 +6,9 @@
       "2b",
       "7b"
     ],
-    "pull_count": "2.9M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "2.9M"
   },
   "display_name": "Codegemma (BYOE)",
   "name": "codegemma",

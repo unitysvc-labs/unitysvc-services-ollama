@@ -5,9 +5,9 @@
   "currency": "USD",
   "description": "Qwen3-Coder-Next is a coding-focused language model from Alibaba's Qwen team, optimized for agentic coding workflows and local development.",
   "details": {
-    "pull_count": "1.1M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.1M"
   },
   "display_name": "Qwen3 Coder Next (BYOE)",
   "name": "qwen3-coder-next",

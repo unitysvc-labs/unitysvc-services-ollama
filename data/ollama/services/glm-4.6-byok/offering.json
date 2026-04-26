@@ -6,9 +6,9 @@
   "currency": "USD",
   "description": "Advanced agentic, reasoning and coding capabilities.",
   "details": {
-    "pull_count": "106.6K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "106.6K"
   },
   "display_name": "Glm 4.6 (Cloud)",
   "name": "glm-4.6",

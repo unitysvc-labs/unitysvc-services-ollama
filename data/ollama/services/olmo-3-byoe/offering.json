@@ -6,9 +6,9 @@
       "7b",
       "32b"
     ],
-    "pull_count": "413.7K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "413.7K"
   },
   "display_name": "Olmo 3 (BYOE)",
   "name": "olmo-3",

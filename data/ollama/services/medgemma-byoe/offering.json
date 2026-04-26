@@ -9,9 +9,9 @@
       "4b",
       "27b"
     ],
-    "pull_count": "12.5K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "12.5K"
   },
   "display_name": "Medgemma (BYOE)",
   "name": "medgemma",

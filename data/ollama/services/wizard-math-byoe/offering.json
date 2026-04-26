@@ -7,9 +7,9 @@
       "13b",
       "70b"
     ],
-    "pull_count": "911.7K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "911.7K"
   },
   "display_name": "Wizard Math (BYOE)",
   "name": "wizard-math",

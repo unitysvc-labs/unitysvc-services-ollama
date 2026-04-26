@@ -5,9 +5,9 @@
     "available_sizes": [
       "8x7b"
     ],
-    "pull_count": "548K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "548K"
   },
   "display_name": "Nous Hermes2 Mixtral (BYOE)",
   "name": "nous-hermes2-mixtral",

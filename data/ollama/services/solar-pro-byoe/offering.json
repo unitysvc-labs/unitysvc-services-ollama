@@ -5,9 +5,9 @@
     "available_sizes": [
       "22b"
     ],
-    "pull_count": "517.7K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "517.7K"
   },
   "display_name": "Solar Pro (BYOE)",
   "name": "solar-pro",

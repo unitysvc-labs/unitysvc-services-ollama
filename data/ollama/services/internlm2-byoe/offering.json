@@ -8,9 +8,9 @@
       "7b",
       "20b"
     ],
-    "pull_count": "899.4K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "899.4K"
   },
   "display_name": "Internlm2 (BYOE)",
   "name": "internlm2",

@@ -1,14 +1,14 @@
 {
   "currency": "USD",
-  "description": "Tülu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI.",
+  "description": "T\u00fclu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI.",
   "details": {
     "available_sizes": [
       "8b",
       "70b"
     ],
-    "pull_count": "355.8K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "355.8K"
   },
   "display_name": "Tulu3 (BYOE)",
   "name": "tulu3",

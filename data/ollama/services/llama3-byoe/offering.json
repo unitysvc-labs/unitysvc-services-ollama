@@ -6,9 +6,9 @@
       "8b",
       "70b"
     ],
-    "pull_count": "23.5M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "23.5M"
   },
   "display_name": "Llama3 (BYOE)",
   "name": "llama3",

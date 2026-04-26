@@ -8,9 +8,9 @@
     "available_sizes": [
       "70b"
     ],
-    "pull_count": "3.8M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "3.8M"
   },
   "display_name": "Llama3.3 (BYOE)",
   "name": "llama3.3",

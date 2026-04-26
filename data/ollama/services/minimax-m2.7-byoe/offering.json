@@ -6,9 +6,9 @@
   "currency": "USD",
   "description": "MiniMax's M2-series model for coding, agentic workflows, and professional productivity.",
   "details": {
-    "pull_count": "95.8K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "95.8K"
   },
   "display_name": "Minimax M2.7 (BYOE)",
   "name": "minimax-m2.7",

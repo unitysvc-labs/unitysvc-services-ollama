@@ -10,9 +10,9 @@
       "1b",
       "3b"
     ],
-    "pull_count": "1.2M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.2M"
   },
   "display_name": "Granite4 (BYOE)",
   "name": "granite4",

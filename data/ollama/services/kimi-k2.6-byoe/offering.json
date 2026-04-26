@@ -7,9 +7,9 @@
   "currency": "USD",
   "description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
   "details": {
-    "pull_count": "43.6K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "43.6K"
   },
   "display_name": "Kimi K2.6 (BYOE)",
   "name": "kimi-k2.6",

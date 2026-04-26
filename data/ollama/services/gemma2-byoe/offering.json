@@ -7,9 +7,9 @@
       "9b",
       "27b"
     ],
-    "pull_count": "21.6M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "21.6M"
   },
   "display_name": "Gemma2 (BYOE)",
   "name": "gemma2",

@@ -5,9 +5,9 @@
     "available_sizes": [
       "671b"
     ],
-    "pull_count": "3.8M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "3.8M"
   },
   "display_name": "Deepseek V3 (BYOE)",
   "name": "deepseek-v3",

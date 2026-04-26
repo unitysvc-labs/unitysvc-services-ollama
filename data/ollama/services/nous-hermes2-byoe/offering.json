@@ -6,9 +6,9 @@
       "10.7b",
       "34b"
     ],
-    "pull_count": "961K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "961K"
   },
   "display_name": "Nous Hermes2 (BYOE)",
   "name": "nous-hermes2",

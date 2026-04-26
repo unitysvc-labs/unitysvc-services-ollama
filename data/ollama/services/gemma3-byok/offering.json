@@ -12,9 +12,9 @@
       "12b",
       "27b"
     ],
-    "pull_count": "36M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "36M"
   },
   "display_name": "Gemma3 (Cloud)",
   "name": "gemma3",

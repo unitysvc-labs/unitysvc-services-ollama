@@ -9,9 +9,9 @@
     "available_sizes": [
       "24b"
     ],
-    "pull_count": "1.4M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.4M"
   },
   "display_name": "Magistral (BYOE)",
   "name": "magistral",

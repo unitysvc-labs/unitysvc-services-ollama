@@ -9,9 +9,9 @@
       "11b",
       "90b"
     ],
-    "pull_count": "4.4M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "4.4M"
   },
   "display_name": "Llama3.2 Vision (BYOE)",
   "name": "llama3.2-vision",

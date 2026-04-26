@@ -10,9 +10,9 @@
       "20b",
       "120b"
     ],
-    "pull_count": "135.5K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "135.5K"
   },
   "display_name": "Gpt Oss Safeguard (BYOE)",
   "name": "gpt-oss-safeguard",

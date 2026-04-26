@@ -5,9 +5,9 @@
     "available_sizes": [
       "2.7b"
     ],
-    "pull_count": "1.5M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.5M"
   },
   "display_name": "Dolphin Phi (BYOE)",
   "name": "dolphin-phi",

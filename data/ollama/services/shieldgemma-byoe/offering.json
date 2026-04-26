@@ -7,9 +7,9 @@
       "9b",
       "27b"
     ],
-    "pull_count": "840.2K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "840.2K"
   },
   "display_name": "Shieldgemma (BYOE)",
   "name": "shieldgemma",

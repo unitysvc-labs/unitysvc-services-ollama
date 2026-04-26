@@ -5,9 +5,9 @@
     "available_sizes": [
       "671b"
     ],
-    "pull_count": "175.3K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "175.3K"
   },
   "display_name": "Cogito 2.1 (BYOE)",
   "name": "cogito-2.1",

@@ -2,9 +2,9 @@
   "currency": "USD",
   "description": "OpenHermes 2.5 is a 7B model fine-tuned by Teknium on Mistral with fully open datasets.",
   "details": {
-    "pull_count": "1M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1M"
   },
   "display_name": "Openhermes (BYOE)",
   "name": "openhermes",

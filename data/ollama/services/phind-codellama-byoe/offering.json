@@ -5,9 +5,9 @@
     "available_sizes": [
       "34b"
     ],
-    "pull_count": "883.7K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "883.7K"
   },
   "display_name": "Phind Codellama (BYOE)",
   "name": "phind-codellama",

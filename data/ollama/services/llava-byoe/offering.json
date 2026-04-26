@@ -3,16 +3,16 @@
     "vision"
   ],
   "currency": "USD",
-  "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
+  "description": "\ud83c\udf0b LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
   "details": {
     "available_sizes": [
       "7b",
       "13b",
       "34b"
     ],
-    "pull_count": "13.9M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "13.9M"
   },
   "display_name": "Llava (BYOE)",
   "name": "llava",

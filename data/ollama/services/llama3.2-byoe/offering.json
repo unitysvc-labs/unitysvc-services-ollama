@@ -9,9 +9,9 @@
       "1b",
       "3b"
     ],
-    "pull_count": "66.8M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "66.8M"
   },
   "display_name": "Llama3.2 (BYOE)",
   "name": "llama3.2",

@@ -3,15 +3,15 @@
     "tools"
   ],
   "currency": "USD",
-  "description": "Mistral Small 3 sets a new benchmark in the “small” Large Language Models category below 70B.",
+  "description": "Mistral Small 3 sets a new benchmark in the \u201csmall\u201d Large Language Models category below 70B.",
   "details": {
     "available_sizes": [
       "22b",
       "24b"
     ],
-    "pull_count": "2.9M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "2.9M"
   },
   "display_name": "Mistral Small (BYOE)",
   "name": "mistral-small",

@@ -5,9 +5,9 @@
     "available_sizes": [
       "132b"
     ],
-    "pull_count": "304.2K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "304.2K"
   },
   "display_name": "Dbrx (BYOE)",
   "name": "dbrx",

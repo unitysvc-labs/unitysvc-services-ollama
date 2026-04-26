@@ -8,9 +8,9 @@
     "available_sizes": [
       "3.8b"
     ],
-    "pull_count": "1.1M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.1M"
   },
   "display_name": "Phi4 Mini (BYOE)",
   "name": "phi4-mini",

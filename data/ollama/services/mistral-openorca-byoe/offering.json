@@ -5,9 +5,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "637.5K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "637.5K"
   },
   "display_name": "Mistral Openorca (BYOE)",
   "name": "mistral-openorca",

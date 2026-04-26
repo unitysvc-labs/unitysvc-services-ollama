@@ -6,9 +6,9 @@
       "7b",
       "70b"
     ],
-    "pull_count": "672.6K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "672.6K"
   },
   "display_name": "Meditron (BYOE)",
   "name": "meditron",

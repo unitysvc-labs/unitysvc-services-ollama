@@ -9,9 +9,9 @@
     "available_sizes": [
       "24b"
     ],
-    "pull_count": "789.6K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "789.6K"
   },
   "display_name": "Devstral Small 2 (BYOE)",
   "name": "devstral-small-2",

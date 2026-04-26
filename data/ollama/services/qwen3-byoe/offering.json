@@ -16,9 +16,9 @@
       "32b",
       "235b"
     ],
-    "pull_count": "27.7M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "27.7M"
   },
   "display_name": "Qwen3 (BYOE)",
   "name": "qwen3",

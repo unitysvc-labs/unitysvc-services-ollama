@@ -8,9 +8,9 @@
     "available_sizes": [
       "123b"
     ],
-    "pull_count": "203.9K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "203.9K"
   },
   "display_name": "Devstral 2 (Cloud)",
   "name": "devstral-2",

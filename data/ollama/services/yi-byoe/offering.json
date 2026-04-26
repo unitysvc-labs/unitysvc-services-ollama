@@ -7,9 +7,9 @@
       "9b",
       "34b"
     ],
-    "pull_count": "1.2M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.2M"
   },
   "display_name": "Yi (BYOE)",
   "name": "yi",

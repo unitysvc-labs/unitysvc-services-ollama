@@ -8,9 +8,9 @@
     "available_sizes": [
       "7b"
     ],
-    "pull_count": "250.8K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "250.8K"
   },
   "display_name": "Command R7B (BYOE)",
   "name": "command-r7b",

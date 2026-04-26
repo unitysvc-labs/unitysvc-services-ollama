@@ -6,9 +6,9 @@
   "currency": "USD",
   "description": "Kimi K2 Thinking, Moonshot AI's best open-source thinking model.",
   "details": {
-    "pull_count": "56.8K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "56.8K"
   },
   "display_name": "Kimi K2 Thinking (Cloud)",
   "name": "kimi-k2-thinking",

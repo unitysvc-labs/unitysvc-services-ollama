@@ -5,9 +5,9 @@
     "available_sizes": [
       "34b"
     ],
-    "pull_count": "461.4K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "461.4K"
   },
   "display_name": "Codebooga (BYOE)",
   "name": "codebooga",

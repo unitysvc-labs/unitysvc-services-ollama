@@ -8,9 +8,9 @@
       "20b",
       "34b"
     ],
-    "pull_count": "1.3M",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "1.3M"
   },
   "display_name": "Granite Code (BYOE)",
   "name": "granite-code",

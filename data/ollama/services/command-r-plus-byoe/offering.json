@@ -8,9 +8,9 @@
     "available_sizes": [
       "104b"
     ],
-    "pull_count": "741.3K",
     "context_length": null,
-    "parameter_count": null
+    "parameter_count": null,
+    "pull_count": "741.3K"
   },
   "display_name": "Command R Plus (BYOE)",
   "name": "command-r-plus",
