@@ -1,0 +1,35 @@
+{
+  "capabilities": [
+    "vision"
+  ],
+  "currency": "USD",
+  "description": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension.",
+  "details": {
+    "available_sizes": [
+      "4b",
+      "27b"
+    ],
+    "pull_count": "12.5K"
+  },
+  "display_name": "Medgemma (BYOE)",
+  "name": "medgemma",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "byoe"
+  ],
+  "time_created": "2026-04-26T03:53:17.293432Z",
+  "upstream_access_config": {
+    "ollama_api": {
+      "access_method": "http",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "base_url": "{{ params.base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "medgemma"
+      }
+    }
+  }
+}

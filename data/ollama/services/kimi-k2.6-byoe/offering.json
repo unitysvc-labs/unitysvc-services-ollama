@@ -1,0 +1,33 @@
+{
+  "capabilities": [
+    "vision",
+    "tools",
+    "thinking"
+  ],
+  "currency": "USD",
+  "description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
+  "details": {
+    "pull_count": "43.6K"
+  },
+  "display_name": "Kimi K2.6 (BYOE)",
+  "name": "kimi-k2.6",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "byoe"
+  ],
+  "time_created": "2026-04-26T03:53:17.280288Z",
+  "upstream_access_config": {
+    "ollama_api": {
+      "access_method": "http",
+      "api_key": "{% if params.api_key_secret %}${ customer_secrets.{{ params.api_key_secret }} }{% else %}{% endif %}",
+      "base_url": "{{ params.base_url }}",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "kimi-k2.6"
+      }
+    }
+  }
+}

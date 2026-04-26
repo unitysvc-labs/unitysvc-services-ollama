@@ -6,7 +6,7 @@
   "currency": "USD",
   "description": "A general-purpose multimodal mixture-of-experts model for production-grade tasks and enterprise workloads.",
   "details": {
-    "pull_count": "37.1K"
+    "pull_count": "44.8K"
   },
   "display_name": "Mistral Large 3 (Cloud)",
   "name": "mistral-large-3",
