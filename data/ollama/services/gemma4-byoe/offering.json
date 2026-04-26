@@ -2,6 +2,7 @@
   "capabilities": [
     "vision",
     "tools",
+    "thinking",
     "audio"
   ],
   "currency": "USD",
@@ -13,7 +14,7 @@
       "26b",
       "31b"
     ],
-    "pull_count": "44.8K"
+    "pull_count": "5.4M"
   },
   "display_name": "Gemma4 (BYOE)",
   "name": "gemma4",

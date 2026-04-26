@@ -5,7 +5,7 @@
   "currency": "USD",
   "description": "A high-performing open embedding model with a large token context window.",
   "details": {
-    "pull_count": "62.2M"
+    "pull_count": "66.8M"
   },
   "display_name": "Nomic Embed Text (BYOE)",
   "name": "nomic-embed-text",

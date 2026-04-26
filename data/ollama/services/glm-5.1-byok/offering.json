@@ -1,0 +1,32 @@
+{
+  "capabilities": [
+    "tools",
+    "thinking"
+  ],
+  "currency": "USD",
+  "description": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin.",
+  "details": {
+    "pull_count": "113K"
+  },
+  "display_name": "Glm 5.1 (Cloud)",
+  "name": "glm-5.1",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "byok"
+  ],
+  "time_created": "2026-04-26T03:53:17.461959Z",
+  "upstream_access_config": {
+    "ollama_cloud_api": {
+      "access_method": "http",
+      "api_key": "${ customer_secrets.OLLAMA_API_KEY }",
+      "base_url": "https://api.ollama.com",
+      "rate_limits": [],
+      "routing_key": {
+        "model": "glm-5.1"
+      }
+    }
+  }
+}
