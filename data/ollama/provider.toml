@@ -9,7 +9,7 @@ time_created = "2026-03-09T00:00:00Z"
 
 [services_populator]
 command = 'scripts/update_services.py'
-requirements = ['requests', 'beautifulsoup4', 'unitysvc-services']
+requirements = ['requests', 'beautifulsoup4', 'unitysvc-sellers']
 
 [services_populator.envs]
 # No API key needed - scrapes public ollama.com/search
