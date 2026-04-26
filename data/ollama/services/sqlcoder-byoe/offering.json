@@ -6,6 +6,8 @@
       "7b",
       "15b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "952.3K"
   },
   "display_name": "Sqlcoder (BYOE)",

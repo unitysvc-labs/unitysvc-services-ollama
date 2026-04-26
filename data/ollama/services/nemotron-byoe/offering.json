@@ -8,6 +8,8 @@
     "available_sizes": [
       "70b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "561.5K"
   },
   "display_name": "Nemotron (BYOE)",

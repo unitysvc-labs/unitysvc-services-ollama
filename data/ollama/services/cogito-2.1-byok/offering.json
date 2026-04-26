@@ -5,6 +5,8 @@
     "available_sizes": [
       "671b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "175.3K"
   },
   "display_name": "Cogito 2.1 (Cloud)",

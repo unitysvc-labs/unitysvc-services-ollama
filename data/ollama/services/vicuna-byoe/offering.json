@@ -7,6 +7,8 @@
       "13b",
       "33b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "1M"
   },
   "display_name": "Vicuna (BYOE)",

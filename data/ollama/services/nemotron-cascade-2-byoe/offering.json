@@ -9,6 +9,8 @@
     "available_sizes": [
       "30b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "105K"
   },
   "display_name": "Nemotron Cascade 2 (BYOE)",

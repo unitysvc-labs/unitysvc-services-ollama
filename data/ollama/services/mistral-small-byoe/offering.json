@@ -9,6 +9,8 @@
       "22b",
       "24b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "2.9M"
   },
   "display_name": "Mistral Small (BYOE)",

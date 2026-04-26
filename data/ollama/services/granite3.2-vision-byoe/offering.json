@@ -9,6 +9,8 @@
     "available_sizes": [
       "2b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "895.3K"
   },
   "display_name": "Granite3.2 Vision (BYOE)",

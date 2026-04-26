@@ -10,6 +10,8 @@
       "4b",
       "30b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "407.5K"
   },
   "display_name": "Nemotron 3 Nano (Cloud)",

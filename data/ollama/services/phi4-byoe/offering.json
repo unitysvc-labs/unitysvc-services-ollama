@@ -5,6 +5,8 @@
     "available_sizes": [
       "14b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "7.4M"
   },
   "display_name": "Phi4 (BYOE)",

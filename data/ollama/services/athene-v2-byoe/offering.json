@@ -8,6 +8,8 @@
     "available_sizes": [
       "72b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "548.5K"
   },
   "display_name": "Athene V2 (BYOE)",

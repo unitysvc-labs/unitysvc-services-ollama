@@ -6,6 +6,8 @@
       "1.5b",
       "9b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "942.4K"
   },
   "display_name": "Yi Coder (BYOE)",

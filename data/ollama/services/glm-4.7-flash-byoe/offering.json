@@ -6,6 +6,8 @@
   "currency": "USD",
   "description": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency.",
   "details": {
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "1.2M"
   },
   "display_name": "Glm 4.7 Flash (BYOE)",

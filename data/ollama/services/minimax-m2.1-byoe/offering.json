@@ -5,6 +5,8 @@
   "currency": "USD",
   "description": "Exceptional multilingual capabilities to elevate code engineering",
   "details": {
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "40.9K"
   },
   "display_name": "Minimax M2.1 (BYOE)",

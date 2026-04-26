@@ -12,6 +12,8 @@
       "12b",
       "27b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "36M"
   },
   "display_name": "Gemma3 (BYOE)",

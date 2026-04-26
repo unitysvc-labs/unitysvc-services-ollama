@@ -7,6 +7,8 @@
       "13b",
       "70b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "6.7M"
   },
   "display_name": "Llama2 (BYOE)",

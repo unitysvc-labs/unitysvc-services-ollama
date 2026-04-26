@@ -8,6 +8,8 @@
     "available_sizes": [
       "24b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "1.1M"
   },
   "display_name": "Lfm2 (BYOE)",

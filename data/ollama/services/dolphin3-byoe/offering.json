@@ -5,6 +5,8 @@
     "available_sizes": [
       "8b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "3.8M"
   },
   "display_name": "Dolphin3 (BYOE)",

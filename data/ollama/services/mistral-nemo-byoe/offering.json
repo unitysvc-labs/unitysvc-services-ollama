@@ -8,6 +8,8 @@
     "available_sizes": [
       "12b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "4.1M"
   },
   "display_name": "Mistral Nemo (BYOE)",

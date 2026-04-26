@@ -6,6 +6,8 @@
   "currency": "USD",
   "description": "MiniMax-M2.5 is a state-of-the-art large language model designed for real-world productivity and coding tasks.",
   "details": {
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "165.7K"
   },
   "display_name": "Minimax M2.5 (Cloud)",

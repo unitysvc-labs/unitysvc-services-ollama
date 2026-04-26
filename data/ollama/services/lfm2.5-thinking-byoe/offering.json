@@ -8,6 +8,8 @@
     "available_sizes": [
       "1.2b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "1.1M"
   },
   "display_name": "Lfm2.5 Thinking (BYOE)",

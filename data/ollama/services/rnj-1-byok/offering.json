@@ -8,6 +8,8 @@
     "available_sizes": [
       "8b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "449.6K"
   },
   "display_name": "Rnj 1 (Cloud)",

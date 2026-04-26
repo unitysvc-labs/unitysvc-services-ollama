@@ -5,6 +5,8 @@
     "available_sizes": [
       "3b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "239.2K"
   },
   "display_name": "Smallthinker (BYOE)",

@@ -5,6 +5,8 @@
     "available_sizes": [
       "9b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "640.9K"
   },
   "display_name": "Codegeex4 (BYOE)",

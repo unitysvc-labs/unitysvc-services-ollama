@@ -6,6 +6,8 @@
       "2b",
       "8b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "308.4K"
   },
   "display_name": "Granite3 Guardian (BYOE)",

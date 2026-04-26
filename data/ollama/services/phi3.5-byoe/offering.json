@@ -5,6 +5,8 @@
     "available_sizes": [
       "3.8b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "902.1K"
   },
   "display_name": "Phi3.5 (BYOE)",

@@ -10,6 +10,8 @@
       "70b",
       "405b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "113.6M"
   },
   "display_name": "Llama3.1 (BYOE)",

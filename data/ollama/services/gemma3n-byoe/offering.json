@@ -6,6 +6,8 @@
       "e2b",
       "e4b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "1.5M"
   },
   "display_name": "Gemma3N (BYOE)",

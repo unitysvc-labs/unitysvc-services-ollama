@@ -8,6 +8,8 @@
     "available_sizes": [
       "8b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "2.2M"
   },
   "display_name": "Llava Llama3 (BYOE)",

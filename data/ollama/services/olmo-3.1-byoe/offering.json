@@ -8,6 +8,8 @@
     "available_sizes": [
       "32b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "263.8K"
   },
   "display_name": "Olmo 3.1 (BYOE)",

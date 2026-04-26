@@ -5,6 +5,8 @@
     "available_sizes": [
       "14b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "1.5M"
   },
   "display_name": "Phi4 Reasoning (BYOE)",

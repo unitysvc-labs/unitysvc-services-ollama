@@ -9,6 +9,8 @@
       "2b",
       "8b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "424.2K"
   },
   "display_name": "Granite3.2 (BYOE)",

@@ -6,6 +6,8 @@
       "8b",
       "70b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "911.1K"
   },
   "display_name": "Llama3 Gradient (BYOE)",

@@ -6,6 +6,8 @@
       "3.8b",
       "14b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "17.3M"
   },
   "display_name": "Phi3 (BYOE)",

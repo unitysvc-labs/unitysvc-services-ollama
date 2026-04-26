@@ -5,6 +5,8 @@
     "available_sizes": [
       "13b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "824.7K"
   },
   "display_name": "Nexusraven (BYOE)",

@@ -2,6 +2,8 @@
   "currency": "USD",
   "description": "General use model based on Llama 2.",
   "details": {
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "802.4K"
   },
   "display_name": "Wizardlm (BYOE)",

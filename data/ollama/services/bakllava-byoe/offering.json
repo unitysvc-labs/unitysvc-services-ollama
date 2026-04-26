@@ -8,6 +8,8 @@
     "available_sizes": [
       "7b"
     ],
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "827.3K"
   },
   "display_name": "Bakllava (BYOE)",

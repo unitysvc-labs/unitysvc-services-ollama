@@ -6,6 +6,8 @@
   "currency": "USD",
   "description": "DeepSeek-V4-Flash is a preview of the DeepSeek-V4 series, a Mixture-of-Experts model with 284B total parameters and 13B activated, built for efficient reasoning across a 1M-token context window.",
   "details": {
+    "context_length": null,
+    "parameter_count": null,
     "pull_count": "13.6K"
   },
   "display_name": "Deepseek V4 Flash (Cloud)",
