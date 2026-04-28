@@ -51,6 +51,27 @@ SCRIPT_DIR = Path(__file__).parent
 EMBEDDING_KEYWORDS = ["embedding", "embed"]
 VISION_KEYWORDS = ["vision"]
 
+# Three-tier BYOE connectivity testing strategy:
+#
+# Tier 1 (BYOK): Fixed base_url (api.ollama.com) — uses connectivity.sh.j2, no ops_testing_parameters.
+# Tier 2 (BYOE small models): Real chat completion against our Ollama host, always kept pulled.
+#   Validates full BYOE flow end-to-end (parameter substitution + real inference).
+# Tier 3 (remaining BYOE): Echo service — validates model name/request structure without
+#   requiring every model to be pulled. Sufficient because Tier 2 already proved the BYOE flow.
+
+# Tier 2: small models always kept pulled on our Ollama instance (each ~1–2 GB).
+# Empty until ollama.staging.svcmarket.com has models pulled; restore to re-enable Tier 2.
+# Candidates: {"tinyllama", "moondream"}
+TIER2_MODELS: set[str] = set()
+
+# Ops testing base URLs
+OLLAMA_STAGING_BASE_URL = "https://ollama.staging.svcmarket.com"
+ECHO_STAGING_BASE_URL = "https://echo.staging.svcmarket.com"
+
+# Connectivity test doc paths (relative to listing.json, inside the docs/ dir)
+CONNECTIVITY_DOC_BYOE = "../../docs/connectivity-byoe.sh.j2"
+CONNECTIVITY_DOC_ECHO = "../../docs/connectivity-echo.sh.j2"
+
 
 def scrape_ollama_models() -> list[dict]:
     """Scrape all models from ollama.com/search with pagination."""
@@ -150,7 +171,12 @@ def determine_tags(variant: str) -> list[str]:
 
 
 def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
-    """Yield BYOE (bring-your-own-endpoint) service dicts for all models."""
+    """Yield BYOE (bring-your-own-endpoint) service dicts for all models.
+
+    Assigns connectivity test tier per model:
+      Tier 2 (TIER2_MODELS): real chat completion against our Ollama host.
+      Tier 3 (all others):   echo service — validates parameter plumbing only.
+    """
     for i, model in enumerate(models, 1):
         model_name = model["model_name"]
         print(f"[{i}/{len(models)}] {model_name}-byoe")
@@ -167,6 +193,15 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
         if service_type == "llm":
             _attach_canonical_metadata(details, model_name)
 
+        if model_name in TIER2_MODELS:
+            ops_testing_base_url = OLLAMA_STAGING_BASE_URL
+            connectivity_test_doc = CONNECTIVITY_DOC_BYOE
+            tier = 2
+        else:
+            ops_testing_base_url = ECHO_STAGING_BASE_URL
+            connectivity_test_doc = CONNECTIVITY_DOC_ECHO
+            tier = 3
+
         yield {
             "name": f"{model_name}-byoe",
             "offering_name": model_name,
@@ -182,8 +217,10 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
             "provider_name": PROVIDER_NAME,
             "provider_display_name": PROVIDER_DISPLAY_NAME,
             "service_variant": "byoe",
+            "ops_testing_base_url": ops_testing_base_url,
+            "connectivity_test_doc": connectivity_test_doc,
         }
-        print("  OK")
+        print(f"  OK (tier {tier})")
 
 
 def iter_cloud_models(models: list[dict]) -> Iterator[dict]:

@@ -4,7 +4,7 @@
     "Connectivity test": {
       "category": "connectivity_test",
       "description": "Connectivity test",
-      "file_path": "../../docs/connectivity.sh.j2",
+      "file_path": "../../docs/connectivity-echo.sh.j2",
       "is_active": true,
       "is_public": false,
       "mime_type": "bash"
@@ -73,7 +73,7 @@
   "service_options": {
     "ops_testing_parameters": {
       "api_key_secret": "",
-      "base_url": "https://ollama.svcpass.com"
+      "base_url": "https://echo.staging.svcmarket.com"
     }
   },
   "status": "ready",

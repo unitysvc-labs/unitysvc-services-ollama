@@ -41,7 +41,7 @@
   },
   "service_options": {
     "ops_testing_parameters": {
-      "base_url": "https://ollama.svcpass.com",
+      "base_url": "{{ ops_testing_base_url }}",
       "api_key_secret": ""
     }
   },
@@ -92,7 +92,7 @@
     "Connectivity test": {
       "category": "connectivity_test",
       "description": "Connectivity test",
-      "file_path": "../../docs/connectivity.sh.j2",
+      "file_path": "{{ connectivity_test_doc }}",
       "is_active": true,
       "is_public": false,
       "mime_type": "bash"

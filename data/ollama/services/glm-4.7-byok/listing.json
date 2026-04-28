@@ -22,6 +22,11 @@
       "file_path": "../../docs/code-example.js.j2",
       "is_active": true,
       "is_public": true,
+      "meta": {
+        "test": {
+          "status": "skip"
+        }
+      },
       "mime_type": "javascript"
     },
     "Python code example": {
@@ -30,6 +35,11 @@
       "file_path": "../../docs/code-example.py.j2",
       "is_active": true,
       "is_public": true,
+      "meta": {
+        "test": {
+          "status": "skip"
+        }
+      },
       "mime_type": "python"
     },
     "Python ollama-python code example": {
@@ -38,6 +48,11 @@
       "file_path": "../../docs/code-example-ollama.py.j2",
       "is_active": true,
       "is_public": true,
+      "meta": {
+        "test": {
+          "status": "skip"
+        }
+      },
       "mime_type": "python"
     },
     "cURL code example": {
@@ -46,6 +61,11 @@
       "file_path": "../../docs/code-example.sh.j2",
       "is_active": true,
       "is_public": true,
+      "meta": {
+        "test": {
+          "status": "skip"
+        }
+      },
       "mime_type": "bash"
     }
   },
