@@ -2,10 +2,7 @@
   "currency": "USD",
   "documents": {
     "Connectivity test": {
-      "$doc_preset": {
-        "is_public": false,
-        "name": "api_connectivity"
-      }
+      "$doc_preset": "api_connectivity"
     },
     "How to use this model": {
       "category": "getting_started",
