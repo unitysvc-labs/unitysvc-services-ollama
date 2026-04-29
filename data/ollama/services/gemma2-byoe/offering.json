@@ -12,7 +12,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "21.8M"
+    "pull_count": "21.9M"
   },
   "display_name": "Gemma2 (BYOE)",
   "name": "gemma2",

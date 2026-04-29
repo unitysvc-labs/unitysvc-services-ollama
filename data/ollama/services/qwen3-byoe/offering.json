@@ -21,7 +21,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "27.9M"
+    "pull_count": "28M"
   },
   "display_name": "Qwen3 (BYOE)",
   "name": "qwen3",

@@ -59,7 +59,7 @@
   "service_options": {
     "ops_testing_parameters": {
       "api_key_secret": "",
-      "base_url": "https://ollama.svcpass.com"
+      "base_url": "https://ollama.svcmarket.com"
     }
   },
   "status": "ready",
