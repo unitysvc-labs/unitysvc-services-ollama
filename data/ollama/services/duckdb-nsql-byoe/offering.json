@@ -7,7 +7,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "492K"
+    "pull_count": "492.1K"
   },
   "display_name": "Duckdb Nsql (BYOE)",
   "name": "duckdb-nsql",

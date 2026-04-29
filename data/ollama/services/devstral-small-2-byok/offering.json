@@ -14,7 +14,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "805K"
+    "pull_count": "806K"
   },
   "display_name": "Devstral Small 2 (Cloud)",
   "name": "devstral-small-2",

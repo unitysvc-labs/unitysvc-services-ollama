@@ -8,7 +8,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "851.3K"
+    "pull_count": "851.4K"
   },
   "display_name": "Reader Lm (BYOE)",
   "name": "reader-lm",

@@ -10,7 +10,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "643.9K"
+    "pull_count": "644K"
   },
   "display_name": "Codegeex4 (BYOE)",
   "name": "codegeex4",
