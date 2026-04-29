@@ -3,8 +3,8 @@ import requests
 import json
 
 UNITYSVC_API_KEY = os.environ.get("UNITYSVC_API_KEY")
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
-MODEL = os.environ.get("MODEL", "{{offering.name}}")
+SERVICE_BASE_URL = "{{ service_base_url }}"
+MODEL = "{{ routing_key.model }}"
 
 headers = {"Content-Type": "application/json"}
 if UNITYSVC_API_KEY:
