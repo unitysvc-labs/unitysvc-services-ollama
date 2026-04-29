@@ -5,9 +5,12 @@
     "available_sizes": [
       "10.7b"
     ],
-    "context_length": null,
+    "context_length": 128000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "885.5K"
+    "pull_count": "891.4K"
   },
   "display_name": "Solar (BYOE)",
   "name": "solar",

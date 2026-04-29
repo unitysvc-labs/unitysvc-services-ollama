@@ -9,9 +9,12 @@
       "1b",
       "3b"
     ],
-    "context_length": null,
+    "context_length": 131072,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "66.8M"
+    "pull_count": "67.2M"
   },
   "display_name": "Llama3.2 (BYOE)",
   "name": "llama3.2",

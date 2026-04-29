@@ -8,9 +8,12 @@
       "7b",
       "20b"
     ],
-    "context_length": null,
+    "context_length": 32768,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "899.4K"
+    "pull_count": "905.5K"
   },
   "display_name": "Internlm2 (BYOE)",
   "name": "internlm2",

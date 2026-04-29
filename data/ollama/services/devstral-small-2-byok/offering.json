@@ -9,9 +9,12 @@
     "available_sizes": [
       "24b"
     ],
-    "context_length": null,
+    "context_length": 128000,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "789.6K"
+    "pull_count": "805K"
   },
   "display_name": "Devstral Small 2 (Cloud)",
   "name": "devstral-small-2",

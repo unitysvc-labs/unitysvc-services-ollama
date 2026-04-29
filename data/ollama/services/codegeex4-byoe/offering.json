@@ -5,9 +5,12 @@
     "available_sizes": [
       "9b"
     ],
-    "context_length": null,
+    "context_length": 32768,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "640.9K"
+    "pull_count": "643.9K"
   },
   "display_name": "Codegeex4 (BYOE)",
   "name": "codegeex4",

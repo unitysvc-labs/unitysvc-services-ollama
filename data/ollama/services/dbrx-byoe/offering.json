@@ -5,9 +5,12 @@
     "available_sizes": [
       "132b"
     ],
-    "context_length": null,
+    "context_length": 32768,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "304.2K"
+    "pull_count": "305.2K"
   },
   "display_name": "Dbrx (BYOE)",
   "name": "dbrx",

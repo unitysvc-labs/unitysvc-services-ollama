@@ -8,7 +8,10 @@
       "34b",
       "70b"
     ],
-    "context_length": null,
+    "context_length": 4096,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
     "pull_count": "5.4M"
   },

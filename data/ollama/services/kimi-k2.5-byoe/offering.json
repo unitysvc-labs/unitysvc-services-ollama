@@ -7,9 +7,12 @@
   "currency": "USD",
   "description": "Kimi K2.5 is an open-source, native multimodal agentic model that seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.",
   "details": {
-    "context_length": null,
+    "context_length": 262144,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "259.5K"
+    "pull_count": "263.7K"
   },
   "display_name": "Kimi K2.5 (BYOE)",
   "name": "kimi-k2.5",

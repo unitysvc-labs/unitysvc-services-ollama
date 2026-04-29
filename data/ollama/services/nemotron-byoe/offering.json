@@ -8,9 +8,12 @@
     "available_sizes": [
       "70b"
     ],
-    "context_length": null,
+    "context_length": 256000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "561.5K"
+    "pull_count": "564.7K"
   },
   "display_name": "Nemotron (BYOE)",
   "name": "nemotron",

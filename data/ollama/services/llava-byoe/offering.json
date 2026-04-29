@@ -10,7 +10,10 @@
       "13b",
       "34b"
     ],
-    "context_length": null,
+    "context_length": 32000,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
     "pull_count": "13.9M"
   },
