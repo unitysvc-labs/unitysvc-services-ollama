@@ -6,7 +6,10 @@
   "currency": "USD",
   "description": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency.",
   "details": {
-    "context_length": null,
+    "context_length": 202752,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
     "pull_count": "1.2M"
   },

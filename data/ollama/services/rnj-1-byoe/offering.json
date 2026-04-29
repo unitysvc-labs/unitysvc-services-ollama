@@ -8,9 +8,12 @@
     "available_sizes": [
       "8b"
     ],
-    "context_length": null,
+    "context_length": 32768,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "449.6K"
+    "pull_count": "451.2K"
   },
   "display_name": "Rnj 1 (BYOE)",
   "name": "rnj-1",

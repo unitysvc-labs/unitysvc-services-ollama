@@ -7,9 +7,12 @@
       "6.7b",
       "33b"
     ],
-    "context_length": null,
+    "context_length": 128000,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "4M"
+    "pull_count": "4.1M"
   },
   "display_name": "Deepseek Coder (BYOE)",
   "name": "deepseek-coder",

@@ -7,7 +7,10 @@
       "13b",
       "70b"
     ],
-    "context_length": null,
+    "context_length": 4096,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
     "pull_count": "6.7M"
   },

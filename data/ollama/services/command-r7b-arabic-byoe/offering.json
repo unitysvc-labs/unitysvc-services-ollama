@@ -8,9 +8,12 @@
     "available_sizes": [
       "7b"
     ],
-    "context_length": null,
+    "context_length": 4096,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "182.2K"
+    "pull_count": "183K"
   },
   "display_name": "Command R7B Arabic (BYOE)",
   "name": "command-r7b-arabic",

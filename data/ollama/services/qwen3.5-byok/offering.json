@@ -16,9 +16,12 @@
       "35b",
       "122b"
     ],
-    "context_length": null,
+    "context_length": 1000000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "7.1M"
+    "pull_count": "7.4M"
   },
   "display_name": "Qwen3.5 (Cloud)",
   "name": "qwen3.5",

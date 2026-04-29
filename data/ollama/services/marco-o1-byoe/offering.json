@@ -5,9 +5,12 @@
     "available_sizes": [
       "7b"
     ],
-    "context_length": null,
+    "context_length": 200000,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "199.5K"
+    "pull_count": "200.3K"
   },
   "display_name": "Marco O1 (BYOE)",
   "name": "marco-o1",

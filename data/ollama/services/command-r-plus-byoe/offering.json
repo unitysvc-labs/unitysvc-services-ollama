@@ -8,9 +8,12 @@
     "available_sizes": [
       "104b"
     ],
-    "context_length": null,
+    "context_length": 128000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "741.3K"
+    "pull_count": "745.1K"
   },
   "display_name": "Command R Plus (BYOE)",
   "name": "command-r-plus",

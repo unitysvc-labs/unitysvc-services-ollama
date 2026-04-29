@@ -8,9 +8,12 @@
     "available_sizes": [
       "3b"
     ],
-    "context_length": null,
+    "context_length": 8192,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "427.9K"
+    "pull_count": "430.7K"
   },
   "display_name": "Deepseek Ocr (BYOE)",
   "name": "deepseek-ocr",

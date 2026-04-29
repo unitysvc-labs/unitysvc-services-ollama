@@ -8,9 +8,12 @@
     "available_sizes": [
       "35b"
     ],
-    "context_length": null,
+    "context_length": 128000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "1.3M"
+    "pull_count": "1.4M"
   },
   "display_name": "Command R (BYOE)",
   "name": "command-r",

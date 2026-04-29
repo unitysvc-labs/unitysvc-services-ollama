@@ -5,9 +5,12 @@
     "available_sizes": [
       "40b"
     ],
-    "context_length": null,
+    "context_length": 4096,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "222.9K"
+    "pull_count": "223.8K"
   },
   "display_name": "Alfred (BYOE)",
   "name": "alfred",

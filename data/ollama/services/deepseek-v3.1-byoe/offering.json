@@ -9,9 +9,12 @@
     "available_sizes": [
       "671b"
     ],
-    "context_length": null,
+    "context_length": 131072,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "657.1K"
+    "pull_count": "661.1K"
   },
   "display_name": "Deepseek V3.1 (BYOE)",
   "name": "deepseek-v3.1",

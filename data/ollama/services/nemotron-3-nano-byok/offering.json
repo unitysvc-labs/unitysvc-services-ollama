@@ -10,9 +10,12 @@
       "4b",
       "30b"
     ],
-    "context_length": null,
+    "context_length": 256000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "407.5K"
+    "pull_count": "412K"
   },
   "display_name": "Nemotron 3 Nano (Cloud)",
   "name": "nemotron-3-nano",

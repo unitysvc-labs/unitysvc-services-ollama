@@ -8,9 +8,12 @@
     "available_sizes": [
       "123b"
     ],
-    "context_length": null,
+    "context_length": 262144,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "203.9K"
+    "pull_count": "205.6K"
   },
   "display_name": "Devstral 2 (Cloud)",
   "name": "devstral-2",

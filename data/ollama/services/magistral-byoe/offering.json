@@ -9,7 +9,10 @@
     "available_sizes": [
       "24b"
     ],
-    "context_length": null,
+    "context_length": 128000,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
     "pull_count": "1.4M"
   },

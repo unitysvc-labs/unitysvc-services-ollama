@@ -9,9 +9,12 @@
       "30b",
       "480b"
     ],
-    "context_length": null,
+    "context_length": 262144,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "4.9M"
+    "pull_count": "5M"
   },
   "display_name": "Qwen3 Coder (BYOE)",
   "name": "qwen3-coder",

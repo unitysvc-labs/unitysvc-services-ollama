@@ -9,9 +9,12 @@
     "available_sizes": [
       "120b"
     ],
-    "context_length": null,
+    "context_length": 262144,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "243.9K"
+    "pull_count": "248.7K"
   },
   "display_name": "Nemotron 3 Super (BYOE)",
   "name": "nemotron-3-super",

@@ -10,9 +10,12 @@
       "20b",
       "120b"
     ],
-    "context_length": null,
+    "context_length": 131072,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "135.5K"
+    "pull_count": "136.3K"
   },
   "display_name": "Gpt Oss Safeguard (BYOE)",
   "name": "gpt-oss-safeguard",

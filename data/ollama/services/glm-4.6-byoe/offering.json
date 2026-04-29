@@ -6,9 +6,12 @@
   "currency": "USD",
   "description": "Advanced agentic, reasoning and coding capabilities.",
   "details": {
-    "context_length": null,
+    "context_length": 131072,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "106.6K"
+    "pull_count": "108.2K"
   },
   "display_name": "Glm 4.6 (BYOE)",
   "name": "glm-4.6",

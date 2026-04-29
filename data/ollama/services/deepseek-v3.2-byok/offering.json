@@ -6,9 +6,12 @@
   "currency": "USD",
   "description": "DeepSeek-V3.2, a model that harmonizes high computational efficiency with superior reasoning and agent performance.",
   "details": {
-    "context_length": null,
+    "context_length": 163840,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "85.7K"
+    "pull_count": "88.3K"
   },
   "display_name": "Deepseek V3.2 (Cloud)",
   "name": "deepseek-v3.2",

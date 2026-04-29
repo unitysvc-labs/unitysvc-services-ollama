@@ -5,9 +5,12 @@
   "currency": "USD",
   "description": "A state-of-the-art mixture-of-experts (MoE) language model. Kimi K2-Instruct-0905 demonstrates significant improvements in performance on public benchmarks and real-world coding agent tasks.",
   "details": {
-    "context_length": null,
+    "context_length": 256000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "61.7K"
+    "pull_count": "62.1K"
   },
   "display_name": "Kimi K2 (Cloud)",
   "name": "kimi-k2",

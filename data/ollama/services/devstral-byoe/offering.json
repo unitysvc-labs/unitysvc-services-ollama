@@ -8,9 +8,12 @@
     "available_sizes": [
       "24b"
     ],
-    "context_length": null,
+    "context_length": 262144,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "926.5K"
+    "pull_count": "929K"
   },
   "display_name": "Devstral (BYOE)",
   "name": "devstral",
