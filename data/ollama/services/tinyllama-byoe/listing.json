@@ -2,12 +2,7 @@
   "currency": "USD",
   "documents": {
     "Connectivity test": {
-      "category": "connectivity_test",
-      "description": "Connectivity test",
-      "file_path": "../../docs/connectivity-echo.sh.j2",
-      "is_active": true,
-      "is_public": false,
-      "mime_type": "bash"
+      "$doc_preset": "api_connectivity"
     },
     "How to use this model": {
       "category": "getting_started",
@@ -17,30 +12,24 @@
       "mime_type": "markdown"
     },
     "JavaScript code example": {
-      "category": "code_example",
-      "description": "Example code to use the model",
-      "file_path": "../../docs/code-example.js.j2",
-      "is_active": true,
-      "is_public": true,
-      "meta": {
-        "test": {
-          "status": "skip"
-        }
-      },
-      "mime_type": "javascript"
+      "$doc_preset": {
+        "meta": {
+          "test": {
+            "status": "skip"
+          }
+        },
+        "name": "llm_code_example_javascript"
+      }
     },
     "Python code example": {
-      "category": "code_example",
-      "description": "Example code to use the model",
-      "file_path": "../../docs/code-example.py.j2",
-      "is_active": true,
-      "is_public": true,
-      "meta": {
-        "test": {
-          "status": "skip"
-        }
-      },
-      "mime_type": "python"
+      "$doc_preset": {
+        "meta": {
+          "test": {
+            "status": "skip"
+          }
+        },
+        "name": "llm_code_example_requests"
+      }
     },
     "Python ollama-python code example": {
       "category": "code_example",
@@ -56,17 +45,14 @@
       "mime_type": "python"
     },
     "cURL code example": {
-      "category": "code_example",
-      "description": "Example code to use the model",
-      "file_path": "../../docs/code-example.sh.j2",
-      "is_active": true,
-      "is_public": true,
-      "meta": {
-        "test": {
-          "status": "skip"
-        }
-      },
-      "mime_type": "bash"
+      "$doc_preset": {
+        "meta": {
+          "test": {
+            "status": "skip"
+          }
+        },
+        "name": "llm_code_example_shell"
+      }
     }
   },
   "schema": "listing_v1",
