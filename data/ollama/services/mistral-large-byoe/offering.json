@@ -8,7 +8,10 @@
     "available_sizes": [
       "123b"
     ],
-    "context_length": null,
+    "context_length": 262144,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
     "pull_count": "1.1M"
   },

@@ -8,7 +8,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "1.5M"
+    "pull_count": "1.6M"
   },
   "display_name": "Gemma3N (BYOE)",
   "name": "gemma3n",

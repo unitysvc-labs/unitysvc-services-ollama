@@ -7,9 +7,12 @@
   "currency": "USD",
   "description": "Gemini 3 Flash offers frontier intelligence built for speed at a fraction of the cost.",
   "details": {
-    "context_length": null,
+    "context_length": 1048576,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "140.2K"
+    "pull_count": "143.4K"
   },
   "display_name": "Gemini 3 Flash Preview (Cloud)",
   "name": "gemini-3-flash-preview",

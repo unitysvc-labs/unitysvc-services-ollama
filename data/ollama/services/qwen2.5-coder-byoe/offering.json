@@ -13,9 +13,12 @@
       "14b",
       "32b"
     ],
-    "context_length": null,
+    "context_length": 32768,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "14.7M"
+    "pull_count": "14.9M"
   },
   "display_name": "Qwen2.5 Coder (BYOE)",
   "name": "qwen2.5-coder",

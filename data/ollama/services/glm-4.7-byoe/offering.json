@@ -6,9 +6,12 @@
   "currency": "USD",
   "description": "Advancing the Coding Capability",
   "details": {
-    "context_length": null,
+    "context_length": 202752,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "93.1K"
+    "pull_count": "95.3K"
   },
   "display_name": "Glm 4.7 (BYOE)",
   "name": "glm-4.7",

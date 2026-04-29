@@ -8,9 +8,12 @@
     "available_sizes": [
       "12b"
     ],
-    "context_length": null,
+    "context_length": 131072,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "4.1M"
+    "pull_count": "4.2M"
   },
   "display_name": "Mistral Nemo (BYOE)",
   "name": "mistral-nemo",

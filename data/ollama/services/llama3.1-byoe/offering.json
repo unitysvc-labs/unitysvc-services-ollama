@@ -10,9 +10,12 @@
       "70b",
       "405b"
     ],
-    "context_length": null,
+    "context_length": 8192,
+    "metadata_sources": {
+      "context_length": "litellm"
+    },
     "parameter_count": null,
-    "pull_count": "113.6M"
+    "pull_count": "113.7M"
   },
   "display_name": "Llama3.1 (BYOE)",
   "name": "llama3.1",

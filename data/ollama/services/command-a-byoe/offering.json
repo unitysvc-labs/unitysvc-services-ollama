@@ -8,9 +8,12 @@
     "available_sizes": [
       "111b"
     ],
-    "context_length": null,
+    "context_length": 256000,
+    "metadata_sources": {
+      "context_length": "openrouter"
+    },
     "parameter_count": null,
-    "pull_count": "211.3K"
+    "pull_count": "212K"
   },
   "display_name": "Command A (BYOE)",
   "name": "command-a",
