@@ -1,4 +1,4 @@
 # Test that the Ollama server is reachable by listing available models
-curl -sf "${SERVICE_BASE_URL%/}/api/tags" \
+curl -sf "{{ service_base_url }}/api/tags" \
   ${UNITYSVC_API_KEY:+-H "Authorization: Bearer $UNITYSVC_API_KEY"} \
   | head -c 500

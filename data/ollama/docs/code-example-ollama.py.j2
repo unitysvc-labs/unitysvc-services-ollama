@@ -3,9 +3,9 @@ from ollama import Client
 
 # pip install ollama
 
-SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
+SERVICE_BASE_URL = "{{ service_base_url }}"
 UNITYSVC_API_KEY = os.environ.get("UNITYSVC_API_KEY")
-MODEL = os.environ.get("MODEL", "{{offering.name}}")
+MODEL = "{{ routing_key.model }}"
 
 headers = {}
 if UNITYSVC_API_KEY:
