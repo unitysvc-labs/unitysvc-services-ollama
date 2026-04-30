@@ -9,7 +9,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "998.3K"
+    "pull_count": "998.8K"
   },
   "display_name": "Qwen2 Math (BYOE)",
   "name": "qwen2-math",
