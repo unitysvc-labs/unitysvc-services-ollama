@@ -9,11 +9,7 @@
       "30m",
       "278m"
     ],
-<<<<<<< HEAD
     "pull_count": "331.2K"
-=======
-    "pull_count": "322K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Granite Embedding (BYOE)",
   "name": "granite-embedding",

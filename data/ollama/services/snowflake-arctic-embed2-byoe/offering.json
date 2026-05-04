@@ -8,11 +8,7 @@
     "available_sizes": [
       "568m"
     ],
-<<<<<<< HEAD
     "pull_count": "404.2K"
-=======
-    "pull_count": "382.1K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Snowflake Arctic Embed2 (BYOE)",
   "name": "snowflake-arctic-embed2",

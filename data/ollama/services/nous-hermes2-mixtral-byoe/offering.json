@@ -7,11 +7,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "566.9K"
-=======
-    "pull_count": "556.1K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Nous Hermes2 Mixtral (BYOE)",
   "name": "nous-hermes2-mixtral",

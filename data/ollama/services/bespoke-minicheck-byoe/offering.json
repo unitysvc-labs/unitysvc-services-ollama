@@ -7,11 +7,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "504.5K"
-=======
-    "pull_count": "493.2K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Bespoke Minicheck (BYOE)",
   "name": "bespoke-minicheck",

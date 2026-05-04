@@ -8,11 +8,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "318.9K"
-=======
-    "pull_count": "312K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Granite3 Guardian (BYOE)",
   "name": "granite3-guardian",

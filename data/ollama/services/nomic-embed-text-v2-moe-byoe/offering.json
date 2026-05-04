@@ -5,11 +5,7 @@
   "currency": "USD",
   "description": "nomic-embed-text-v2-moe is a multilingual MoE text embedding model that excels at multilingual retrieval.",
   "details": {
-<<<<<<< HEAD
     "pull_count": "295.5K"
-=======
-    "pull_count": "196.4K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Nomic Embed Text V2 Moe (BYOE)",
   "name": "nomic-embed-text-v2-moe",

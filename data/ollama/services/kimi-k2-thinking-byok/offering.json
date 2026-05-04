@@ -11,11 +11,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "2.1M"
-=======
-    "pull_count": "60.4K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Kimi K2 Thinking (Cloud)",
   "name": "kimi-k2-thinking",

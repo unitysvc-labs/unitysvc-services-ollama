@@ -5,11 +5,7 @@
   "currency": "USD",
   "description": "A high-performing open embedding model with a large token context window.",
   "details": {
-<<<<<<< HEAD
     "pull_count": "73.5M"
-=======
-    "pull_count": "68.1M"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Nomic Embed Text (BYOE)",
   "name": "nomic-embed-text",

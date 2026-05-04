@@ -8,11 +8,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "914.8K"
-=======
-    "pull_count": "896.5K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Xwinlm (BYOE)",
   "name": "xwinlm",

@@ -13,11 +13,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "769K"
-=======
-    "pull_count": "753.6K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Command R Plus (BYOE)",
   "name": "command-r-plus",

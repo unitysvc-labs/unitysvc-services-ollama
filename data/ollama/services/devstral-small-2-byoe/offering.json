@@ -14,11 +14,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "859.4K"
-=======
-    "pull_count": "812.6K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Devstral Small 2 (BYOE)",
   "name": "devstral-small-2",

@@ -11,11 +11,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "908.6K"
-=======
-    "pull_count": "889.3K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Granite3 Moe (BYOE)",
   "name": "granite3-moe",

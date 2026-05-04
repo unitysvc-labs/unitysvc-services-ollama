@@ -8,11 +8,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "996.4K"
-=======
-    "pull_count": "972.8K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Sqlcoder (BYOE)",
   "name": "sqlcoder",

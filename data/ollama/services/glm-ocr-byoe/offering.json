@@ -8,11 +8,7 @@
   "details": {
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "2.2M"
-=======
-    "pull_count": "412.2K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Glm Ocr (BYOE)",
   "name": "glm-ocr",

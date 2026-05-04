@@ -8,11 +8,7 @@
     "available_sizes": [
       "278m"
     ],
-<<<<<<< HEAD
     "pull_count": "863.3K"
-=======
-    "pull_count": "840.2K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Paraphrase Multilingual (BYOE)",
   "name": "paraphrase-multilingual",

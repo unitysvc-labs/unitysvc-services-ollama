@@ -7,11 +7,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-<<<<<<< HEAD
     "pull_count": "1M"
-=======
-    "pull_count": "986.2K"
->>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Stable Code (BYOE)",
   "name": "stable-code",
