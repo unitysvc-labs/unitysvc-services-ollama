@@ -11,10 +11,17 @@
   "capabilities": {{ capabilities | tojson }},
 {%- endif %}
   "details": {{ details | tojson }},
+{#- Ollama Cloud's API lives directly on ``ollama.com`` (``/v1/chat/completions``
+    for the OpenAI-compat surface, ``/api/chat`` for native).  The
+    ``api.ollama.com`` host is a Cloudflare 301-redirect to ``ollama.com``,
+    and HTTP clients strip the ``Authorization`` header on cross-origin
+    redirects — so routing upstream through ``api.ollama.com`` produces a
+    401 from the public landing site even with a valid key.  Always point
+    at ``ollama.com`` directly. -#}
   "upstream_access_config": {
     "ollama_cloud_api": {
       "access_method": "http",
-      "base_url": "https://api.ollama.com",
+      "base_url": "https://ollama.com",
       "api_key": "${ customer_secrets.{{ env_api_key_name }} }",
       "rate_limits": [],
       "routing_key": {"model": "{{ offering_name }}"}

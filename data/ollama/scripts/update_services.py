@@ -83,9 +83,11 @@ def scrape_ollama_models() -> list[dict]:
             if container is None:
                 continue
 
-            # Description
+            # Description.  Sanitised at the source (rather than at the
+            # ``yield`` sites) so every consumer of the scraped catalog
+            # sees the cleaned form.
             desc_el = container.find("p", class_=re.compile(r"max-w-lg"))
-            description = desc_el.get_text(strip=True) if desc_el else ""
+            description = _sanitize_description(desc_el.get_text(strip=True)) if desc_el else ""
 
             # Capabilities
             cap_els = container.find_all(attrs={"x-test-capability": True})
@@ -129,6 +131,29 @@ def scrape_ollama_models() -> list[dict]:
 
     print(f"Found {len(models)} models total\n")
     return models
+
+
+def _sanitize_description(text: str) -> str:
+    """Strip characters that break the upload pipeline.
+
+    The seller upload path encodes the request body to UTF-8 with
+    ``ensure_ascii=False``; somewhere along the way (httpx + the
+    backend's intake) descriptions containing supplementary-plane
+    characters (emoji, U+1F42C 🐬 etc.) trigger a strict UTF-8 encode
+    against an unpaired surrogate and the whole batch aborts with::
+
+        'utf-8' codec can't encode characters in position N-N+1:
+            surrogates not allowed
+
+    Until the SDK/backend handles non-BMP code points cleanly, drop
+    every non-BMP code point from scraped descriptions so the payload
+    is safe to ship.  Plain BMP Unicode (accented Latin, CJK, ...)
+    stays intact.
+    """
+    cleaned = "".join(ch for ch in text if ord(ch) < 0x10000)
+    # Collapse runs of whitespace left behind by stripped chars and trim
+    # the edges so descriptions don't begin with a stray leading space.
+    return " ".join(cleaned.split())
 
 
 def determine_service_type(model_name: str, capabilities: list[str]) -> str:

@@ -1,6 +1,6 @@
 {
   "currency": "USD",
-  "description": "Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models.  The model is designed to excel particularly in reasoning.",
+  "description": "Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models. The model is designed to excel particularly in reasoning.",
   "details": {
     "available_sizes": [
       "7b",
@@ -8,7 +8,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "874.2K"
+    "pull_count": "874.3K"
   },
   "display_name": "Orca2 (BYOE)",
   "name": "orca2",
