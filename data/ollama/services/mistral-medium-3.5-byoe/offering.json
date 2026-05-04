@@ -12,7 +12,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "8,256"
+    "pull_count": "8,742"
   },
   "display_name": "Mistral Medium 3.5 (BYOE)",
   "name": "mistral-medium-3.5",
