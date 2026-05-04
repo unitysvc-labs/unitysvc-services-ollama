@@ -20,7 +20,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "84.4M"
+    "pull_count": "84.5M"
   },
   "display_name": "Deepseek R1 (BYOE)",
   "name": "deepseek-r1",

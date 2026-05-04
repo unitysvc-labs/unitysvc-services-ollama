@@ -14,7 +14,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "535K"
+    "pull_count": "535.1K"
   },
   "display_name": "Qwen3 Next (Cloud)",
   "name": "qwen3-next",

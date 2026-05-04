@@ -67,7 +67,7 @@
   "user_access_interfaces": {
     "ollama_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/kimi-k2-thinking",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama",
       "routing_key": {
         "model": "kimi-k2-thinking"
       }
