@@ -1,3 +1,16 @@
+{#- BYOE Ollama listing.  Two test postures:
+
+    * ``is_installed`` true — the model has been pulled on the
+      ops-test endpoint (``ollama.svcmarket.com``); CI can exercise the
+      Python / JS / cURL code examples for real.  ``routing_model``
+      points at the specific tag we pulled (e.g. ``qwen2.5:1.5b``)
+      since the catalog name (``qwen2.5``) would otherwise resolve to
+      ``:latest`` which we don't host.
+    * ``is_installed`` false — code-example docs are rendered as
+      reference material but marked ``test.status = skip`` so CI only
+      runs the connectivity probe (which always runs and only checks
+      the gateway can reach the upstream Ollama daemon).
+-#}
 {
   "schema": "listing_v1",
   "status": "{{ status | default('ready') }}",
@@ -5,8 +18,8 @@
   "user_access_interfaces": {
     "ollama_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/p/{{ provider_name }}/{{ offering_name }}",
-      "routing_key": {"model": "{{ offering_name }}"}
+      "base_url": "${API_GATEWAY_BASE_URL}/p/{{ provider_name }}",
+      "routing_key": {"model": "{{ routing_model | default(offering_name) }}"}
     }
   },
   "user_parameters_schema": {
@@ -54,10 +67,14 @@
       "mime_type": "markdown"
     },
     "Python code example": {
+{%- if is_installed %}
+      "$doc_preset": "llm_code_example_requests"
+{%- else %}
       "$doc_preset": {
         "name": "llm_code_example_requests",
         "meta": {"test": {"status": "skip"}}
       }
+{%- endif %}
     },
     "Python ollama-python code example": {
       "category": "code_example",
@@ -65,20 +82,28 @@
       "file_path": "../../docs/code-example-ollama.py.j2",
       "is_active": true,
       "is_public": true,
-      "mime_type": "python",
-      "meta": {"test": {"status": "skip"}}
+      "mime_type": "python"{% if not is_installed %},
+      "meta": {"test": {"status": "skip"}}{% endif %}
     },
     "JavaScript code example": {
+{%- if is_installed %}
+      "$doc_preset": "llm_code_example_javascript"
+{%- else %}
       "$doc_preset": {
         "name": "llm_code_example_javascript",
         "meta": {"test": {"status": "skip"}}
       }
+{%- endif %}
     },
     "cURL code example": {
+{%- if is_installed %}
+      "$doc_preset": "llm_code_example_shell"
+{%- else %}
       "$doc_preset": {
         "name": "llm_code_example_shell",
         "meta": {"test": {"status": "skip"}}
       }
+{%- endif %}
     },
     "Connectivity test": {
       "$doc_preset": "api_connectivity"

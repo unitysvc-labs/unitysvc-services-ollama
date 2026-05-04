@@ -1,13 +1,13 @@
 {
   "currency": "USD",
-  "description": "An upgraded version of DeekSeek-V2  that integrates the general and coding abilities of both DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct.",
+  "description": "An upgraded version of DeekSeek-V2 that integrates the general and coding abilities of both DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct.",
   "details": {
     "available_sizes": [
       "236b"
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "270.1K"
+    "pull_count": "271.5K"
   },
   "display_name": "Deepseek V2.5 (BYOE)",
   "name": "deepseek-v2.5",

@@ -10,7 +10,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "2.2M"
+    "pull_count": "2.3M"
   },
   "display_name": "Llava Llama3 (BYOE)",
   "name": "llava-llama3",

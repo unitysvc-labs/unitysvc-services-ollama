@@ -83,9 +83,11 @@ def scrape_ollama_models() -> list[dict]:
             if container is None:
                 continue
 
-            # Description
+            # Description.  Sanitised at the source (rather than at the
+            # ``yield`` sites) so every consumer of the scraped catalog
+            # sees the cleaned form.
             desc_el = container.find("p", class_=re.compile(r"max-w-lg"))
-            description = desc_el.get_text(strip=True) if desc_el else ""
+            description = _sanitize_description(desc_el.get_text(strip=True)) if desc_el else ""
 
             # Capabilities
             cap_els = container.find_all(attrs={"x-test-capability": True})
@@ -131,6 +133,29 @@ def scrape_ollama_models() -> list[dict]:
     return models
 
 
+def _sanitize_description(text: str) -> str:
+    """Strip characters that break the upload pipeline.
+
+    The seller upload path encodes the request body to UTF-8 with
+    ``ensure_ascii=False``; somewhere along the way (httpx + the
+    backend's intake) descriptions containing supplementary-plane
+    characters (emoji, U+1F42C 🐬 etc.) trigger a strict UTF-8 encode
+    against an unpaired surrogate and the whole batch aborts with::
+
+        'utf-8' codec can't encode characters in position N-N+1:
+            surrogates not allowed
+
+    Until the SDK/backend handles non-BMP code points cleanly, drop
+    every non-BMP code point from scraped descriptions so the payload
+    is safe to ship.  Plain BMP Unicode (accented Latin, CJK, ...)
+    stays intact.
+    """
+    cleaned = "".join(ch for ch in text if ord(ch) < 0x10000)
+    # Collapse runs of whitespace left behind by stripped chars and trim
+    # the edges so descriptions don't begin with a stray leading space.
+    return " ".join(cleaned.split())
+
+
 def determine_service_type(model_name: str, capabilities: list[str]) -> str:
     """Determine service type from model name and capabilities."""
     name_lower = model_name.lower()
@@ -147,6 +172,24 @@ def determine_tags(variant: str) -> list[str]:
     """Return valid tags for the service variant."""
     # TagEnum allows: byok, byoe, ai, gateway, managed
     return ["ai", variant]
+
+
+# Models pre-pulled on the BYOE ops-test endpoint (ollama.svcmarket.com).
+# Each catalog entry maps to the specific Ollama tag we've pulled — Ollama
+# would otherwise resolve a bare name to ``:latest``, which for some
+# families (qwen2.5, gemma3) defaults to a much larger size than we host.
+# The listing template gates code-example test execution on membership in
+# this map: members run code examples for real; non-members render the
+# examples for users but mark them ``test.status = skip`` so CI only
+# probes the connectivity test.  Add a row when a new tag is pulled
+# upstream; remove when the model is evicted.
+INSTALLED_BYOE_TAGS: dict[str, str] = {
+    "llama3.2": "llama3.2:3b",
+    "qwen2.5": "qwen2.5:1.5b",
+    "gemma3": "gemma3:1b",
+    "nomic-embed-text": "nomic-embed-text",
+    "tinyllama": "tinyllama",
+}
 
 
 def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
@@ -173,6 +216,7 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
         if service_type == "llm":
             _attach_canonical_metadata(details, model_name)
 
+        installed_tag = INSTALLED_BYOE_TAGS.get(model_name)
         yield {
             "name": f"{model_name}-byoe",
             "offering_name": model_name,
@@ -188,6 +232,12 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
             "provider_name": PROVIDER_NAME,
             "provider_display_name": PROVIDER_DISPLAY_NAME,
             "service_variant": "byoe",
+            # When set, ops-test infra can exercise this service end-to-end
+            # against ollama.svcmarket.com using this concrete tag.  When
+            # unset, code-example docs are rendered with ``test.status =
+            # skip`` so CI only runs the connectivity probe.
+            "is_installed": installed_tag is not None,
+            "routing_model": installed_tag or model_name,
         }
         print("  OK")
 

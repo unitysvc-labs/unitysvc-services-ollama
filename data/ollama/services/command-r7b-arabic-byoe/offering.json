@@ -13,7 +13,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "183K"
+    "pull_count": "184K"
   },
   "display_name": "Command R7B Arabic (BYOE)",
   "name": "command-r7b-arabic",

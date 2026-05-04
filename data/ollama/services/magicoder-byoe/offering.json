@@ -1,13 +1,13 @@
 {
   "currency": "USD",
-  "description": "\ud83c\udfa9 Magicoder is a family of 7B parameter models trained on 75K synthetic instruction data using OSS-Instruct, a novel approach to enlightening LLMs with open-source code snippets.",
+  "description": "Magicoder is a family of 7B parameter models trained on 75K synthetic instruction data using OSS-Instruct, a novel approach to enlightening LLMs with open-source code snippets.",
   "details": {
     "available_sizes": [
       "7b"
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "517.7K"
+    "pull_count": "521.3K"
   },
   "display_name": "Magicoder (BYOE)",
   "name": "magicoder",

@@ -67,7 +67,7 @@
   "user_access_interfaces": {
     "ollama_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/qwen3.6",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama",
       "routing_key": {
         "model": "qwen3.6"
       }

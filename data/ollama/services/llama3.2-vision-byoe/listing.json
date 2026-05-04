@@ -67,7 +67,7 @@
   "user_access_interfaces": {
     "ollama_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama/llama3.2-vision",
+      "base_url": "${API_GATEWAY_BASE_URL}/p/ollama",
       "routing_key": {
         "model": "llama3.2-vision"
       }

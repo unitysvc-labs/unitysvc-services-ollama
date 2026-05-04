@@ -3,14 +3,14 @@
     "vision"
   ],
   "currency": "USD",
-  "description": "BakLLaVA is a multimodal model consisting of the Mistral 7B base model augmented with the LLaVA  architecture.",
+  "description": "BakLLaVA is a multimodal model consisting of the Mistral 7B base model augmented with the LLaVA architecture.",
   "details": {
     "available_sizes": [
       "7b"
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "831.5K"
+    "pull_count": "838.2K"
   },
   "display_name": "Bakllava (BYOE)",
   "name": "bakllava",

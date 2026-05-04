@@ -1,6 +1,6 @@
 {
   "currency": "USD",
-  "description": "\ud83e\ude90 A family of small models with 135M, 360M, and 1.7B parameters, trained on a new high-quality dataset.",
+  "description": "A family of small models with 135M, 360M, and 1.7B parameters, trained on a new high-quality dataset.",
   "details": {
     "available_sizes": [
       "135m",

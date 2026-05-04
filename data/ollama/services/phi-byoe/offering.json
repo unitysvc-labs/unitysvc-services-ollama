@@ -10,7 +10,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "1.4M"
+    "pull_count": "1.5M"
   },
   "display_name": "Phi (BYOE)",
   "name": "phi",

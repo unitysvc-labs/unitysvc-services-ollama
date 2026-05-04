@@ -16,7 +16,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "6.1M"
+    "pull_count": "6.7M"
   },
   "display_name": "Gemma4 (BYOE)",
   "name": "gemma4",
