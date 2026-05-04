@@ -242,33 +242,103 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
         print("  OK")
 
 
-def iter_cloud_models(models: list[dict]) -> Iterator[dict]:
-    """Yield cloud (BYOK) service dicts for models that support Ollama cloud."""
-    cloud_models = [m for m in models if m["is_cloud"]]
-    for i, model in enumerate(cloud_models, 1):
-        model_name = model["model_name"]
-        print(f"[{i}/{len(cloud_models)}] {model_name}-byok")
+OLLAMA_CLOUD_MODELS_URL = "https://ollama.com/v1/models"
 
-        service_type = determine_service_type(model_name, model["capabilities"])
-        display_name = model_name.replace("-", " ").replace("_", " ").title()
+
+def fetch_ollama_cloud_models() -> list[str]:
+    """Fetch the authoritative Ollama Cloud model id list.
+
+    The cloud catalog is the source of truth for what ``routing_key.model``
+    values upstream actually accepts.  ``ollama.com/search`` (the BYOE
+    catalog) lists *family* names without size tags; the cloud only
+    routes on the full id (e.g. ``gpt-oss:20b``, ``cogito-2.1:671b``).
+    Sourcing BYOK services from this endpoint guarantees every routing
+    key resolves to a real model and avoids 404s like the one in
+    issue #cogito-2.1-byok.
+
+    The endpoint is unauthenticated for catalog reads.
+    """
+    print(f"Fetching Ollama Cloud catalog from {OLLAMA_CLOUD_MODELS_URL}...")
+    resp = requests.get(OLLAMA_CLOUD_MODELS_URL, timeout=30)
+    resp.raise_for_status()
+    data = resp.json().get("data", [])
+    ids = sorted(m["id"] for m in data if m.get("id"))
+    print(f"Found {len(ids)} cloud models\n")
+    return ids
+
+
+def _slugify_cloud_id(cloud_id: str) -> str:
+    """Turn a cloud model id into a filesystem-safe slug.
+
+    ``gemma3:4b``           -> ``gemma3-4b``
+    ``cogito-2.1:671b``     -> ``cogito-2.1-671b``
+    ``deepseek-v4-pro``     -> ``deepseek-v4-pro`` (untagged)
+
+    The colon is the only character we need to handle: cloud ids
+    otherwise stick to ``[a-z0-9._-]``.  The slug becomes the service
+    directory name and the offering's stable id; the original
+    colon-bearing id stays intact in ``routing_model`` so routing
+    targets the upstream model exactly.
+    """
+    return cloud_id.replace(":", "-")
+
+
+def iter_cloud_models(models: list[dict]) -> Iterator[dict]:
+    """Yield cloud (BYOK) service dicts, one per Ollama Cloud model id.
+
+    Sources the canonical id list from ``ollama.com/v1/models`` rather
+    than the search-scraped family names.  The scraped catalog
+    (``models``) is consulted by family-name prefix to pull
+    description / capabilities / pull_count metadata when available;
+    the ids that don't match a scraped entry still ship with a
+    stub description.
+    """
+    # Index the scraped catalog by family name so we can enrich each
+    # cloud-listed id with the family's description / capabilities /
+    # pull_count metadata when there's a match.
+    scraped_by_family = {m["model_name"]: m for m in models if m.get("is_cloud")}
+
+    cloud_ids = fetch_ollama_cloud_models()
+
+    for i, cloud_id in enumerate(cloud_ids, 1):
+        slug = _slugify_cloud_id(cloud_id)
+        family = cloud_id.split(":", 1)[0]
+        scraped = scraped_by_family.get(family, {})
+
+        print(f"[{i}/{len(cloud_ids)}] {slug}-byok (routes to {cloud_id!r})")
+
+        service_type = determine_service_type(family, scraped.get("capabilities", []))
+        display_name = cloud_id.replace("-", " ").replace("_", " ").title()
         tags = determine_tags("byok")
 
-        details = {}
-        if model["sizes"]:
-            details["available_sizes"] = model["sizes"]
-        if model["pull_count"]:
-            details["pull_count"] = model["pull_count"]
+        details: dict[str, Any] = {}
+        if scraped.get("sizes"):
+            details["available_sizes"] = scraped["sizes"]
+        if scraped.get("pull_count"):
+            details["pull_count"] = scraped["pull_count"]
         if service_type == "llm":
-            _attach_canonical_metadata(details, model_name)
+            # Canonical metadata lookup is keyed on family name;
+            # specific size variants share the family's
+            # context_length / parameter_count entry when present.
+            _attach_canonical_metadata(details, family)
 
         yield {
-            "name": f"{model_name}-byok",
-            "offering_name": model_name,
+            "name": f"{slug}-byok",
+            # ``offering_name`` is the offering's stable id (no colon
+            # for filesystem / URL safety); ``routing_model`` carries
+            # the cloud's actual model id (with colon) for the
+            # listing's routing_key and the offering's upstream
+            # routing_key.
+            "offering_name": slug,
+            "routing_model": cloud_id,
             "display_name": f"{display_name} (Cloud)",
-            "description": model["description"] or f"{display_name} model via Ollama Cloud",
+            "description": (
+                scraped.get("description")
+                or f"{display_name} model via Ollama Cloud"
+            ),
             "service_type": service_type,
             "status": "ready",
-            "capabilities": model["capabilities"],
+            "capabilities": scraped.get("capabilities", []),
             "details": details,
             "tags": tags,
             "payout_price": None,
