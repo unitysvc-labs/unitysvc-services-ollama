@@ -11,7 +11,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "990.7K"
+    "pull_count": "1M"
   },
   "display_name": "Aya (BYOE)",
   "name": "aya",

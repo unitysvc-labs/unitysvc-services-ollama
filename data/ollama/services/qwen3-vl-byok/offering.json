@@ -20,7 +20,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "3.5M"
+    "pull_count": "3.6M"
   },
   "display_name": "Qwen3 Vl (Cloud)",
   "name": "qwen3-vl",

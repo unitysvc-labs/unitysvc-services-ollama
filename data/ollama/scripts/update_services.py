@@ -149,6 +149,24 @@ def determine_tags(variant: str) -> list[str]:
     return ["ai", variant]
 
 
+# Models pre-pulled on the BYOE ops-test endpoint (ollama.svcmarket.com).
+# Each catalog entry maps to the specific Ollama tag we've pulled — Ollama
+# would otherwise resolve a bare name to ``:latest``, which for some
+# families (qwen2.5, gemma3) defaults to a much larger size than we host.
+# The listing template gates code-example test execution on membership in
+# this map: members run code examples for real; non-members render the
+# examples for users but mark them ``test.status = skip`` so CI only
+# probes the connectivity test.  Add a row when a new tag is pulled
+# upstream; remove when the model is evicted.
+INSTALLED_BYOE_TAGS: dict[str, str] = {
+    "llama3.2": "llama3.2:3b",
+    "qwen2.5": "qwen2.5:1.5b",
+    "gemma3": "gemma3:1b",
+    "nomic-embed-text": "nomic-embed-text",
+    "tinyllama": "tinyllama",
+}
+
+
 def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
     """Yield BYOE (bring-your-own-endpoint) service dicts for all models.
 
@@ -173,6 +191,7 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
         if service_type == "llm":
             _attach_canonical_metadata(details, model_name)
 
+        installed_tag = INSTALLED_BYOE_TAGS.get(model_name)
         yield {
             "name": f"{model_name}-byoe",
             "offering_name": model_name,
@@ -188,6 +207,12 @@ def iter_byoe_models(models: list[dict]) -> Iterator[dict]:
             "provider_name": PROVIDER_NAME,
             "provider_display_name": PROVIDER_DISPLAY_NAME,
             "service_variant": "byoe",
+            # When set, ops-test infra can exercise this service end-to-end
+            # against ollama.svcmarket.com using this concrete tag.  When
+            # unset, code-example docs are rendered with ``test.status =
+            # skip`` so CI only runs the connectivity probe.
+            "is_installed": installed_tag is not None,
+            "routing_model": installed_tag or model_name,
         }
         print("  OK")
 

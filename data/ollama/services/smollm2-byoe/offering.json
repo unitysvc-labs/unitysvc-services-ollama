@@ -12,7 +12,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "3.3M"
+    "pull_count": "3.4M"
   },
   "display_name": "Smollm2 (BYOE)",
   "name": "smollm2",
