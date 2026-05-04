@@ -13,7 +13,11 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
+<<<<<<< HEAD
     "pull_count": "459.1K"
+=======
+    "pull_count": "435.1K"
+>>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Deepseek Ocr (BYOE)",
   "name": "deepseek-ocr",

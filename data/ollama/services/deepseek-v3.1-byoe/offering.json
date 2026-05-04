@@ -14,7 +14,11 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
+<<<<<<< HEAD
     "pull_count": "696.2K"
+=======
+    "pull_count": "667.1K"
+>>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Deepseek V3.1 (BYOE)",
   "name": "deepseek-v3.1",

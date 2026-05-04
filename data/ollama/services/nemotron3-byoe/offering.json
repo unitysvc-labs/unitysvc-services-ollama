@@ -13,7 +13,11 @@
     ],
     "context_length": null,
     "parameter_count": null,
+<<<<<<< HEAD
     "pull_count": "600.6K"
+=======
+    "pull_count": "351.8K"
+>>>>>>> bf98999a (byok: source from ollama.com/v1/models for canonical routing keys)
   },
   "display_name": "Nemotron3 (BYOE)",
   "name": "nemotron3",
