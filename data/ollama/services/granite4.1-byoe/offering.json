@@ -3,7 +3,7 @@
     "tools"
   ],
   "currency": "USD",
-  "description": "Granite4.1 model via Ollama",
+  "description": "IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license.",
   "details": {
     "available_sizes": [
       "3b",
@@ -12,7 +12,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "23.3K"
+    "pull_count": "120.2K"
   },
   "display_name": "Granite4.1 (BYOE)",
   "name": "granite4.1",

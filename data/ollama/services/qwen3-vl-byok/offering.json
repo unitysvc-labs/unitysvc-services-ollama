@@ -15,12 +15,12 @@
       "32b",
       "235b"
     ],
-    "context_length": 131072,
+    "context_length": 262144,
     "metadata_sources": {
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "3.6M"
+    "pull_count": "4M"
   },
   "display_name": "Qwen3 Vl (Cloud)",
   "name": "qwen3-vl",

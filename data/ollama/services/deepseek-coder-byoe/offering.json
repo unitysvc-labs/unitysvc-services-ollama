@@ -12,7 +12,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "4.1M"
+    "pull_count": "4.2M"
   },
   "display_name": "Deepseek Coder (BYOE)",
   "name": "deepseek-coder",

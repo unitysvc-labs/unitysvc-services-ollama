@@ -18,7 +18,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "15.1M"
+    "pull_count": "16.1M"
   },
   "display_name": "Qwen2.5 Coder (BYOE)",
   "name": "qwen2.5-coder",

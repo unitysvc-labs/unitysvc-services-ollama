@@ -11,7 +11,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "46.3K"
+    "pull_count": "59.6K"
   },
   "display_name": "Mistral Large 3 (BYOE)",
   "name": "mistral-large-3",

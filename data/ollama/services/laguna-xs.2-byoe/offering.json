@@ -6,12 +6,12 @@
   "currency": "USD",
   "description": "Laguna XS.2 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.",
   "details": {
-    "context_length": 131072,
+    "context_length": 262144,
     "metadata_sources": {
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "5,144"
+    "pull_count": "14K"
   },
   "display_name": "Laguna Xs.2 (BYOE)",
   "name": "laguna-xs.2",

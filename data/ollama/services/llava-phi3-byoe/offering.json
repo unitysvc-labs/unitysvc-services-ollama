@@ -10,7 +10,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "277.7K"
+    "pull_count": "285.9K"
   },
   "display_name": "Llava Phi3 (BYOE)",
   "name": "llava-phi3",

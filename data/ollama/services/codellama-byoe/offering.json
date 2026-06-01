@@ -10,10 +10,10 @@
     ],
     "context_length": 4096,
     "metadata_sources": {
-      "context_length": "openrouter"
+      "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "5.5M"
+    "pull_count": "5.6M"
   },
   "display_name": "Codellama (BYOE)",
   "name": "codellama",
