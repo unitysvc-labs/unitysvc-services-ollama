@@ -11,7 +11,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "41K"
+    "pull_count": "98.5K"
   },
   "display_name": "Deepseek V4 Flash (Cloud)",
   "name": "deepseek-v4-flash",

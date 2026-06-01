@@ -13,7 +13,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "3.8M"
+    "pull_count": "3.9M"
   },
   "display_name": "Llama3.3 (BYOE)",
   "name": "llama3.3",
