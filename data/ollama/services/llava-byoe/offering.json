@@ -15,7 +15,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "14M"
+    "pull_count": "14.1M"
   },
   "display_name": "Llava (BYOE)",
   "name": "llava",

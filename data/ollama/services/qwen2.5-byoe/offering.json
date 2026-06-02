@@ -14,12 +14,12 @@
       "32b",
       "72b"
     ],
-    "context_length": 32000,
+    "context_length": 131072,
     "metadata_sources": {
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "29.1M"
+    "pull_count": "31.6M"
   },
   "display_name": "Qwen2.5 (BYOE)",
   "name": "qwen2.5",

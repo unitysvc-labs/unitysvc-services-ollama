@@ -15,7 +15,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "1.6M"
+    "pull_count": "1.7M"
   },
   "display_name": "Llama4 (BYOE)",
   "name": "llama4",

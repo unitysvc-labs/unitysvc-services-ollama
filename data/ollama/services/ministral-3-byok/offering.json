@@ -16,7 +16,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "1.1M"
+    "pull_count": "1.2M"
   },
   "display_name": "Ministral 3 (Cloud)",
   "name": "ministral-3",

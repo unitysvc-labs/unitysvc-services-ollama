@@ -2,12 +2,12 @@
   "currency": "USD",
   "description": "General use model based on Llama 2.",
   "details": {
-    "context_length": 65535,
+    "context_length": 65536,
     "metadata_sources": {
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "818.9K"
+    "pull_count": "835.2K"
   },
   "display_name": "Wizardlm (BYOE)",
   "name": "wizardlm",

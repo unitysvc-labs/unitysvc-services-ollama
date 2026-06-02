@@ -21,7 +21,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "8.1M"
+    "pull_count": "12.9M"
   },
   "display_name": "Qwen3.5 (Cloud)",
   "name": "qwen3.5",
