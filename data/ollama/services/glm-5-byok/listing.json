@@ -21,13 +21,14 @@
       "$doc_preset": "llm_code_example_shell"
     }
   },
+  "name": "ollama/glm-5",
   "schema": "listing_v1",
   "status": "ready",
   "time_created": "2026-03-09T18:48:13.485444Z",
   "user_access_interfaces": {
     "ollama_cloud_api": {
       "access_method": "http",
-      "base_url": "${API_GATEWAY_BASE_URL}/ollama",
+      "base_url": "${API_GATEWAY_BASE_URL}/{{ service_name }}",
       "routing_key": {
         "model": "glm-5"
       }
