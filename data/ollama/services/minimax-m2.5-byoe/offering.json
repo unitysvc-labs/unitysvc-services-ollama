@@ -6,12 +6,12 @@
   "currency": "USD",
   "description": "MiniMax-M2.5 is a state-of-the-art large language model designed for real-world productivity and coding tasks.",
   "details": {
-    "context_length": 196608,
+    "context_length": 204800,
     "metadata_sources": {
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "171K"
+    "pull_count": "2.2M"
   },
   "display_name": "Minimax M2.5 (BYOE)",
   "name": "minimax-m2.5",

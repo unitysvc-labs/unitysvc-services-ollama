@@ -9,12 +9,12 @@
     "available_sizes": [
       "80b"
     ],
-    "context_length": 131072,
+    "context_length": 262144,
     "metadata_sources": {
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "535.1K"
+    "pull_count": "564.8K"
   },
   "display_name": "Qwen3 Next (Cloud)",
   "name": "qwen3-next",

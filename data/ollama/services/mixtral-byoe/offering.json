@@ -14,7 +14,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "2.6M"
+    "pull_count": "2.7M"
   },
   "display_name": "Mixtral (BYOE)",
   "name": "mixtral",

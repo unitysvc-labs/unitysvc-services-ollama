@@ -13,7 +13,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "434.8K"
+    "pull_count": "459.1K"
   },
   "display_name": "Deepseek Ocr (BYOE)",
   "name": "deepseek-ocr",

@@ -11,12 +11,13 @@
     "available_sizes": [
       "e2b",
       "e4b",
+      "12b",
       "26b",
       "31b"
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "6.7M"
+    "pull_count": "12.4M"
   },
   "display_name": "Gemma4 (BYOE)",
   "name": "gemma4",

@@ -10,7 +10,7 @@
     ],
     "context_length": null,
     "parameter_count": null,
-    "pull_count": "1.1M"
+    "pull_count": "1.2M"
   },
   "display_name": "Phi4 Mini (BYOE)",
   "name": "phi4-mini",

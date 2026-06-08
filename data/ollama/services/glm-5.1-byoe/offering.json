@@ -11,7 +11,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "128.6K"
+    "pull_count": "2.2M"
   },
   "display_name": "Glm 5.1 (BYOE)",
   "name": "glm-5.1",
