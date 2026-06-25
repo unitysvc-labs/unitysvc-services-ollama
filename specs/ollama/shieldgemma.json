@@ -1,0 +1,57 @@
+{
+  "parameters": {
+    "capabilities": [],
+    "description": "ShieldGemma is set of instruction tuned models for evaluating the safety of text prompt input and text output responses against a set of defined safety policies.",
+    "details": {
+      "available_sizes": [
+        "2b",
+        "9b",
+        "27b"
+      ],
+      "context_length": null,
+      "parameter_count": null,
+      "pull_count": "880.2K"
+    },
+    "display_name": "Shieldgemma",
+    "has_cloud": false,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "shieldgemma",
+    "ops_testing_model": "shieldgemma",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "shieldgemma"
+        },
+        "sort_order": 1
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}

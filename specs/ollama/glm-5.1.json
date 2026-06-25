@@ -1,0 +1,74 @@
+{
+  "parameters": {
+    "capabilities": [
+      "tools",
+      "thinking"
+    ],
+    "description": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin.",
+    "details": {
+      "context_length": 202752,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "parameter_count": null,
+      "pull_count": "2.3M"
+    },
+    "display_name": "Glm 5.1",
+    "has_cloud": true,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        },
+        "ollama-cloud": {
+          "description": "Free - route to Ollama Cloud using your Ollama API key",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "glm-5.1",
+    "ops_testing_model": "glm-5.1",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe",
+      "byok"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "glm-5.1"
+        },
+        "sort_order": 1
+      },
+      "ollama-cloud": {
+        "access_method": "http",
+        "api_key": "${ customer_secrets.OLLAMA_API_KEY }",
+        "base_url": "https://ollama.com",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "glm-5.1"
+        },
+        "sort_order": 2
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}

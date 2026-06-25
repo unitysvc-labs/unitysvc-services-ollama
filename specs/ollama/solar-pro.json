@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "capabilities": [],
+    "description": "Solar Pro Preview: an advanced large language model (LLM) with 22 billion parameters designed to fit into a single GPU",
+    "details": {
+      "available_sizes": [
+        "22b"
+      ],
+      "context_length": 128000,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "parameter_count": null,
+      "pull_count": "536.2K"
+    },
+    "display_name": "Solar Pro",
+    "has_cloud": false,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "solar-pro",
+    "ops_testing_model": "solar-pro",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "solar-pro"
+        },
+        "sort_order": 1
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}

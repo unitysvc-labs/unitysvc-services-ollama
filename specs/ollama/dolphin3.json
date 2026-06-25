@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "capabilities": [],
+    "description": "Dolphin 3.0 Llama 3.1 8B is the next generation of the Dolphin series of instruct-tuned models designed to be the ultimate general purpose local model, enabling coding, math, agentic, function calling, and general use cases.",
+    "details": {
+      "available_sizes": [
+        "8b"
+      ],
+      "context_length": 16384,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "parameter_count": null,
+      "pull_count": "3.9M"
+    },
+    "display_name": "Dolphin3",
+    "has_cloud": false,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "dolphin3",
+    "ops_testing_model": "dolphin3",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "dolphin3"
+        },
+        "sort_order": 1
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}
