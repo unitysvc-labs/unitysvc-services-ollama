@@ -24,7 +24,7 @@
       "base_url": "https://ollama.com",
       "api_key": "${ customer_secrets.{{ env_api_key_name }} }",
       "rate_limits": [],
-      "routing_key": {"model": "{{ offering_name }}"}
+      "routing_key": {"model": "{{ routing_model | default(offering_name) }}"}
     }
   }
 }
