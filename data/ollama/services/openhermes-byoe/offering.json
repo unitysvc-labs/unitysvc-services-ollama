@@ -7,7 +7,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "1M"
+    "pull_count": "1.1M"
   },
   "display_name": "Openhermes (BYOE)",
   "name": "openhermes",

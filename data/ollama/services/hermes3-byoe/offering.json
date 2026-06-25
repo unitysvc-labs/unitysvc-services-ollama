@@ -16,7 +16,7 @@
       "context_length": "litellm"
     },
     "parameter_count": null,
-    "pull_count": "1.3M"
+    "pull_count": "1.4M"
   },
   "display_name": "Hermes3 (BYOE)",
   "name": "hermes3",

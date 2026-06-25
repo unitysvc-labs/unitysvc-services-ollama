@@ -10,7 +10,7 @@
       "context_length": "openrouter"
     },
     "parameter_count": null,
-    "pull_count": "1.1M"
+    "pull_count": "1.5M"
   },
   "display_name": "Qwen3 Coder Next (BYOE)",
   "name": "qwen3-coder-next",
