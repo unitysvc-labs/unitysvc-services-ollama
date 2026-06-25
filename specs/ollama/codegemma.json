@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "capabilities": [],
+    "description": "CodeGemma is a collection of powerful, lightweight models that can perform a variety of coding tasks like fill-in-the-middle code completion, code generation, natural language understanding, mathematical reasoning, and instruction following.",
+    "details": {
+      "available_sizes": [
+        "2b",
+        "7b"
+      ],
+      "context_length": 8192,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "parameter_count": null,
+      "pull_count": "3M"
+    },
+    "display_name": "Codegemma",
+    "has_cloud": false,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "codegemma",
+    "ops_testing_model": "codegemma",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "codegemma"
+        },
+        "sort_order": 1
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}

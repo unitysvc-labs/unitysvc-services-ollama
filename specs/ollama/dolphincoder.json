@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "capabilities": [],
+    "description": "A 7B and 15B uncensored variant of the Dolphin model family that excels at coding, based on StarCoder2.",
+    "details": {
+      "available_sizes": [
+        "7b",
+        "15b"
+      ],
+      "context_length": 16384,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "parameter_count": null,
+      "pull_count": "960.5K"
+    },
+    "display_name": "Dolphincoder",
+    "has_cloud": false,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "dolphincoder",
+    "ops_testing_model": "dolphincoder",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "dolphincoder"
+        },
+        "sort_order": 1
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "parameters": {
+    "capabilities": [],
+    "description": "InternLM2.5 is a 7B parameter model tailored for practical scenarios with outstanding reasoning capability.",
+    "details": {
+      "available_sizes": [
+        "1m",
+        "1.8b",
+        "7b",
+        "20b"
+      ],
+      "context_length": 32768,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "parameter_count": null,
+      "pull_count": "944.8K"
+    },
+    "display_name": "Internlm2",
+    "has_cloud": false,
+    "is_installed": false,
+    "list_price": {
+      "channels": {
+        "byoe": {
+          "description": "Free - route to your own Ollama-compatible endpoint",
+          "price": "0",
+          "type": "constant"
+        }
+      },
+      "default": "byoe",
+      "type": "channel"
+    },
+    "offering_name": "internlm2",
+    "ops_testing_model": "internlm2",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe"
+    ],
+    "upstream_access_config": {
+      "byoe": {
+        "access_method": "http",
+        "base_url": "{{ params.base_url }}",
+        "rate_limits": [],
+        "routing_key": {
+          "model": "internlm2"
+        },
+        "sort_order": 1
+      }
+    },
+    "user_access_interfaces": {
+      "canonical": {
+        "access_method": "http",
+        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
+      }
+    }
+  }
+}

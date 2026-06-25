@@ -1,0 +1,14 @@
+{
+  "name": "{{ offering_name }}",
+  "display_name": "{{ display_name }}",
+  "description": {{ description | tojson }},
+  "service_type": "{{ service_type }}",
+  "status": "{{ status | default('ready') }}",
+  "currency": "USD",
+  "tags": {{ tags | tojson }},
+{%- if capabilities %}
+  "capabilities": {{ capabilities | tojson }},
+{%- endif %}
+  "details": {{ details | tojson }},
+  "upstream_access_config": {{ upstream_access_config | tojson }}
+}
