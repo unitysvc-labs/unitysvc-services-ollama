@@ -1,0 +1,44 @@
+{%- set channels = offering.upstream_access_config | default({}) -%}
+{%- set model_name = channels.get("byoe", {}).get("routing_key", {}).get("model", offering.name | default("this model")) -%}
+{%- set has_managed = "managed" in channels -%}
+{%- set has_byok = "byok" in channels -%}
+## {{ offering.display_name | default("Ollama Model") }}
+
+This service provides the {{ offering.display_name | default("Ollama") }} model through UnitySVC.
+{% if has_managed %}
+
+## Managed
+
+Use the `managed` channel to route requests to Ollama Cloud with the seller-managed
+API key. No customer Ollama API key is required for this channel.
+{% endif %}
+{% if has_byok %}
+
+## BYOK
+
+Use the `byok` channel to route requests to Ollama Cloud with your own Ollama API
+key. Store your key as `OLLAMA_API_KEY` in your customer secrets before using this
+channel.
+{% endif %}
+
+## BYOE
+
+Use the `byoe` channel to route requests to your own Ollama-compatible endpoint.
+
+1. Install Ollama on your machine or server: [ollama.com/download](https://ollama.com/download)
+2. Pull the model: `ollama pull {{ model_name }}`
+3. Expose your Ollama server through a public DNS name or public IP address that
+   the UnitySVC gateway can reach
+4. Configure firewall rules, port forwarding, reverse proxy, and TLS as needed
+   so the platform can connect to that endpoint
+5. Provide the public base URL during enrollment, such as
+   `https://ollama.example.com`
+
+## Best Practices
+
+1. Pull the required model before using the service.
+2. Monitor GPU, CPU, and memory usage on your Ollama server.
+3. Use HTTPS and authentication when exposing Ollama over the internet.
+{% if has_managed or has_byok %}4. Use exponential backoff for Ollama Cloud rate limits.
+5. Never expose Ollama API keys in client-side code.
+{% endif %}

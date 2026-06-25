@@ -3,6 +3,7 @@
     "capabilities": [
       "tools"
     ],
+    "cloud_model": "qwen3-coder:480b",
     "description": "Alibaba's performant long context models for agentic and coding tasks.",
     "details": {
       "available_sizes": [
@@ -17,24 +18,8 @@
       "pull_count": "6.7M"
     },
     "display_name": "Qwen3 Coder 480B",
-    "has_cloud": true,
+    "in_ollama_cloud": true,
     "is_installed": false,
-    "list_price": {
-      "channels": {
-        "byoe": {
-          "description": "Free - route to your own Ollama-compatible endpoint",
-          "price": "0",
-          "type": "constant"
-        },
-        "ollama-cloud": {
-          "description": "Free - route to Ollama Cloud using your Ollama API key",
-          "price": "0",
-          "type": "constant"
-        }
-      },
-      "default": "byoe",
-      "type": "channel"
-    },
     "offering_name": "qwen3-coder-480b",
     "ops_testing_model": "qwen3-coder:480b",
     "provider_display_name": "Ollama",
@@ -44,34 +29,8 @@
       "ai",
       "gateway",
       "byoe",
+      "managed",
       "byok"
-    ],
-    "upstream_access_config": {
-      "byoe": {
-        "access_method": "http",
-        "base_url": "{{ params.base_url }}",
-        "rate_limits": [],
-        "routing_key": {
-          "model": "qwen3-coder:480b"
-        },
-        "sort_order": 1
-      },
-      "ollama-cloud": {
-        "access_method": "http",
-        "api_key": "${ customer_secrets.OLLAMA_API_KEY }",
-        "base_url": "https://ollama.com",
-        "rate_limits": [],
-        "routing_key": {
-          "model": "qwen3-coder:480b"
-        },
-        "sort_order": 2
-      }
-    },
-    "user_access_interfaces": {
-      "canonical": {
-        "access_method": "http",
-        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
-      }
-    }
+    ]
   }
 }

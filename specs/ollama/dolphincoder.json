@@ -15,19 +15,8 @@
       "pull_count": "960.5K"
     },
     "display_name": "Dolphincoder",
-    "has_cloud": false,
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "list_price": {
-      "channels": {
-        "byoe": {
-          "description": "Free - route to your own Ollama-compatible endpoint",
-          "price": "0",
-          "type": "constant"
-        }
-      },
-      "default": "byoe",
-      "type": "channel"
-    },
     "offering_name": "dolphincoder",
     "ops_testing_model": "dolphincoder",
     "provider_display_name": "Ollama",
@@ -37,23 +26,6 @@
       "ai",
       "gateway",
       "byoe"
-    ],
-    "upstream_access_config": {
-      "byoe": {
-        "access_method": "http",
-        "base_url": "{{ params.base_url }}",
-        "rate_limits": [],
-        "routing_key": {
-          "model": "dolphincoder"
-        },
-        "sort_order": 1
-      }
-    },
-    "user_access_interfaces": {
-      "canonical": {
-        "access_method": "http",
-        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
-      }
-    }
+    ]
   }
 }

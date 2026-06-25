@@ -11,19 +11,8 @@
       "pull_count": "275.8K"
     },
     "display_name": "Phi4 Mini Reasoning",
-    "has_cloud": false,
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "list_price": {
-      "channels": {
-        "byoe": {
-          "description": "Free - route to your own Ollama-compatible endpoint",
-          "price": "0",
-          "type": "constant"
-        }
-      },
-      "default": "byoe",
-      "type": "channel"
-    },
     "offering_name": "phi4-mini-reasoning",
     "ops_testing_model": "phi4-mini-reasoning",
     "provider_display_name": "Ollama",
@@ -33,23 +22,6 @@
       "ai",
       "gateway",
       "byoe"
-    ],
-    "upstream_access_config": {
-      "byoe": {
-        "access_method": "http",
-        "base_url": "{{ params.base_url }}",
-        "rate_limits": [],
-        "routing_key": {
-          "model": "phi4-mini-reasoning"
-        },
-        "sort_order": 1
-      }
-    },
-    "user_access_interfaces": {
-      "canonical": {
-        "access_method": "http",
-        "base_url": "${API_GATEWAY_BASE_URL}/ollama"
-      }
-    }
+    ]
   }
 }

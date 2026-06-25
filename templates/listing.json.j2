@@ -2,48 +2,69 @@
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
   "name": "{{ provider_name }}/{{ offering_name }}",
-  "list_price": {{ list_price | tojson }},
-  "user_access_interfaces": {{ user_access_interfaces | tojson }},
+  "list_price": {
+    "type": "channel",
+    "default": "byoe",
+    "channels": {
+      "byoe": {
+        "description": "Free - route to your own Ollama-compatible endpoint",
+        "price": "0",
+        "type": "constant"
+      }{% if in_ollama_cloud %},
+      "managed": {
+        "description": "Free - route to Ollama Cloud using the seller-managed API key",
+        "price": "0",
+        "type": "constant"
+      },
+      "byok": {
+        "description": "Free - route to Ollama Cloud using your Ollama API key",
+        "price": "0",
+        "type": "constant"
+      }{% endif %}
+    }
+  },
+  "user_access_interfaces": {
+    "canonical": {
+      "access_method": "http",
+      "base_url": "${API_GATEWAY_BASE_URL}/ollama",
+      "routing_key": {
+        "model": "{{ ops_testing_model }}"
+      }
+    }
+  },
   "user_parameters_schema": {
     "type": "object",
     "title": "Ollama Endpoint Configuration",
-    "description": "Provide the URL of your Ollama server for the BYOE channel",
+    "description": "Provide a public URL for your Ollama server for the BYOE channel",
     "required": ["base_url"],
     "properties": {
       "base_url": {
         "type": "string",
-        "title": "Ollama Server URL",
-        "default": "http://localhost:11434",
-        "description": "Base URL of your Ollama server (e.g. http://localhost:11434 or http://your-server:11434)"
+        "title": "Public Ollama Server URL",
+        "default": "https://ollama.example.com",
+        "description": "Public base URL of your Ollama server. The UnitySVC gateway must be able to reach this DNS name or IP address over the network."
       }
     }
   },
   "user_parameters_ui_schema": {
     "base_url": {
-      "ui:placeholder": "http://localhost:11434",
-      "ui:description": "The base URL where your Ollama instance is running"
+      "ui:placeholder": "https://ollama.example.com",
+      "ui:description": "A public DNS name or IP address that routes to your Ollama server"
     }
   },
   "service_options": {
     "ops_testing_parameters": {
-      "base_url": "https://ollama.svcmarket.com"
+      "base_url": "https://mock.unitysvc.dev/openai"
     }
   },
   "documents": {
-    "How to use this model with BYOE": {
+    "How to use this model": {
       "category": "getting_started",
-      "file_path": "description-byoe.md",
+      "file_path": "description.md.j2",
       "is_active": true,
       "is_public": true,
       "mime_type": "markdown"
-    }{% if has_cloud %},
-    "How to use this model with Ollama Cloud": {
-      "category": "getting_started",
-      "file_path": "description-cloud.md",
-      "is_active": true,
-      "is_public": true,
-      "mime_type": "markdown"
-    }{% endif %},
+    },
     "Python code example": {
 {%- if is_installed %}
       "$doc_preset": "llm_code_example_requests"
@@ -60,8 +81,8 @@
       "file_path": "code-example-ollama.py.j2",
       "is_active": true,
       "is_public": true,
-      "mime_type": "python"{% if not is_installed %},
-      "meta": {"test": {"status": "skip"}}{% endif %}
+      "mime_type": "python",
+      "meta": {"test": {"status": "skip"}}
     },
     "JavaScript code example": {
 {%- if is_installed %}
@@ -84,7 +105,7 @@
 {%- endif %}
     },
     "Connectivity test": {
-      "$doc_preset": "api_connectivity"
+      "$doc_preset": "llm_connectivity"
     },
     "Default request body": {
       "$doc_preset": "llm_request_template"

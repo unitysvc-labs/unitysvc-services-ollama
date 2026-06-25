@@ -4,13 +4,15 @@ This repository publishes the Ollama service catalog for UnitySVC. Services are
 generated from shared templates and per-model parameter files instead of checked
 in expanded service folders.
 
-The catalog exposes Ollama models through two channels:
+The catalog exposes Ollama models through these channels:
 
+- `managed`: seller-managed Ollama Cloud access for models that are
+  available from Ollama Cloud. This channel requires a real seller
+  `OLLAMA_API_KEY` and is not suitable for shared mock credentials.
+- `byok`: customer BYOK Ollama Cloud access for the same cloud-capable models.
+  This channel uses the customer's `OLLAMA_API_KEY` secret.
 - `byoe`: customer-provided Ollama-compatible endpoint. Requests are routed to
   the endpoint configured by the customer for that enrollment.
-- `ollama-cloud`: Ollama's hosted API for models that are available from Ollama
-  Cloud. This channel requires a real `OLLAMA_API_KEY` seller secret and is not
-  suitable for shared mock credentials.
 
 There are no separate BYOK/BYOE service names. A model is represented once, and
 its access modes are channels on that service.
@@ -24,8 +26,7 @@ templates/
   offering.json.j2
   listing.json.j2
   code-example-ollama.py.j2
-  description-byoe.md
-  description-cloud.md
+  description.md.j2
 specs/
   ollama/
     ${model}.json
@@ -37,7 +38,9 @@ scripts/
 The `templates/` directory contains the shared service fragments used for every
 Ollama service: provider metadata, offering/listing templates, code examples,
 and channel-specific descriptions. The `specs/ollama/*.json` files are generated
-params that fill those templates for each model. The
+params that fill those templates for each model. Params record model facts such
+as `in_ollama_cloud` and `cloud_model`; repeated channel configuration is kept
+in the templates. The
 `specs/ollama/*.service.json` sidecars store backend `service_id` values for
 uploaded services and should not be churned when regenerating params.
 
@@ -104,11 +107,11 @@ export UNITYSVC_SELLER_API_URL="https://seller.unitysvc.com/v1"
 ```
 
 Before uploading cloud-capable services, upload the seller secrets required by
-the specs. This repo includes `seller.secrets.txt`, which lists the secret names
-needed by the services. It intentionally does not contain a real Ollama Cloud API
-key. Fill `OLLAMA_API_KEY` locally, or configure it in the GitHub repository
-environment used by the shared upload workflows, then seed the seller secret
-store:
+the `managed` channel. This repo includes `seller.secrets.txt`,
+which lists the secret names needed by the services. It intentionally does not
+contain a real Ollama Cloud API key. Fill `OLLAMA_API_KEY` locally, or configure
+it in the GitHub repository environment used by the shared upload workflows,
+then seed the seller secret store:
 
 ```bash
 usvc_seller secrets upload seller.secrets.txt
@@ -129,6 +132,6 @@ usvc_seller services submit -l
 ## Notes
 
 `scripts/update_params.py` fetches model metadata from Ollama search and the
-Ollama Cloud model endpoint. Cloud model IDs are used for the `ollama-cloud`
-channel routing key, while the service name remains under the `ollama/` provider
-namespace.
+Ollama Cloud model endpoint. Cloud model IDs are stored as `cloud_model` and are
+used by both `managed` and `byok`, while the service name remains under the
+`ollama/` provider namespace.

@@ -37,6 +37,27 @@ INSTALLED_BYOE_TAGS: dict[str, str] = {
     "tinyllama": "tinyllama",
 }
 
+# Models advertised by the public Ollama Cloud catalog but rejected by the
+# staging seller-managed key during submit connectivity tests. Keep them BYOE
+# until the managed account can actually route them.
+OLLAMA_CLOUD_EXCLUDED_IDS: set[str] = {
+    "deepseek-v3.1:671b",
+    "deepseek-v3.2",
+    "deepseek-v4-flash",
+    "deepseek-v4-pro",
+    "gemini-3-flash-preview",
+    "glm-5",
+    "glm-5.1",
+    "glm-5.2",
+    "kimi-k2.5",
+    "kimi-k2.6",
+    "kimi-k2.7-code",
+    "minimax-m2.7",
+    "mistral-large-3:675b",
+    "qwen3.5:397b",
+    "rnj-1:8b",
+}
+
 _FETCHER = ModelDataFetcher()
 
 
@@ -160,45 +181,7 @@ def _vars_for(
     installed_tag = INSTALLED_BYOE_TAGS.get(family)
     byoe_model = routing_model if ":" in routing_model else installed_tag or family
 
-    channels: dict[str, dict[str, Any]] = {
-        "byoe": {
-            "access_method": "http",
-            "base_url": "{{ params.base_url }}",
-            "rate_limits": [],
-            "routing_key": {"model": byoe_model},
-            "sort_order": 1,
-        }
-    }
-    user_access_interfaces: dict[str, dict[str, Any]] = {
-        "canonical": {
-            "access_method": "http",
-            "base_url": f"${{API_GATEWAY_BASE_URL}}/{PROVIDER_NAME}",
-        }
-    }
-    list_price_channels: dict[str, dict[str, str]] = {
-        "byoe": {
-            "description": "Free - route to your own Ollama-compatible endpoint",
-            "price": "0",
-            "type": "constant",
-        }
-    }
-
-    if has_cloud:
-        channels["ollama-cloud"] = {
-            "access_method": "http",
-            "base_url": "https://ollama.com",
-            "api_key": f"${{ customer_secrets.{ENV_API_KEY_NAME} }}",
-            "rate_limits": [],
-            "routing_key": {"model": routing_model},
-            "sort_order": 2,
-        }
-        list_price_channels["ollama-cloud"] = {
-            "description": "Free - route to Ollama Cloud using your Ollama API key",
-            "price": "0",
-            "type": "constant",
-        }
-
-    return {
+    params = {
         "name": f"{PROVIDER_NAME}/{service_id}",
         "offering_name": service_id,
         "display_name": display_name,
@@ -207,26 +190,25 @@ def _vars_for(
         "status": "ready",
         "capabilities": capabilities,
         "details": _details_for(family, scraped, service_type),
-        "tags": ["ai", "gateway", "byoe"] + (["byok"] if has_cloud else []),
+        "tags": ["ai", "gateway", "byoe"] + (["managed", "byok"] if has_cloud else []),
         "provider_name": PROVIDER_NAME,
         "provider_display_name": PROVIDER_DISPLAY_NAME,
-        "upstream_access_config": channels,
-        "user_access_interfaces": user_access_interfaces,
-        "list_price": {
-            "channels": list_price_channels,
-            "default": "byoe",
-            "type": "channel",
-        },
-        "has_cloud": has_cloud,
+        "in_ollama_cloud": has_cloud,
         "is_installed": installed_tag is not None,
         "ops_testing_model": byoe_model,
     }
+    if has_cloud:
+        params["cloud_model"] = routing_model
+    return params
 
 
 def iter_models(models: list[dict[str, Any]]) -> Iterator[dict[str, Any]]:
     scraped_by_family = {m["model_name"]: m for m in models}
-    cloud_ids = fetch_ollama_cloud_models()
+    all_cloud_ids = fetch_ollama_cloud_models()
+    cloud_ids = [model_id for model_id in all_cloud_ids if model_id not in OLLAMA_CLOUD_EXCLUDED_IDS]
+    excluded_cloud_ids = [model_id for model_id in all_cloud_ids if model_id in OLLAMA_CLOUD_EXCLUDED_IDS]
     cloud_families = {model_id.split(":", 1)[0] for model_id in cloud_ids}
+    excluded_cloud_families = {model_id.split(":", 1)[0] for model_id in excluded_cloud_ids}
 
     for i, cloud_id in enumerate(cloud_ids, 1):
         family = cloud_id.split(":", 1)[0]
@@ -241,7 +223,24 @@ def iter_models(models: list[dict[str, Any]]) -> Iterator[dict[str, Any]]:
             has_cloud=True,
         )
 
-    byoe_models = [m for m in models if m["model_name"] not in cloud_families]
+    for i, cloud_id in enumerate(excluded_cloud_ids, 1):
+        family = cloud_id.split(":", 1)[0]
+        service_id = _slugify_model_id(cloud_id)
+        scraped = scraped_by_family.get(family, {})
+        print(f"[cloud-excluded {i}/{len(excluded_cloud_ids)}] {service_id} (routes to {cloud_id!r})")
+        yield _vars_for(
+            service_id=service_id,
+            family=family,
+            routing_model=cloud_id,
+            scraped=scraped,
+            has_cloud=False,
+        )
+
+    byoe_models = [
+        m
+        for m in models
+        if m["model_name"] not in cloud_families and m["model_name"] not in excluded_cloud_families
+    ]
     for i, model in enumerate(byoe_models, 1):
         model_name = model["model_name"]
         print(f"[byoe {i}/{len(byoe_models)}] {model_name}")
