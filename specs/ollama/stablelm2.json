@@ -9,7 +9,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "980.6K"
+      "pull_count": "986.5K"
     },
     "display_name": "Stablelm2",
     "in_ollama_cloud": false,

@@ -13,7 +13,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "195K"
+      "pull_count": "195.5K"
     },
     "display_name": "Command R7B Arabic",
     "in_ollama_cloud": false,

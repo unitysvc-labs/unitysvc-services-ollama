@@ -6,7 +6,7 @@
       "available_sizes": [
         "2.7b"
       ],
-      "context_length": 131072,
+      "context_length": 32768,
       "metadata_sources": {
         "context_length": "openrouter"
       },

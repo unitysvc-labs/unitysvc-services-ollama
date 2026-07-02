@@ -9,7 +9,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "975.2K"
+      "pull_count": "978.5K"
     },
     "display_name": "Llama3 Chatqa",
     "in_ollama_cloud": false,

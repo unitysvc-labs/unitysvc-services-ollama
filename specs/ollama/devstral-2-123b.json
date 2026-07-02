@@ -14,7 +14,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "241.6K"
+      "pull_count": "245.7K"
     },
     "display_name": "Devstral 2 123B",
     "in_ollama_cloud": true,

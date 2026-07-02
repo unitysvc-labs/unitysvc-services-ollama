@@ -8,7 +8,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "512K"
+      "pull_count": "512.9K"
     },
     "display_name": "Stablelm Zephyr",
     "in_ollama_cloud": false,

@@ -10,7 +10,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "513.2K"
+      "pull_count": "516K"
     },
     "display_name": "Exaone3.5",
     "in_ollama_cloud": false,

@@ -8,7 +8,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "864K"
+      "pull_count": "865.8K"
     },
     "display_name": "Yarn Mistral",
     "in_ollama_cloud": false,

@@ -15,7 +15,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "102.9K"
+      "pull_count": "130.6K"
     },
     "display_name": "Mistral Medium 3.5",
     "in_ollama_cloud": false,

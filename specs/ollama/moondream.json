@@ -10,7 +10,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "1.3M"
+      "pull_count": "1.4M"
     },
     "display_name": "Moondream",
     "in_ollama_cloud": false,

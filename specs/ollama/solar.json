@@ -11,7 +11,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "924.9K"
+      "pull_count": "927.1K"
     },
     "display_name": "Solar",
     "in_ollama_cloud": false,

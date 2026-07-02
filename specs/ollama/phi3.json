@@ -9,7 +9,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "17.7M"
+      "pull_count": "17.8M"
     },
     "display_name": "Phi3",
     "in_ollama_cloud": false,

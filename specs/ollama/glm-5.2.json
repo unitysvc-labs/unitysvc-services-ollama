@@ -11,7 +11,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "56.1K"
+      "pull_count": "139.9K"
     },
     "display_name": "Glm 5.2",
     "in_ollama_cloud": false,

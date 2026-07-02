@@ -15,7 +15,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "6.7M"
+      "pull_count": "6.9M"
     },
     "display_name": "Qwen3 Coder 480B",
     "in_ollama_cloud": true,
