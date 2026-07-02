@@ -10,7 +10,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "45.6K"
+      "pull_count": "56.8K"
     },
     "display_name": "Medgemma1.5",
     "in_ollama_cloud": false,

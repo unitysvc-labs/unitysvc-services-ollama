@@ -10,7 +10,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "956.5K"
+      "pull_count": "961K"
     },
     "display_name": "Wizard Math",
     "in_ollama_cloud": false,

@@ -11,7 +11,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "4.7M"
+      "pull_count": "4.8M"
     },
     "display_name": "Llama3.2 Vision",
     "in_ollama_cloud": false,

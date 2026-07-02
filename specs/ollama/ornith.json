@@ -1,25 +1,21 @@
 {
   "parameters": {
-    "capabilities": [
-      "vision"
-    ],
-    "description": "Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.",
+    "capabilities": [],
+    "description": "A self-improving family of open-source models for agentic coding",
     "details": {
       "available_sizes": [
-        "3b",
-        "7b",
-        "32b",
-        "72b"
+        "9b",
+        "35b"
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "2.9M"
+      "pull_count": "170.2K"
     },
-    "display_name": "Qwen2.5Vl",
+    "display_name": "Ornith",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "qwen2.5vl",
-    "ops_testing_model": "qwen2.5vl",
+    "offering_name": "ornith",
+    "ops_testing_model": "ornith",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

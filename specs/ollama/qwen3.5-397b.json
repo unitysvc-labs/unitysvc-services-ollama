@@ -21,7 +21,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "14.2M"
+      "pull_count": "14.5M"
     },
     "display_name": "Qwen3.5 397B",
     "in_ollama_cloud": false,

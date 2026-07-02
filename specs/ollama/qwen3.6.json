@@ -16,7 +16,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "3M"
+      "pull_count": "3.4M"
     },
     "display_name": "Qwen3.6",
     "in_ollama_cloud": false,

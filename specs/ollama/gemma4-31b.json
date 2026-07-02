@@ -18,7 +18,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "15.4M"
+      "pull_count": "16.5M"
     },
     "display_name": "Gemma4 31B",
     "in_ollama_cloud": true,

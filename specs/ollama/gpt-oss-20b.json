@@ -16,7 +16,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "10.5M"
+      "pull_count": "10.6M"
     },
     "display_name": "Gpt Oss 20B",
     "in_ollama_cloud": true,

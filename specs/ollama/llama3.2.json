@@ -14,7 +14,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "74M"
+      "pull_count": "74.8M"
     },
     "display_name": "Llama3.2",
     "in_ollama_cloud": false,

@@ -11,7 +11,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "66.7K"
+      "pull_count": "69K"
     },
     "display_name": "Mistral Large 3 675B",
     "in_ollama_cloud": false,

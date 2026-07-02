@@ -18,7 +18,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "38M"
+      "pull_count": "38.2M"
     },
     "display_name": "Gemma3 27B",
     "in_ollama_cloud": true,

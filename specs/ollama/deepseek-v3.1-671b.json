@@ -14,7 +14,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "701.6K"
+      "pull_count": "703.7K"
     },
     "display_name": "Deepseek V3.1 671B",
     "in_ollama_cloud": false,

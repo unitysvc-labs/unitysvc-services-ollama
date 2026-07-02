@@ -11,7 +11,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "133.1K"
+      "pull_count": "179.9K"
     },
     "display_name": "Deepseek V4 Flash",
     "in_ollama_cloud": false,

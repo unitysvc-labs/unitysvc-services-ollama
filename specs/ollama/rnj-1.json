@@ -1,25 +1,22 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "tools"
     ],
-    "description": "Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.",
+    "description": "Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models.",
     "details": {
       "available_sizes": [
-        "3b",
-        "7b",
-        "32b",
-        "72b"
+        "8b"
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "2.9M"
+      "pull_count": "483.1K"
     },
-    "display_name": "Qwen2.5Vl",
+    "display_name": "Rnj 1",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "qwen2.5vl",
-    "ops_testing_model": "qwen2.5vl",
+    "offering_name": "rnj-1",
+    "ops_testing_model": "rnj-1",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

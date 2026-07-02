@@ -8,7 +8,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "5.1M"
+      "pull_count": "5.2M"
     },
     "display_name": "Tinyllama",
     "in_ollama_cloud": false,
