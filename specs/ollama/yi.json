@@ -13,7 +13,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "1.2M"
+      "pull_count": "1.3M"
     },
     "display_name": "Yi",
     "in_ollama_cloud": false,

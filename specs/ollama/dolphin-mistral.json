@@ -6,12 +6,12 @@
       "available_sizes": [
         "7b"
       ],
-      "context_length": 32768,
+      "context_length": 128000,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "1.5M"
+      "pull_count": "1.6M"
     },
     "display_name": "Dolphin Mistral",
     "in_ollama_cloud": false,

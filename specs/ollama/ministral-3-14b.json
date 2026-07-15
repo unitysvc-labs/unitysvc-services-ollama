@@ -17,7 +17,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "1.2M"
+      "pull_count": "1.3M"
     },
     "display_name": "Ministral 3 14B",
     "in_ollama_cloud": true,

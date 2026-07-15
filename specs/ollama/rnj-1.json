@@ -1,22 +1,22 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "tools"
     ],
-    "description": "MedGemma 1.5 4B is an updated version of the MedGemma 4B model.",
+    "description": "Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models.",
     "details": {
       "available_sizes": [
-        "4b"
+        "8b"
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "78K"
+      "pull_count": "485.4K"
     },
-    "display_name": "Medgemma1.5",
+    "display_name": "Rnj 1",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "medgemma1.5",
-    "ops_testing_model": "medgemma1.5",
+    "offering_name": "rnj-1",
+    "ops_testing_model": "rnj-1",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

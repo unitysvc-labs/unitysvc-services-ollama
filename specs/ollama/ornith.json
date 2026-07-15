@@ -1,20 +1,21 @@
 {
   "parameters": {
     "capabilities": [],
-    "description": "A lightweight chat model allowing accurate, and responsive output without requiring high-end hardware.",
+    "description": "A self-improving family of open-source models for agentic coding",
     "details": {
       "available_sizes": [
-        "3b"
+        "9b",
+        "35b"
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "516.1K"
+      "pull_count": "247.1K"
     },
-    "display_name": "Stablelm Zephyr",
+    "display_name": "Ornith",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "stablelm-zephyr",
-    "ops_testing_model": "stablelm-zephyr",
+    "offering_name": "ornith",
+    "ops_testing_model": "ornith",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
