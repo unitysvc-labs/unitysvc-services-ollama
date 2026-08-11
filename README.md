@@ -20,14 +20,14 @@ its access modes are channels on that service.
 ## Repository Layout
 
 ```text
-templates/
+services/templates/
   config.json
   provider.json
   offering.json.j2
   listing.json.j2
   code-example-ollama.py.j2
   description.md.j2
-specs/
+services/specs/
   ollama/
     ${model}.json
     ${model}.service.json
@@ -35,13 +35,13 @@ scripts/
   update_params.py
 ```
 
-The `templates/` directory contains the shared service fragments used for every
+The `services/templates/` directory contains the shared service fragments used for every
 Ollama service: provider metadata, offering/listing templates, code examples,
-and channel-specific descriptions. The `specs/ollama/*.json` files are generated
+and channel-specific descriptions. The `services/specs/ollama/*.json` files are generated
 params that fill those templates for each model. Params record model facts such
 as `in_ollama_cloud` and `cloud_model`; repeated channel configuration is kept
 in the templates. The
-`specs/ollama/*.service.json` sidecars store backend `service_id` values for
+`services/specs/ollama/*.service.json` sidecars store backend `service_id` values for
 uploaded services and should not be churned when regenerating params.
 
 The authoritative source for the template/params file format is
