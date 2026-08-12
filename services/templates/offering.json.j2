@@ -8,14 +8,21 @@
     teaser and move the full blurb into a later paragraph. #}
 {%- set _about = description | default('', true) %}
 {%- set _short = _about and _about | length < 200 and '\n\n' not in _about %}
-{%- set _teaser = _about if _short else (display_name ~ ' — served by ' ~ provider_display_name ~ ' through the UnitySVC gateway.') %}
+{%- set _teaser_base = _about if _short else (display_name ~ ' — served by ' ~ provider_display_name ~ ' through the UnitySVC gateway.') %}
+{#- The teaser is the only paragraph shown collapsed, so it carries the
+    dual-dialect differentiator — but ONLY for cloud services: the byoe
+    channel has no llm_translator, so the claim would be false there. #}
+{%- set _teaser_dual = _teaser_base ~ ' Callable in both OpenAI and Anthropic API styles.' %}
+{%- set _teaser = _teaser_dual if (in_ollama_cloud and (_teaser_dual | length) < 195) else _teaser_base %}
 {%- set _ctx = ' with a ' ~ details.context_length ~ '-token context window' if details and details.context_length else '' %}
 {%- if in_ollama_cloud %}
-{%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Through the UnitySVC gateway you can run it on Ollama Cloud with a seller-managed key (managed channel) or your own Ollama API key (byok channel), or route to your own Ollama server (byoe channel). The gateway endpoint accepts both OpenAI Chat Completions and Anthropic Messages requests — it auto-detects the dialect, translates to the OpenAI-compatible upstream, and returns the response in the format you sent. See the code examples for both styles.' %}
+{%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Through the UnitySVC gateway you can run it on Ollama Cloud with a seller-managed key (managed channel) or your own Ollama API key (byok channel), or route to your own Ollama server (byoe channel). See the code examples for both API styles.' %}
+{%- set _interop = 'One endpoint, either dialect — send an OpenAI Chat Completions or an Anthropic Messages request and the gateway auto-detects the format, translates it for the upstream, and replies in the style you sent. Because every model on UnitySVC speaks both dialects, they are interchangeable behind a single client: swap providers without touching your code, and combine them with the gateway composition primitives — group (/g/), broadcast (/b/), chain (/c/) and failover (/f/).' %}
 {%- else %}
+{%- set _interop = '' %}
 {%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Route it through the UnitySVC gateway to your own Ollama server using the bring-your-own-endpoint (byoe) channel, then call it with the OpenAI-compatible code examples below.' %}
 {%- endif %}
-{%- set _description = _teaser ~ (('\n\n' ~ _about) if (_about and not _short) else '') ~ '\n\n' ~ _detail %}
+{%- set _description = _teaser ~ (('\n\n' ~ _about) if (_about and not _short) else '') ~ '\n\n' ~ _detail ~ (('\n\n' ~ _interop) if _interop else '') %}
   "description": {{ _description | tojson }},
   "service_type": "{{ service_type }}",
   "status": "{{ status | default('ready') }}",
