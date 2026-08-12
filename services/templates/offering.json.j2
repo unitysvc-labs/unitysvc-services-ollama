@@ -1,7 +1,22 @@
 {
   "name": "{{ offering_name }}",
   "display_name": "{{ display_name }}",
-  "description": {{ description | tojson }},
+{#- The validator requires >=2 paragraphs separated by a blank line, and the
+    first (the collapsed list-view teaser) must be under 200 chars. The populate
+    script supplies only a one-line brief, so compose the rest here. Keep the
+    model's own blurb as the teaser when it fits; otherwise use a short generated
+    teaser and move the full blurb into a later paragraph. #}
+{%- set _about = description | default('', true) %}
+{%- set _short = _about and _about | length < 200 and '\n\n' not in _about %}
+{%- set _teaser = _about if _short else (display_name ~ ' — served by ' ~ provider_display_name ~ ' through the UnitySVC gateway.') %}
+{%- set _ctx = ' with a ' ~ details.context_length ~ '-token context window' if details and details.context_length else '' %}
+{%- if in_ollama_cloud %}
+{%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Through the UnitySVC gateway you can run it on Ollama Cloud with a seller-managed key (managed channel) or your own Ollama API key (byok channel), or route to your own Ollama server (byoe channel). The gateway endpoint accepts both OpenAI Chat Completions and Anthropic Messages requests — it auto-detects the dialect, translates to the OpenAI-compatible upstream, and returns the response in the format you sent. See the code examples for both styles.' %}
+{%- else %}
+{%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Route it through the UnitySVC gateway to your own Ollama server using the bring-your-own-endpoint (byoe) channel, then call it with the OpenAI-compatible code examples below.' %}
+{%- endif %}
+{%- set _description = _teaser ~ (('\n\n' ~ _about) if (_about and not _short) else '') ~ '\n\n' ~ _detail %}
+  "description": {{ _description | tojson }},
   "service_type": "{{ service_type }}",
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
@@ -9,7 +24,13 @@
 {%- if capabilities %}
   "capabilities": {{ capabilities | tojson }},
 {%- endif %}
+{%- if in_ollama_cloud %}
+  {#- R8: cloud channels (byok/managed) carry the anthropic->openai translator,
+      so advertise both request/response dialects. #}
+  "details": {{ dict(details or {}, input_formats=["openai", "anthropic"], output_formats=["openai_response", "anthropic_response"]) | tojson }},
+{%- else %}
   "details": {{ details | tojson }},
+{%- endif %}
   "upstream_access_config": {
     "byoe": {
       "access_method": "http",
@@ -28,6 +49,9 @@
       "routing_key": {
         "model": "{{ cloud_model }}"
       },
+      "request_transformer": {
+        "llm_translator": "anthropic_to_openai"
+      },
       "sort_order": 1
     },
     "byok": {
@@ -37,6 +61,9 @@
       "rate_limits": [],
       "routing_key": {
         "model": "{{ cloud_model }}"
+      },
+      "request_transformer": {
+        "llm_translator": "anthropic_to_openai"
       },
       "sort_order": 2
     }{% endif %}

@@ -104,6 +104,28 @@
       }
 {%- endif %}
     },
+{%- if in_ollama_cloud %}
+    "Python code example (Anthropic-style input)": {
+{%- if is_installed %}
+      "$doc_preset": "llm_code_example_anthropic_to_openai_sdk"
+{%- else %}
+      "$doc_preset": {
+        "name": "llm_code_example_anthropic_to_openai_sdk",
+        "meta": {"test": {"status": "skip"}}
+      }
+{%- endif %}
+    },
+    "cURL code example (Anthropic-style input)": {
+{%- if is_installed %}
+      "$doc_preset": "llm_code_example_anthropic_to_openai_shell"
+{%- else %}
+      "$doc_preset": {
+        "name": "llm_code_example_anthropic_to_openai_shell",
+        "meta": {"test": {"status": "skip"}}
+      }
+{%- endif %}
+    },
+{%- endif %}
     "Connectivity test": {
       "$doc_preset": "llm_connectivity"
     },
