@@ -4,20 +4,20 @@
       "tools",
       "thinking"
     ],
-    "description": "DeepSeek-V3.2, a model that harmonizes high computational efficiency with superior reasoning and agent performance.",
+    "description": "Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.",
     "details": {
-      "context_length": 131072,
+      "context_length": 262144,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "2.2M"
+      "pull_count": "89.1K"
     },
-    "display_name": "Deepseek V3.2",
+    "display_name": "Laguna Xs 2.1",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "deepseek-v3.2",
-    "ops_testing_model": "deepseek-v3.2",
+    "offering_name": "laguna-xs-2.1",
+    "ops_testing_model": "laguna-xs-2.1",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

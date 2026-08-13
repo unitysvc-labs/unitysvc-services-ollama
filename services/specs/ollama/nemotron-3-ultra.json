@@ -7,12 +7,12 @@
     "cloud_model": "nemotron-3-ultra",
     "description": "NVIDIA Nemotron 3 Ultra is built for high-throughput reasoning and long-running agent workflows.",
     "details": {
-      "context_length": 1000000,
+      "context_length": 512288,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "13K"
+      "pull_count": "46.2K"
     },
     "display_name": "Nemotron 3 Ultra",
     "in_ollama_cloud": true,
@@ -26,7 +26,6 @@
       "ai",
       "gateway",
       "byoe",
-      "managed",
       "byok"
     ]
   }

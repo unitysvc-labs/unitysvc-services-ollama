@@ -1,24 +1,25 @@
 {
   "parameters": {
     "capabilities": [
+      "vision",
       "tools",
       "thinking"
     ],
-    "cloud_model": "glm-4.7",
-    "description": "Advancing the Coding Capability",
+    "cloud_model": "kimi-k3",
+    "description": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date.",
     "details": {
-      "context_length": 202752,
+      "context_length": 1048576,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "2.2M"
+      "pull_count": "34.5K"
     },
-    "display_name": "Glm 4.7",
+    "display_name": "Kimi K3",
     "in_ollama_cloud": true,
     "is_installed": false,
-    "offering_name": "glm-4.7",
-    "ops_testing_model": "glm-4.7",
+    "offering_name": "kimi-k3",
+    "ops_testing_model": "kimi-k3",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
@@ -26,7 +27,6 @@
       "ai",
       "gateway",
       "byoe",
-      "managed",
       "byok"
     ]
   }

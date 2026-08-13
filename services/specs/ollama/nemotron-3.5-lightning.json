@@ -4,20 +4,23 @@
       "tools",
       "thinking"
     ],
-    "description": "A strong reasoning and agentic model from Z.ai with 744B total parameters (40B active), built for complex systems engineering and long-horizon tasks.",
+    "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
     "details": {
-      "context_length": 1048576,
+      "available_sizes": [
+        "30b"
+      ],
+      "context_length": 1000000,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "2.3M"
+      "pull_count": "17.3K"
     },
-    "display_name": "Glm 5",
+    "display_name": "Nemotron 3.5 Lightning",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "glm-5",
-    "ops_testing_model": "glm-5",
+    "offering_name": "nemotron-3.5-lightning",
+    "ops_testing_model": "nemotron-3.5-lightning",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

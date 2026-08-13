@@ -20,9 +20,17 @@ from unitysvc_sellers.params_render import write_params_from_iterator
 
 PROVIDER_NAME = "ollama"
 PROVIDER_DISPLAY_NAME = "Ollama"
-OLLAMA_SEARCH_URL = "https://ollama.com/search"
+# The full library index renders every model on a single page. (The older
+# /search?page=N endpoint was abandoned upstream: it now ignores the page param
+# — every page returns the same first ~20 models — and dropped the x-test-*
+# attributes this scraper used to key on, so it can no longer enumerate the
+# catalog.)
+OLLAMA_LIBRARY_URL = "https://ollama.com/library"
 OLLAMA_CLOUD_MODELS_URL = "https://ollama.com/v1/models"
 ENV_API_KEY_NAME = "OLLAMA_API_KEY"
+# Some upstream responses vary by client; send a plain browser UA so we get the
+# full server-rendered library rather than a trimmed/blocked variant.
+_USER_AGENT = "Mozilla/5.0 (compatible; unitysvc-ollama-populator/1.0)"
 
 SCRIPT_DIR = Path(__file__).parent
 
@@ -83,54 +91,70 @@ def _attach_canonical_metadata(details: dict[str, Any], model_name: str) -> None
         details["metadata_sources"] = sources
 
 
+def _parse_card(card: Any, model_name: str) -> dict[str, Any]:
+    """Extract one model's metadata from its library-index card.
+
+    Upstream replaced the old ``x-test-*`` hooks with Tailwind-styled badges, so
+    each field is now identified by the badge's colour class:
+      * capabilities (tools, vision, thinking, audio, ...) -> ``bg-indigo-50``
+      * parameter sizes (8b, 70b, e4b, ...)                -> ``text-blue-600``
+      * the Ollama Cloud marker                            -> ``bg-cyan-50`` "cloud"
+    The pull count / tag count / updated string share one meta line.
+    """
+    desc_el = card.find("p", class_=re.compile(r"max-w-lg"))
+
+    capabilities: list[str] = []
+    sizes: list[str] = []
+    is_cloud = False
+    for badge in card.select("span[class]"):
+        text = badge.get_text(strip=True)
+        if not text:
+            continue
+        classes = badge.get("class", [])
+        if "bg-cyan-50" in classes:
+            if text.lower() == "cloud":
+                is_cloud = True
+        elif "bg-indigo-50" in classes:
+            capabilities.append(text)
+        elif "text-blue-600" in classes:
+            sizes.append(text)
+
+    meta_el = card.find("p", class_=re.compile(r"space-x-5"))
+    meta_text = meta_el.get_text(" ", strip=True) if meta_el else ""
+    pull_m = re.search(r"([\d.,]+\s*[KMB]?)\s+Pulls", meta_text)
+    tag_m = re.search(r"([\d.,]+)\s+Tags", meta_text)
+    updated_m = re.search(r"Updated\s+(.+?)\s*$", meta_text)
+
+    return {
+        "model_name": model_name,
+        "description": _sanitize_description(desc_el.get_text(strip=True)) if desc_el else "",
+        "capabilities": capabilities,
+        "sizes": sizes,
+        "pull_count": pull_m.group(1).strip() if pull_m else "",
+        "tag_count": tag_m.group(1).strip() if tag_m else "",
+        "updated": updated_m.group(1).strip() if updated_m else "",
+        "is_cloud": is_cloud,
+    }
+
+
 def scrape_ollama_models() -> list[dict[str, Any]]:
+    print(f"Fetching models from {OLLAMA_LIBRARY_URL}...")
+    resp = requests.get(OLLAMA_LIBRARY_URL, headers={"User-Agent": _USER_AGENT}, timeout=30)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
     models: list[dict[str, Any]] = []
-    page = 1
-
-    print(f"Fetching models from {OLLAMA_SEARCH_URL}...")
-    while True:
-        resp = requests.get(
-            OLLAMA_SEARCH_URL,
-            params={"q": "", "page": str(page)},
-            headers={"HX-Request": "true"},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-
-        title_els = soup.find_all(attrs={"x-test-search-response-title": True})
-        if not title_els:
-            break
-
-        for title_el in title_els:
-            model_name = title_el.get_text(strip=True)
-            container = title_el.find_parent("li") or title_el.find_parent("div")
-            if container is None:
-                continue
-
-            desc_el = container.find("p", class_=re.compile(r"max-w-lg"))
-            cap_els = container.find_all(attrs={"x-test-capability": True})
-            size_els = container.find_all(attrs={"x-test-size": True})
-            pull_el = container.find(attrs={"x-test-pull-count": True})
-            tag_el = container.find(attrs={"x-test-tag-count": True})
-            updated_el = container.find(attrs={"x-test-updated": True})
-            cloud_els = container.find_all("span", string=re.compile(r"^\s*cloud\s*$", re.I))
-
-            models.append(
-                {
-                    "model_name": model_name,
-                    "description": _sanitize_description(desc_el.get_text(strip=True)) if desc_el else "",
-                    "capabilities": [el.get_text(strip=True) for el in cap_els],
-                    "sizes": [el.get_text(strip=True) for el in size_els],
-                    "pull_count": pull_el.get_text(strip=True) if pull_el else "",
-                    "tag_count": tag_el.get_text(strip=True) if tag_el else "",
-                    "updated": updated_el.get_text(strip=True) if updated_el else "",
-                    "is_cloud": bool(cloud_els),
-                }
-            )
-
-        print(f"  Page {page}: {len(title_els)} models")
-        page += 1
+    seen: set[str] = set()
+    for link in soup.select('a[href^="/library/"]'):
+        href = link.get("href", "")
+        model_name = href[len("/library/"):].strip("/")
+        # The index links straight to each model (``/library/<name>``); skip sub
+        # links (``/library/<name>/tags``), empty hrefs, and duplicates.
+        if not model_name or "/" in model_name or model_name in seen:
+            continue
+        seen.add(model_name)
+        card = link.find_parent("li") or link
+        models.append(_parse_card(card, model_name))
 
     print(f"Found {len(models)} models total\n")
     return models
@@ -190,7 +214,7 @@ def _vars_for(
         "status": "ready",
         "capabilities": capabilities,
         "details": _details_for(family, scraped, service_type),
-        "tags": ["ai", "gateway", "byoe"] + (["managed", "byok"] if has_cloud else []),
+        "tags": ["ai", "gateway", "byoe"] + (["byok"] if has_cloud else []),
         "provider_name": PROVIDER_NAME,
         "provider_display_name": PROVIDER_DISPLAY_NAME,
         "in_ollama_cloud": has_cloud,

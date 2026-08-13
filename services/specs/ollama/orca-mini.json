@@ -14,7 +14,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "2.9M"
+      "pull_count": "3M"
     },
     "display_name": "Orca Mini",
     "in_ollama_cloud": false,

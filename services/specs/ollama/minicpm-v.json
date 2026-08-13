@@ -10,7 +10,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "5.3M"
+      "pull_count": "5.4M"
     },
     "display_name": "Minicpm V",
     "in_ollama_cloud": false,
