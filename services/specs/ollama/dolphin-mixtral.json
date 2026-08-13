@@ -12,7 +12,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "1.8M"
+      "pull_count": "1.9M"
     },
     "display_name": "Dolphin Mixtral",
     "in_ollama_cloud": false,

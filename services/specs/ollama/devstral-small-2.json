@@ -4,7 +4,6 @@
       "vision",
       "tools"
     ],
-    "cloud_model": "devstral-small-2:24b",
     "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
     "details": {
       "available_sizes": [
@@ -15,22 +14,20 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "882K"
+      "pull_count": "934.3K"
     },
-    "display_name": "Devstral Small 2 24B",
-    "in_ollama_cloud": true,
+    "display_name": "Devstral Small 2",
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "devstral-small-2-24b",
-    "ops_testing_model": "devstral-small-2:24b",
+    "offering_name": "devstral-small-2",
+    "ops_testing_model": "devstral-small-2",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
     "tags": [
       "ai",
       "gateway",
-      "byoe",
-      "managed",
-      "byok"
+      "byoe"
     ]
   }
 }

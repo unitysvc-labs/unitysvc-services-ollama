@@ -1,21 +1,23 @@
 {
   "parameters": {
-    "capabilities": [],
-    "description": "The powerful family of models by Nous Research that excels at scientific discussion and coding tasks.",
+    "capabilities": [
+      "tools"
+    ],
+    "description": "A self-improving family of open-source models for agentic coding",
     "details": {
       "available_sizes": [
-        "10.7b",
-        "34b"
+        "9b",
+        "35b"
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "1.1M"
+      "pull_count": "370.9K"
     },
-    "display_name": "Nous Hermes2",
+    "display_name": "Ornith",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "nous-hermes2",
-    "ops_testing_model": "nous-hermes2",
+    "offering_name": "ornith",
+    "ops_testing_model": "ornith",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

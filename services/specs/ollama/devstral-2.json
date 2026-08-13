@@ -3,33 +3,30 @@
     "capabilities": [
       "tools"
     ],
-    "cloud_model": "devstral-2:123b",
     "description": "123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
     "details": {
       "available_sizes": [
         "123b"
       ],
-      "context_length": 262144,
+      "context_length": 256000,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "241.6K"
+      "pull_count": "351K"
     },
-    "display_name": "Devstral 2 123B",
-    "in_ollama_cloud": true,
+    "display_name": "Devstral 2",
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "devstral-2-123b",
-    "ops_testing_model": "devstral-2:123b",
+    "offering_name": "devstral-2",
+    "ops_testing_model": "devstral-2",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
     "tags": [
       "ai",
       "gateway",
-      "byoe",
-      "managed",
-      "byok"
+      "byoe"
     ]
   }
 }

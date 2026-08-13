@@ -3,7 +3,6 @@
     "capabilities": [
       "vision"
     ],
-    "cloud_model": "gemma3:12b",
     "description": "The current, most capable model that runs on a single GPU.",
     "details": {
       "available_sizes": [
@@ -18,22 +17,20 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "38M"
+      "pull_count": "39.4M"
     },
-    "display_name": "Gemma3 12B",
-    "in_ollama_cloud": true,
+    "display_name": "Gemma3",
+    "in_ollama_cloud": false,
     "is_installed": true,
-    "offering_name": "gemma3-12b",
-    "ops_testing_model": "gemma3:12b",
+    "offering_name": "gemma3",
+    "ops_testing_model": "gemma3:1b",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
     "tags": [
       "ai",
       "gateway",
-      "byoe",
-      "managed",
-      "byok"
+      "byoe"
     ]
   }
 }

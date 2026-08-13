@@ -4,7 +4,6 @@
       "vision",
       "tools"
     ],
-    "cloud_model": "ministral-3:8b",
     "description": "The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware.",
     "details": {
       "available_sizes": [
@@ -17,22 +16,20 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "1.2M"
+      "pull_count": "1.4M"
     },
-    "display_name": "Ministral 3 8B",
-    "in_ollama_cloud": true,
+    "display_name": "Ministral 3",
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "ministral-3-8b",
-    "ops_testing_model": "ministral-3:8b",
+    "offering_name": "ministral-3",
+    "ops_testing_model": "ministral-3",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
     "tags": [
       "ai",
       "gateway",
-      "byoe",
-      "managed",
-      "byok"
+      "byoe"
     ]
   }
 }

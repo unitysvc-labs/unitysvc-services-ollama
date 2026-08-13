@@ -13,7 +13,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "1.1M"
+      "pull_count": "1.2M"
     },
     "display_name": "Vicuna",
     "in_ollama_cloud": false,

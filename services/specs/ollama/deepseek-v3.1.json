@@ -14,13 +14,13 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "701.6K"
+      "pull_count": "720.4K"
     },
-    "display_name": "Deepseek V3.1 671B",
+    "display_name": "Deepseek V3.1",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "deepseek-v3.1-671b",
-    "ops_testing_model": "deepseek-v3.1:671b",
+    "offering_name": "deepseek-v3.1",
+    "ops_testing_model": "deepseek-v3.1",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

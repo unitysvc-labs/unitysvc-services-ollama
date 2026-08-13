@@ -8,12 +8,12 @@
       "available_sizes": [
         "24b"
       ],
-      "context_length": 262144,
+      "context_length": 256000,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "966.5K"
+      "pull_count": "1M"
     },
     "display_name": "Devstral",
     "in_ollama_cloud": false,

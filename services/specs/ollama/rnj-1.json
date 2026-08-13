@@ -10,13 +10,13 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "481.5K"
+      "pull_count": "501.6K"
     },
-    "display_name": "Rnj 1 8B",
+    "display_name": "Rnj 1",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "rnj-1-8b",
-    "ops_testing_model": "rnj-1:8b",
+    "offering_name": "rnj-1",
+    "ops_testing_model": "rnj-1",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
