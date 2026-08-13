@@ -16,7 +16,7 @@
 {%- set _teaser = _teaser_dual if (in_ollama_cloud and (_teaser_dual | length) < 195) else _teaser_base %}
 {%- set _ctx = ' with a ' ~ details.context_length ~ '-token context window' if details and details.context_length else '' %}
 {%- if in_ollama_cloud %}
-{%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Through the UnitySVC gateway you can run it on Ollama Cloud with a seller-managed key (managed channel) or your own Ollama API key (byok channel), or route to your own Ollama server (byoe channel). See the code examples for both API styles.' %}
+{%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Through the UnitySVC gateway you can run it on Ollama Cloud with your own Ollama API key (byok channel), or route to your own Ollama server (byoe channel). See the code examples for both API styles.' %}
 {%- set _interop = 'One endpoint, either dialect — send an OpenAI Chat Completions or an Anthropic Messages request and the gateway auto-detects the format, translates it for the upstream, and replies in the style you sent. Because every model on UnitySVC speaks both dialects, they are interchangeable behind a single client: swap providers without touching your code, and combine them with the gateway composition primitives — group (/g/), broadcast (/b/), chain (/c/) and failover (/f/).' %}
 {%- else %}
 {%- set _interop = '' %}
@@ -32,7 +32,7 @@
   "capabilities": {{ capabilities | tojson }},
 {%- endif %}
 {%- if in_ollama_cloud %}
-  {#- R8: cloud channels (byok/managed) carry the anthropic->openai translator,
+  {#- R8: the cloud byok channel carries the anthropic->openai translator,
       so advertise both request/response dialects. #}
   "details": {{ dict(details or {}, input_formats=["openai", "anthropic"], output_formats=["openai_response", "anthropic_response"]) | tojson }},
 {%- else %}
@@ -48,19 +48,6 @@
       },
       "sort_order": 3
     }{% if in_ollama_cloud %},
-    "managed": {
-      "access_method": "http",
-      "api_key": "${ secrets.OLLAMA_API_KEY }",
-      "base_url": "https://ollama.com",
-      "rate_limits": [],
-      "routing_key": {
-        "model": "{{ cloud_model }}"
-      },
-      "request_transformer": {
-        "llm_translator": "anthropic_to_openai"
-      },
-      "sort_order": 1
-    },
     "byok": {
       "access_method": "http",
       "api_key": "${ customer_secrets.OLLAMA_API_KEY }",
