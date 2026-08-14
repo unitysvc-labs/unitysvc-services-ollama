@@ -2,6 +2,7 @@
   "contact_email": "support@ollama.com",
   "display_name": "Ollama",
   "homepage": "https://ollama.com/",
+  "logo": "https://ollama.com/public/ollama.png",
   "name": "ollama",
   "status": "ready",
   "terms_of_service": "https://ollama.com/terms",
