@@ -1,11 +1,12 @@
 {
   "name": "{{ offering_name }}",
   "display_name": "{{ display_name }}",
-{#- The validator requires >=2 paragraphs separated by a blank line, and the
-    first (the collapsed list-view teaser) must be under 200 chars. The populate
-    script supplies only a one-line brief, so compose the rest here. Keep the
-    model's own blurb as the teaser when it fits; otherwise use a short generated
-    teaser and move the full blurb into a later paragraph. #}
+{#- Marketplace copy (unitysvc/unitysvc#1838): the collapsed list-view teaser
+    now lives in the required `summary` field (max 200 chars); `description`
+    holds the long-form paragraphs. The populate script supplies only a
+    one-line brief, so compose the rest here. Keep the model's own blurb as
+    the teaser when it fits; otherwise use a short generated teaser and keep
+    the full blurb in the description. #}
 {%- set _about = description | default('', true) %}
 {%- set _short = _about and _about | length < 200 and '\n\n' not in _about %}
 {%- set _teaser_base = _about if _short else (display_name ~ ' — served by ' ~ provider_display_name ~ ' through the UnitySVC gateway.') %}
@@ -22,7 +23,8 @@
 {%- set _interop = '' %}
 {%- set _detail = display_name ~ ' is served over an OpenAI-compatible API' ~ _ctx ~ '. Route it through the UnitySVC gateway to your own Ollama server using the bring-your-own-endpoint (byoe) channel, then call it with the OpenAI-compatible code examples below.' %}
 {%- endif %}
-{%- set _description = _teaser ~ (('\n\n' ~ _about) if (_about and not _short) else '') ~ '\n\n' ~ _detail ~ (('\n\n' ~ _interop) if _interop else '') %}
+{%- set _description = ((_about ~ '\n\n') if (_about and not _short) else '') ~ _detail ~ (('\n\n' ~ _interop) if _interop else '') %}
+  "summary": {{ (_teaser | trim)[:200] | tojson }},
   "description": {{ _description | tojson }},
   "service_type": "{{ service_type }}",
   "status": "{{ status | default('ready') }}",
