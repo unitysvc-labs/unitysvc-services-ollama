@@ -13,12 +13,12 @@
         "72b",
         "110b"
       ],
-      "context_length": 1000000,
+      "context_length": 262144,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "7.5M"
+      "pull_count": "7.6M"
     },
     "display_name": "Qwen",
     "in_ollama_cloud": false,

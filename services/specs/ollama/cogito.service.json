@@ -1,3 +1,4 @@
 {
-  "service_id": "efac30e0-abd3-4a2a-bcd7-164089578f99"
+  "service_id": "efac30e0-abd3-4a2a-bcd7-164089578f99",
+  "upstream_test_status": "fail"
 }

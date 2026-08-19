@@ -14,7 +14,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "934.3K"
+      "pull_count": "940.9K"
     },
     "display_name": "Devstral Small 2",
     "in_ollama_cloud": false,

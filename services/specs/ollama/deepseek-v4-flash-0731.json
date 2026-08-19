@@ -7,12 +7,12 @@
     "cloud_model": "deepseek-v4-flash:0731",
     "description": "DeepSeek-V4-Flash is a preview of the DeepSeek-V4 series, a Mixture-of-Experts model with 284B total parameters and 13B activated, built for efficient reasoning across a 1M-token context window.",
     "details": {
-      "context_length": 1048576,
+      "context_length": 1310720,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "358.4K"
+      "pull_count": "377.2K"
     },
     "display_name": "Deepseek V4 Flash 0731",
     "in_ollama_cloud": true,

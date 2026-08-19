@@ -18,7 +18,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "20.3M"
+      "pull_count": "20.5M"
     },
     "display_name": "Qwen2.5 Coder",
     "in_ollama_cloud": false,

@@ -8,7 +8,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "518.6K"
+      "pull_count": "520.6K"
     },
     "display_name": "Duckdb Nsql",
     "in_ollama_cloud": false,
