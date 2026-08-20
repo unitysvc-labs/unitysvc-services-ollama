@@ -4,7 +4,7 @@
       "tools",
       "thinking"
     ],
-    "description": "North Mini Code is Cohere's first model for developers \u2014 a 30B Mixture-of-Experts model with 3B active parameters, built for agentic software engineering.",
+    "description": "North Mini Code is Cohere's first model for developers — a 30B Mixture-of-Experts model with 3B active parameters, built for agentic software engineering.",
     "details": {
       "context_length": null,
       "parameter_count": null,

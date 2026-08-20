@@ -3,7 +3,7 @@
     "capabilities": [
       "tools"
     ],
-    "description": "Mistral Small 3 sets a new benchmark in the \u201csmall\u201d Large Language Models category below 70B.",
+    "description": "Mistral Small 3 sets a new benchmark in the “small” Large Language Models category below 70B.",
     "details": {
       "available_sizes": [
         "22b",
