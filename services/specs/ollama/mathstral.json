@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [],
-    "description": "Math\u03a3tral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.",
+    "description": "MathΣtral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.",
     "details": {
       "available_sizes": [
         "7b"

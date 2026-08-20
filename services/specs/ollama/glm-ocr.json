@@ -4,7 +4,7 @@
       "vision",
       "tools"
     ],
-    "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder\u2013decoder architecture.",
+    "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder–decoder architecture.",
     "details": {
       "context_length": null,
       "parameter_count": null,

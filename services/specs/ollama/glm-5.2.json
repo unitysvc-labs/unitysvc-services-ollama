@@ -4,7 +4,7 @@
       "tools",
       "thinking"
     ],
-    "description": "GLM-5.2 is Z.ai\u2019s flagship model for the era of long-horizon tasks.",
+    "description": "GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.",
     "details": {
       "context_length": 1048576,
       "metadata_sources": {
