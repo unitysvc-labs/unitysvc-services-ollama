@@ -35,6 +35,13 @@
   "summary": {{ (_teaser | trim)[:200] | tojson }},
   "description": {{ _description | tojson }},
   "service_type": "{{ service_type }}",
+{#- Model-family logo (unitysvc/unitysvc#1858). Resolved from the model id by
+    the shared registry in unitysvc-data, so `ollama/qwen3-coder` shows the Qwen
+    mark rather than Ollama's. Lives here rather than in the param files because
+    update_params.py rewrites everything under specs/ on every populate run.
+    An unrecognised model resolves to null, which creates no document and leaves
+    the provider logo in place — hence no conditional around the key. #}
+  "logo": {{ {"$logo_preset": offering_name} | tojson }},
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
   "tags": {{ tags | tojson }},
