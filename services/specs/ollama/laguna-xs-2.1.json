@@ -11,7 +11,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "89.1K"
+      "pull_count": "95.7K"
     },
     "display_name": "Laguna Xs 2.1",
     "in_ollama_cloud": false,

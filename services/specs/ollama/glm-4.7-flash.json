@@ -11,7 +11,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "1.4M"
+      "pull_count": "1.5M"
     },
     "display_name": "Glm 4.7 Flash",
     "in_ollama_cloud": false,

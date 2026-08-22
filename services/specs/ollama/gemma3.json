@@ -17,7 +17,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "39.4M"
+      "pull_count": "39.7M"
     },
     "display_name": "Gemma3",
     "in_ollama_cloud": false,

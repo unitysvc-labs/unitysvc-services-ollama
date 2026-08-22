@@ -11,7 +11,7 @@
         "context_length": "litellm"
       },
       "parameter_count": null,
-      "pull_count": "680.8K"
+      "pull_count": "684K"
     },
     "display_name": "Codegeex4",
     "in_ollama_cloud": false,

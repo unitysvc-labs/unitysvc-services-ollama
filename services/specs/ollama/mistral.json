@@ -13,7 +13,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "31.8M"
+      "pull_count": "32.1M"
     },
     "display_name": "Mistral",
     "in_ollama_cloud": false,
