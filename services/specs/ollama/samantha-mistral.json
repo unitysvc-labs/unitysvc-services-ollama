@@ -7,8 +7,7 @@
         "7b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "985.5K"
+      "parameter_count": null
     },
     "display_name": "Samantha Mistral",
     "in_ollama_cloud": false,

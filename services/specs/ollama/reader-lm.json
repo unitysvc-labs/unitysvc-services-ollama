@@ -8,8 +8,7 @@
         "1.5b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "912.3K"
+      "parameter_count": null
     },
     "display_name": "Reader Lm",
     "in_ollama_cloud": false,

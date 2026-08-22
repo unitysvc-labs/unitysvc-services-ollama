@@ -4,8 +4,7 @@
     "description": "An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics.",
     "details": {
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "896.3K"
+      "parameter_count": null
     },
     "display_name": "Llama Pro",
     "in_ollama_cloud": false,

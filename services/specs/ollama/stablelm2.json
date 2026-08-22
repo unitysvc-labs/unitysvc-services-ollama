@@ -8,8 +8,7 @@
         "12b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1M"
+      "parameter_count": null
     },
     "display_name": "Stablelm2",
     "in_ollama_cloud": false,

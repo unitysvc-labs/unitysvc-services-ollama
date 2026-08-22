@@ -11,8 +11,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "358.4K"
+      "parameter_count": null
     },
     "display_name": "Deepseek V4 Flash Preview",
     "in_ollama_cloud": true,

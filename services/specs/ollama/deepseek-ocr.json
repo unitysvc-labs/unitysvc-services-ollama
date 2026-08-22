@@ -12,8 +12,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "511.2K"
+      "parameter_count": null
     },
     "display_name": "Deepseek Ocr",
     "in_ollama_cloud": false,

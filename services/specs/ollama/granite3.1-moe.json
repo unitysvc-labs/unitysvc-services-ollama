@@ -10,8 +10,7 @@
         "3b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "3M"
+      "parameter_count": null
     },
     "display_name": "Granite3.1 Moe",
     "in_ollama_cloud": false,

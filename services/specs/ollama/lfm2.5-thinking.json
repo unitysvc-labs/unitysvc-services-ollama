@@ -10,8 +10,7 @@
         "1.2b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1.3M"
+      "parameter_count": null
     },
     "display_name": "Lfm2.5 Thinking",
     "in_ollama_cloud": false,

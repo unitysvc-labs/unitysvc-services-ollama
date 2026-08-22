@@ -12,8 +12,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "292.6K"
+      "parameter_count": null
     },
     "display_name": "Command R7B",
     "in_ollama_cloud": false,

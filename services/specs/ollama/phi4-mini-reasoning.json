@@ -7,8 +7,7 @@
         "3.8b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "288.1K"
+      "parameter_count": null
     },
     "display_name": "Phi4 Mini Reasoning",
     "in_ollama_cloud": false,

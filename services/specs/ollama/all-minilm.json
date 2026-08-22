@@ -8,8 +8,7 @@
       "available_sizes": [
         "22m",
         "33m"
-      ],
-      "pull_count": "3.4M"
+      ]
     },
     "display_name": "All Minilm",
     "in_ollama_cloud": false,

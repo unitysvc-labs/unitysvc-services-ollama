@@ -11,8 +11,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "1.9M"
+      "parameter_count": null
     },
     "display_name": "Dolphin Mixtral",
     "in_ollama_cloud": false,

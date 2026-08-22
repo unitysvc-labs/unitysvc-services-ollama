@@ -4,8 +4,7 @@
     "description": "A language model created by combining two fine-tuned Llama 2 70B models into one.",
     "details": {
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "471.1K"
+      "parameter_count": null
     },
     "display_name": "Goliath",
     "in_ollama_cloud": false,

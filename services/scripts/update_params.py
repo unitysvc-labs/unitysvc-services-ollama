@@ -121,7 +121,6 @@ def _parse_card(card: Any, model_name: str) -> dict[str, Any]:
 
     meta_el = card.find("p", class_=re.compile(r"space-x-5"))
     meta_text = meta_el.get_text(" ", strip=True) if meta_el else ""
-    pull_m = re.search(r"([\d.,]+\s*[KMB]?)\s+Pulls", meta_text)
     tag_m = re.search(r"([\d.,]+)\s+Tags", meta_text)
     updated_m = re.search(r"Updated\s+(.+?)\s*$", meta_text)
 
@@ -130,7 +129,6 @@ def _parse_card(card: Any, model_name: str) -> dict[str, Any]:
         "description": _sanitize_description(desc_el.get_text(strip=True)) if desc_el else "",
         "capabilities": capabilities,
         "sizes": sizes,
-        "pull_count": pull_m.group(1).strip() if pull_m else "",
         "tag_count": tag_m.group(1).strip() if tag_m else "",
         "updated": updated_m.group(1).strip() if updated_m else "",
         "is_cloud": is_cloud,
@@ -184,8 +182,6 @@ def _details_for(model_name: str, scraped: dict[str, Any], service_type: str) ->
     details: dict[str, Any] = {}
     if scraped.get("sizes"):
         details["available_sizes"] = scraped["sizes"]
-    if scraped.get("pull_count"):
-        details["pull_count"] = scraped["pull_count"]
     if service_type == "llm":
         _attach_canonical_metadata(details, model_name)
     return details

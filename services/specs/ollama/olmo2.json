@@ -8,8 +8,7 @@
         "13b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "3.7M"
+      "parameter_count": null
     },
     "display_name": "Olmo2",
     "in_ollama_cloud": false,

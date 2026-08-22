@@ -9,8 +9,7 @@
         "72b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1.1M"
+      "parameter_count": null
     },
     "display_name": "Qwen2 Math",
     "in_ollama_cloud": false,

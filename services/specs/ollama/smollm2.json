@@ -11,8 +11,7 @@
         "1.7b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "3.9M"
+      "parameter_count": null
     },
     "display_name": "Smollm2",
     "in_ollama_cloud": false,

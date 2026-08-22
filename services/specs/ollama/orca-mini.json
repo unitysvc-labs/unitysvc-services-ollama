@@ -13,8 +13,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "3M"
+      "parameter_count": null
     },
     "display_name": "Orca Mini",
     "in_ollama_cloud": false,

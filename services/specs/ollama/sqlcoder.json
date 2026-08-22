@@ -8,8 +8,7 @@
         "15b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1.5M"
+      "parameter_count": null
     },
     "display_name": "Sqlcoder",
     "in_ollama_cloud": false,

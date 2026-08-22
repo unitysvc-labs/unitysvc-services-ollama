@@ -12,8 +12,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "34.5K"
+      "parameter_count": null
     },
     "display_name": "Kimi K3",
     "in_ollama_cloud": true,

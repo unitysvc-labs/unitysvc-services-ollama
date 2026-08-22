@@ -10,8 +10,7 @@
         "8b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "8,712"
+      "parameter_count": null
     },
     "display_name": "Granite4.1 Guardian",
     "in_ollama_cloud": false,

@@ -8,8 +8,7 @@
       "available_sizes": [
         "30m",
         "278m"
-      ],
-      "pull_count": "351K"
+      ]
     },
     "display_name": "Granite Embedding",
     "in_ollama_cloud": false,

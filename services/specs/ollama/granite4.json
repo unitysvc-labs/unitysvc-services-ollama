@@ -11,8 +11,7 @@
         "3b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1.4M"
+      "parameter_count": null
     },
     "display_name": "Granite4",
     "in_ollama_cloud": false,

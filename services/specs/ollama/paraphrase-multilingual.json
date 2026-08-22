@@ -7,8 +7,7 @@
     "details": {
       "available_sizes": [
         "278m"
-      ],
-      "pull_count": "934.2K"
+      ]
     },
     "display_name": "Paraphrase Multilingual",
     "in_ollama_cloud": false,

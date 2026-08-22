@@ -10,8 +10,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "559.8K"
+      "parameter_count": null
     },
     "display_name": "Megadolphin",
     "in_ollama_cloud": false,

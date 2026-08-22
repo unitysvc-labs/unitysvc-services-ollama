@@ -7,8 +7,7 @@
         "7b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "651.2K"
+      "parameter_count": null
     },
     "display_name": "Medllama2",
     "in_ollama_cloud": false,

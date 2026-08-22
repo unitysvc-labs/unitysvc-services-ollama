@@ -13,8 +13,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "993.3K"
+      "parameter_count": null
     },
     "display_name": "Internlm2",
     "in_ollama_cloud": false,

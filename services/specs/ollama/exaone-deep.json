@@ -9,8 +9,7 @@
         "32b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "757.9K"
+      "parameter_count": null
     },
     "display_name": "Exaone Deep",
     "in_ollama_cloud": false,

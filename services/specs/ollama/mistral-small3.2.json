@@ -10,8 +10,7 @@
         "24b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "2.4M"
+      "parameter_count": null
     },
     "display_name": "Mistral Small3.2",
     "in_ollama_cloud": false,

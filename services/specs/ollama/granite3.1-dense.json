@@ -10,8 +10,7 @@
         "8b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1M"
+      "parameter_count": null
     },
     "display_name": "Granite3.1 Dense",
     "in_ollama_cloud": false,

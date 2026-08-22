@@ -10,8 +10,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "362K"
+      "parameter_count": null
     },
     "display_name": "Dbrx",
     "in_ollama_cloud": false,
