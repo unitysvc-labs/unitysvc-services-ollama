@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "capabilities": [
+      "tools",
+      "thinking"
+    ],
+    "cloud_model": "deepseek-v4-pro:0813",
+    "description": "DeepSeek-V4-Pro is a frontier Mixture-of-Experts model with a large context window and three reasoning modes.",
+    "details": {
+      "context_length": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "parameter_count": null,
+      "pull_count": "348.8K"
+    },
+    "display_name": "Deepseek V4 Pro 0813",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "deepseek-v4-pro-0813",
+    "ops_testing_model": "deepseek-v4-pro:0813",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe",
+      "byok"
+    ]
+  }
+}

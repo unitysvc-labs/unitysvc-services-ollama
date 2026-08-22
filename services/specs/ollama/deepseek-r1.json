@@ -20,7 +20,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "91.3M"
+      "pull_count": "91.7M"
     },
     "display_name": "Deepseek R1",
     "in_ollama_cloud": false,

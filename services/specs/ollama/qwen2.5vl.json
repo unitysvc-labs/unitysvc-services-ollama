@@ -13,7 +13,7 @@
       ],
       "context_length": null,
       "parameter_count": null,
-      "pull_count": "4.1M"
+      "pull_count": "4.4M"
     },
     "display_name": "Qwen2.5Vl",
     "in_ollama_cloud": false,

@@ -8,7 +8,7 @@
         "context_length": "openrouter"
       },
       "parameter_count": null,
-      "pull_count": "884.7K"
+      "pull_count": "893.4K"
     },
     "display_name": "Wizardlm",
     "in_ollama_cloud": false,
