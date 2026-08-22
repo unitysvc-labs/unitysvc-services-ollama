@@ -9,8 +9,7 @@
         "270m"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "179.8K"
+      "parameter_count": null
     },
     "display_name": "Functiongemma",
     "in_ollama_cloud": false,

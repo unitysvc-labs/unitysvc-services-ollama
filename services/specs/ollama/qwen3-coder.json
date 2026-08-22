@@ -13,8 +13,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "8.2M"
+      "parameter_count": null
     },
     "display_name": "Qwen3 Coder",
     "in_ollama_cloud": false,

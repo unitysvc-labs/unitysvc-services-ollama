@@ -7,8 +7,7 @@
         "34b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "956.2K"
+      "parameter_count": null
     },
     "display_name": "Phind Codellama",
     "in_ollama_cloud": false,

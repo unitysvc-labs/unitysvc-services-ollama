@@ -15,8 +15,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "685.1K"
+      "parameter_count": null
     },
     "display_name": "Nemotron 3 Nano 30B",
     "in_ollama_cloud": true,

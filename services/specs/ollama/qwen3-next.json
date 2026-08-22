@@ -13,8 +13,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "579.1K"
+      "parameter_count": null
     },
     "display_name": "Qwen3 Next",
     "in_ollama_cloud": false,

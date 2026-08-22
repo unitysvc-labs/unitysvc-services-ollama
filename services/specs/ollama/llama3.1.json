@@ -14,8 +14,7 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
-      "parameter_count": null,
-      "pull_count": "118.4M"
+      "parameter_count": null
     },
     "display_name": "Llama3.1",
     "in_ollama_cloud": false,

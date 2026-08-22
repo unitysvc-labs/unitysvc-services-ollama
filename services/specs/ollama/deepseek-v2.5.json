@@ -7,8 +7,7 @@
         "236b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "284.5K"
+      "parameter_count": null
     },
     "display_name": "Deepseek V2.5",
     "in_ollama_cloud": false,

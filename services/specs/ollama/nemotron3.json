@@ -11,8 +11,7 @@
         "33b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "642.3K"
+      "parameter_count": null
     },
     "display_name": "Nemotron3",
     "in_ollama_cloud": false,

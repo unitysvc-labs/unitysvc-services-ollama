@@ -7,8 +7,7 @@
         "7b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "670.9K"
+      "parameter_count": null
     },
     "display_name": "Mistral Openorca",
     "in_ollama_cloud": false,

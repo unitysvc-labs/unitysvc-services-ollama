@@ -9,8 +9,7 @@
         "8b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "2.3M"
+      "parameter_count": null
     },
     "display_name": "Llava Llama3",
     "in_ollama_cloud": false,

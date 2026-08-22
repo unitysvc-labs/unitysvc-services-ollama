@@ -10,8 +10,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "309.8K"
+      "parameter_count": null
     },
     "display_name": "Glm 5.2",
     "in_ollama_cloud": false,

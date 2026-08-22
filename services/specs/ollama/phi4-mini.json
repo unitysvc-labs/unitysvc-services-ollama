@@ -9,8 +9,7 @@
         "3.8b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1.4M"
+      "parameter_count": null
     },
     "display_name": "Phi4 Mini",
     "in_ollama_cloud": false,

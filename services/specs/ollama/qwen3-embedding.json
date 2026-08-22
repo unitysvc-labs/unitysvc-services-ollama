@@ -9,8 +9,7 @@
         "0.6b",
         "4b",
         "8b"
-      ],
-      "pull_count": "3.6M"
+      ]
     },
     "display_name": "Qwen3 Embedding",
     "in_ollama_cloud": false,

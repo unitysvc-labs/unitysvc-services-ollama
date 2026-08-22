@@ -8,8 +8,7 @@
         "671b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "415.6K"
+      "parameter_count": null
     },
     "display_name": "R1 1776",
     "in_ollama_cloud": false,

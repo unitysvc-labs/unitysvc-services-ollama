@@ -11,8 +11,7 @@
         "27b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "2M"
+      "parameter_count": null
     },
     "display_name": "Translategemma",
     "in_ollama_cloud": false,

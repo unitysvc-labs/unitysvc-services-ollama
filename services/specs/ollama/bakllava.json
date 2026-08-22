@@ -9,8 +9,7 @@
         "7b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "875.6K"
+      "parameter_count": null
     },
     "display_name": "Bakllava",
     "in_ollama_cloud": false,

@@ -9,8 +9,7 @@
         "72b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "580.7K"
+      "parameter_count": null
     },
     "display_name": "Athene V2",
     "in_ollama_cloud": false,

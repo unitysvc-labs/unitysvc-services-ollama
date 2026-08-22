@@ -11,8 +11,7 @@
         "110m",
         "137m",
         "335m"
-      ],
-      "pull_count": "3.1M"
+      ]
     },
     "display_name": "Snowflake Arctic Embed",
     "in_ollama_cloud": false,

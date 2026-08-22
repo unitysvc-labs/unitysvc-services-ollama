@@ -7,8 +7,7 @@
         "3.8b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "1M"
+      "parameter_count": null
     },
     "display_name": "Phi3.5",
     "in_ollama_cloud": false,

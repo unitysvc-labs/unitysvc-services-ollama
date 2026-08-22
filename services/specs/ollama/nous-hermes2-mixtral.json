@@ -7,8 +7,7 @@
         "8x7b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "581.6K"
+      "parameter_count": null
     },
     "display_name": "Nous Hermes2 Mixtral",
     "in_ollama_cloud": false,

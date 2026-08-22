@@ -9,8 +9,7 @@
         "4b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "697.9K"
+      "parameter_count": null
     },
     "display_name": "Nemotron Mini",
     "in_ollama_cloud": false,

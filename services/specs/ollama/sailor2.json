@@ -9,8 +9,7 @@
         "20b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "406.3K"
+      "parameter_count": null
     },
     "display_name": "Sailor2",
     "in_ollama_cloud": false,

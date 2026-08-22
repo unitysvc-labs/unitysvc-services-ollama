@@ -10,8 +10,7 @@
         "30b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "140.8K"
+      "parameter_count": null
     },
     "display_name": "Nemotron Cascade 2",
     "in_ollama_cloud": false,

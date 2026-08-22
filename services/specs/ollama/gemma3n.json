@@ -8,8 +8,7 @@
         "e4b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "2M"
+      "parameter_count": null
     },
     "display_name": "Gemma3N",
     "in_ollama_cloud": false,

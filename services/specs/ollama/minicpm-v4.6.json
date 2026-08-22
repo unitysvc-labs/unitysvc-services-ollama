@@ -9,8 +9,7 @@
         "1b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "32.1K"
+      "parameter_count": null
     },
     "display_name": "Minicpm V4.6",
     "in_ollama_cloud": false,

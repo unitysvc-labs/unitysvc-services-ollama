@@ -4,9 +4,7 @@
       "embedding"
     ],
     "description": "nomic-embed-text-v2-moe is a multilingual MoE text embedding model that excels at multilingual retrieval.",
-    "details": {
-      "pull_count": "701.2K"
-    },
+    "details": {},
     "display_name": "Nomic Embed Text V2 Moe",
     "in_ollama_cloud": false,
     "is_installed": false,

@@ -7,8 +7,7 @@
     "details": {
       "available_sizes": [
         "567m"
-      ],
-      "pull_count": "5.8M"
+      ]
     },
     "display_name": "Bge M3",
     "in_ollama_cloud": false,

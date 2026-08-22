@@ -8,8 +8,7 @@
         "13b"
       ],
       "context_length": null,
-      "parameter_count": null,
-      "pull_count": "920.2K"
+      "parameter_count": null
     },
     "display_name": "Orca2",
     "in_ollama_cloud": false,

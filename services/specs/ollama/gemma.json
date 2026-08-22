@@ -11,8 +11,7 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
-      "parameter_count": null,
-      "pull_count": "7.3M"
+      "parameter_count": null
     },
     "display_name": "Gemma",
     "in_ollama_cloud": false,

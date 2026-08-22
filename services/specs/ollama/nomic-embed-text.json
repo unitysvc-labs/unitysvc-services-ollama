@@ -4,9 +4,7 @@
       "embedding"
     ],
     "description": "A high-performing open embedding model with a large token context window.",
-    "details": {
-      "pull_count": "82.1M"
-    },
+    "details": {},
     "display_name": "Nomic Embed Text",
     "in_ollama_cloud": false,
     "is_installed": true,
