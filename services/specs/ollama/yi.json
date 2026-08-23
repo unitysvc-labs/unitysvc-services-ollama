@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Yi 1.5 is a high-performing, bilingual language model.",
     "details": {
       "available_sizes": [

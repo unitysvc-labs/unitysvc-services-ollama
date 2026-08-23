@@ -1,9 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models.",
     "details": {
@@ -15,6 +13,11 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Qwen3.6",

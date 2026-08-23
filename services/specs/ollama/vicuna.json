@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "General use chat model based on Llama and Llama 2 with 2K to 16K context sizes.",
     "details": {
       "available_sizes": [

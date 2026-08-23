@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "A suite of text embedding models by Snowflake, optimized for performance.",
     "details": {
@@ -11,6 +11,9 @@
         "110m",
         "137m",
         "335m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Snowflake Arctic Embed",

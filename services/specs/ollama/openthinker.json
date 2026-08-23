@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A fully open-source family of reasoning models built using a dataset derived by distilling DeepSeek-R1.",
     "details": {
       "available_sizes": [

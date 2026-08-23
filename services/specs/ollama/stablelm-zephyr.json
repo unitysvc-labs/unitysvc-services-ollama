@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A lightweight chat model allowing accurate, and responsive output without requiring high-end hardware.",
     "details": {
       "available_sizes": [

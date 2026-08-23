@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "DBRX is an open, general-purpose LLM created by Databricks.",
     "details": {
       "available_sizes": [

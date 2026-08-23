@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A family of efficient AI models under 10B parameters performant in science, math, and coding through innovative training techniques.",
     "details": {
       "available_sizes": [

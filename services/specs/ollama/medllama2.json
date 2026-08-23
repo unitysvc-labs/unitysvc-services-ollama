@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Fine-tuned Llama 2 model to answer medical questions based on an open source medical dataset.",
     "details": {
       "available_sizes": [

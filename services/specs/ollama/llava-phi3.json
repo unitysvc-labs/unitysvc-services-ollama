@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "A new small LLaVA model fine-tuned from Phi 3 Mini.",
     "details": {
@@ -9,6 +9,9 @@
         "3.8b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Llava Phi3",

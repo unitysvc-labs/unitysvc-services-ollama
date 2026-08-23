@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "Building upon the foundational models of the Qwen3 series, Qwen3 Embedding provides a comprehensive range of text embeddings models in various sizes",
     "details": {
@@ -9,6 +9,9 @@
         "0.6b",
         "4b",
         "8b"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Qwen3 Embedding",

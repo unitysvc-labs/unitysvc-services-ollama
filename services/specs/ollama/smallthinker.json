@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A new small reasoning model fine-tuned from the Qwen 2.5 3B Instruct model.",
     "details": {
       "available_sizes": [

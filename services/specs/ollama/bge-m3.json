@@ -1,12 +1,15 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity.",
     "details": {
       "available_sizes": [
         "567m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Bge M3",

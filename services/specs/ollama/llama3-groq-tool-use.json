@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "A series of models from Groq that represent a significant advancement in open-source AI capabilities for tool use/function calling.",
     "details": {
@@ -10,6 +10,9 @@
         "70b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Llama3 Groq Tool Use",

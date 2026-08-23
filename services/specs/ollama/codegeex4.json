@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A versatile model for AI software development scenarios, including code completion.",
     "details": {
       "available_sizes": [

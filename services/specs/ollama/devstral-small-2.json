@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools"
+      "chat"
     ],
     "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
     "details": {
@@ -13,6 +12,10 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "vision",
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Devstral Small 2",

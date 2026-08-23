@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A state-of-the-art fact-checking model developed by Bespoke Labs.",
     "details": {
       "available_sizes": [

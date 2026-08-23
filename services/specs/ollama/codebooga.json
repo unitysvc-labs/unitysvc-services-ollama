@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A high-performing code instruct model created by merging two existing code models.",
     "details": {
       "available_sizes": [

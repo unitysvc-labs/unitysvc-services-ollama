@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A series of models that convert HTML content to Markdown content, which is useful for content conversion tasks.",
     "details": {
       "available_sizes": [

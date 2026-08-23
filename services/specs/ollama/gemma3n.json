@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Gemma 3n models are designed for efficient execution on everyday devices such as laptops, tablets or phones.",
     "details": {
       "available_sizes": [

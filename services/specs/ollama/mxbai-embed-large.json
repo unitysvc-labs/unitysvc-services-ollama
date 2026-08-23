@@ -1,12 +1,15 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "State-of-the-art large embedding model from mixedbread.ai",
     "details": {
       "available_sizes": [
         "335m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Mxbai Embed Large",

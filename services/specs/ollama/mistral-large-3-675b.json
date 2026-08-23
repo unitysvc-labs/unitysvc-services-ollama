@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools"
+      "chat"
     ],
     "description": "A general-purpose multimodal mixture-of-experts model for production-grade tasks and enterprise workloads.",
     "details": {
@@ -10,6 +9,10 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "vision",
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Mistral Large 3 675B",

@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "SQLCoder is a code completion model fined-tuned on StarCoder for SQL generation tasks",
     "details": {
       "available_sizes": [

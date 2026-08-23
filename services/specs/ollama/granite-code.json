@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A family of open foundation models by IBM for Code Intelligence",
     "details": {
       "available_sizes": [

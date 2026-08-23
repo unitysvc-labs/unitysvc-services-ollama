@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "An open weights function calling model based on Llama 3, competitive with GPT-4o function calling capabilities.",
     "details": {
@@ -12,6 +12,9 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Firefunction V2",

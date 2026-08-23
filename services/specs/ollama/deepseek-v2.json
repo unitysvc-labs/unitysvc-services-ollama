@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A strong, economical, and efficient Mixture-of-Experts language model.",
     "details": {
       "available_sizes": [

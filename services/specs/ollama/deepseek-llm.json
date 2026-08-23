@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "An advanced language model crafted with 2 trillion bilingual tokens.",
     "details": {
       "available_sizes": [

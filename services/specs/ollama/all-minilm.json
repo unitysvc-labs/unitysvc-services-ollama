@@ -1,13 +1,16 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "Embedding models on very large sentence level datasets.",
     "details": {
       "available_sizes": [
         "22m",
         "33m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "All Minilm",

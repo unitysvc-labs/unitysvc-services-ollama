@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "MedGemma 1.5 4B is an updated version of the MedGemma 4B model.",
     "details": {
@@ -9,6 +9,9 @@
         "4b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Medgemma1.5",

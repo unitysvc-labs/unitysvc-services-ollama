@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "The Nous Hermes 2 model from Nous Research, now trained over Mixtral.",
     "details": {
       "available_sizes": [

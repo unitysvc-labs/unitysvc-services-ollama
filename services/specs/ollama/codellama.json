@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A large language model that can use text prompts to generate and discuss code.",
     "details": {
       "available_sizes": [

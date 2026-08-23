@@ -1,12 +1,15 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "Snowflake's frontier embedding model. Arctic Embed 2.0 adds multilingual support without sacrificing English performance or scalability.",
     "details": {
       "available_sizes": [
         "568m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Snowflake Arctic Embed2",

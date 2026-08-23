@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Conversational model based on Llama 2 that performs competitively on various benchmarks.",
     "details": {
       "available_sizes": [

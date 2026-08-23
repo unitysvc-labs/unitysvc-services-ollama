@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Uncensored Llama 2 model by George Sung and Jarrad Hope.",
     "details": {
       "available_sizes": [

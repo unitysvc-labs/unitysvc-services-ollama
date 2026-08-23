@@ -1,10 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools",
-      "thinking",
-      "audio"
+      "chat"
     ],
     "cloud_model": "gemma4:31b",
     "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
@@ -17,6 +14,12 @@
         "31b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking",
+        "audio"
+      ],
       "parameter_count": null
     },
     "display_name": "Gemma4 31B",

@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Llama 2 based model fine tuned to improve Chinese dialogue ability.",
     "details": {
       "available_sizes": [

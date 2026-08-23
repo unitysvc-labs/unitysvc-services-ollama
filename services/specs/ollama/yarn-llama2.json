@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "An extension of Llama 2 that supports a context of up to 128k tokens.",
     "details": {
       "available_sizes": [

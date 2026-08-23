@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A 7B chat model fine-tuned with high-quality data and based on Zephyr.",
     "details": {
       "available_sizes": [

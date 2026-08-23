@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "LFM2.5 is a new family of hybrid models designed for on-device deployment.",
     "details": {
@@ -10,6 +9,10 @@
         "1.2b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Lfm2.5 Thinking",

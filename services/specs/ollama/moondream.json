@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "moondream2 is a small vision language model designed to run efficiently on edge devices.",
     "details": {
@@ -9,6 +9,9 @@
         "1.8b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Moondream",
