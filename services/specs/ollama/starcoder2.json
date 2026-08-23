@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "StarCoder2 is the next generation of transparently trained open code LLMs that comes in three sizes: 3B, 7B and 15B parameters.",
     "details": {
       "available_sizes": [

@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks.",
     "details": {
@@ -16,6 +16,9 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Cogito",

@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "Mistral Small 3 sets a new benchmark in the “small” Large Language Models category below 70B.",
     "details": {
@@ -13,6 +13,9 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Mistral Small",

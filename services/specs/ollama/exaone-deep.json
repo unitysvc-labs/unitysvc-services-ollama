@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research.",
     "details": {
       "available_sizes": [

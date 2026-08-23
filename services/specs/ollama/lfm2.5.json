@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "LFM2.5-8B-A1B, an edge model built for fast, reliable tool calling on consumer hardware.",
     "details": {
@@ -10,6 +9,10 @@
         "8b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Lfm2.5",

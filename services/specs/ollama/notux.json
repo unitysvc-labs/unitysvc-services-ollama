@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A top-performing mixture of experts model, fine-tuned with high-quality data.",
     "details": {
       "available_sizes": [

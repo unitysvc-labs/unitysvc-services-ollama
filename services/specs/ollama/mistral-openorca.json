@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
     "details": {
       "available_sizes": [

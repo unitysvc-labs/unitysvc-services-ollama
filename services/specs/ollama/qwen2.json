@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "Qwen2 is a new series of large language models from Alibaba group",
     "details": {
@@ -15,6 +15,9 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Qwen2",

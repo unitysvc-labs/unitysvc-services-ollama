@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension.",
     "details": {
@@ -10,6 +10,9 @@
         "27b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Medgemma",

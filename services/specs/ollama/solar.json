@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A compact, yet powerful 10.7B large language model designed for single-turn conversation.",
     "details": {
       "available_sizes": [

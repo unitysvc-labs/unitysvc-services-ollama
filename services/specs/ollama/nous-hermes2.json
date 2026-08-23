@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "The powerful family of models by Nous Research that excels at scientific discussion and coding tasks.",
     "details": {
       "available_sizes": [

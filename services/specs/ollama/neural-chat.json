@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A fine-tuned model based on Mistral with good coverage of domain and language.",
     "details": {
       "available_sizes": [

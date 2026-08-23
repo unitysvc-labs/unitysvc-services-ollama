@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Uncensored version of Wizard LM model",
     "details": {
       "available_sizes": [

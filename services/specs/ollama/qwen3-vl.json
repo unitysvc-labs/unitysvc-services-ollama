@@ -1,9 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "The most powerful vision-language model in the Qwen model family to date.",
     "details": {
@@ -19,6 +17,11 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Qwen3 Vl",

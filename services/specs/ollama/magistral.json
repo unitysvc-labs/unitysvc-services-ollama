@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "Magistral is a small, efficient reasoning model with 24B parameters.",
     "details": {
@@ -13,6 +12,10 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Magistral",

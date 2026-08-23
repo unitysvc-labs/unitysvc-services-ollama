@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "BakLLaVA is a multimodal model consisting of the Mistral 7B base model augmented with the LLaVA architecture.",
     "details": {
@@ -9,6 +9,9 @@
         "7b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Bakllava",

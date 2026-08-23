@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
     "details": {
@@ -17,6 +17,9 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Qwen2.5 Coder",

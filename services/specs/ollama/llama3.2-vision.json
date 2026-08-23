@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "Llama 3.2 Vision is a collection of instruction-tuned image reasoning generative models in 11B and 90B sizes.",
     "details": {
@@ -10,6 +10,9 @@
         "90b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Llama3.2 Vision",

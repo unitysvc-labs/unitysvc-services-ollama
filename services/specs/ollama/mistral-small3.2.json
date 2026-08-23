@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools"
+      "chat"
     ],
     "description": "An update to Mistral Small that improves on function calling, instruction following, and less repetition errors.",
     "details": {
@@ -10,6 +9,10 @@
         "24b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Mistral Small3.2",

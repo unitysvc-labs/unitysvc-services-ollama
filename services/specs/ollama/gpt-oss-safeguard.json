@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss",
     "details": {
@@ -14,6 +13,10 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Gpt Oss Safeguard",

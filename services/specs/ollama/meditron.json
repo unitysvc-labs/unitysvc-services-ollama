@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Open-source medical large language model adapted from Llama 2 to the medical domain.",
     "details": {
       "available_sizes": [

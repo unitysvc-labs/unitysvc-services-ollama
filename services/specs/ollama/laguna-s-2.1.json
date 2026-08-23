@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "Our most capable model to date, designed for long-horizon work. 70.2% on Terminal-Bench 2.1 at 118B-A8B.",
     "details": {
@@ -10,6 +9,10 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Laguna S 2.1",

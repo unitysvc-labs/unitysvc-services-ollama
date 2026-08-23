@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Great code generation model based on Llama2.",
     "details": {
       "available_sizes": [

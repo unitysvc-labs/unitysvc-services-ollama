@@ -1,10 +1,14 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "A high-performing open embedding model with a large token context window.",
-    "details": {},
+    "details": {
+      "ollama_badges": [
+        "embedding"
+      ]
+    },
     "display_name": "Nomic Embed Text",
     "in_ollama_cloud": false,
     "is_installed": true,

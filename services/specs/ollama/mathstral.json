@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "MathΣtral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.",
     "details": {
       "available_sizes": [

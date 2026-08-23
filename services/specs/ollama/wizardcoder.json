@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "State-of-the-art code generation model",
     "details": {
       "available_sizes": [

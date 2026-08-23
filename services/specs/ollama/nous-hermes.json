@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "General use models based on Llama and Llama 2 from Nous Research.",
     "details": {
       "available_sizes": [

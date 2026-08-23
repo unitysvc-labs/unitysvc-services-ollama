@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.",
     "details": {
       "available_sizes": [

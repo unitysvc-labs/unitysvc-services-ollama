@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "7B parameter text-to-SQL model made by MotherDuck and Numbers Station.",
     "details": {
       "available_sizes": [

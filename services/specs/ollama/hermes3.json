@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "Hermes 3 is the latest version of the flagship Hermes series of LLMs by Nous Research",
     "details": {
@@ -15,6 +15,9 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Hermes3",

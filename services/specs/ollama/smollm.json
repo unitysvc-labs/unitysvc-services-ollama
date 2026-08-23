@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A family of small models with 135M, 360M, and 1.7B parameters, trained on a new high-quality dataset.",
     "details": {
       "available_sizes": [

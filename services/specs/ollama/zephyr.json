@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Zephyr is a series of fine-tuned versions of the Mistral and Mixtral models that are trained to act as helpful assistants.",
     "details": {
       "available_sizes": [

@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "Granite 4 features improved instruction following (IF) and tool-calling capabilities, making them more effective in enterprise applications.",
     "details": {
@@ -11,6 +11,9 @@
         "3b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Granite4",

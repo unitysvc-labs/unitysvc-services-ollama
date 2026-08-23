@@ -1,12 +1,15 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "Embedding model from BAAI mapping texts to vectors.",
     "details": {
       "available_sizes": [
         "335m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Bge Large",

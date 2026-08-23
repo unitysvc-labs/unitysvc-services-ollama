@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Nexus Raven is a 13B instruction tuned model for function calling tasks.",
     "details": {
       "available_sizes": [

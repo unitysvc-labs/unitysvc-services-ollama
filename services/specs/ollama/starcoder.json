@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "StarCoder is a code generation model trained on 80+ programming languages.",
     "details": {
       "available_sizes": [

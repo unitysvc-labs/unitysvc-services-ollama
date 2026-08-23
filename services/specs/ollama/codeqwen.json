@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "CodeQwen1.5 is a large language model pretrained on a large amount of code data.",
     "details": {
       "available_sizes": [

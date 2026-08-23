@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A lightweight AI model with 3.8 billion parameters with performance overtaking similarly and larger sized models.",
     "details": {
       "available_sizes": [

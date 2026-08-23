@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages.",
     "details": {
@@ -11,6 +11,9 @@
         "27b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Translategemma",

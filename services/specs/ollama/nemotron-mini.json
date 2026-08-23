@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "A commercial-friendly small language model by NVIDIA optimized for roleplay, RAG QA, and function calling.",
     "details": {
@@ -9,6 +9,9 @@
         "4b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Nemotron Mini",

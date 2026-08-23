@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.",
     "details": {
@@ -12,6 +12,9 @@
         "72b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Qwen2.5Vl",

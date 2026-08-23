@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Llama 2 based model fine tuned on an Orca-style dataset. Originally called Free Willy.",
     "details": {
       "available_sizes": [

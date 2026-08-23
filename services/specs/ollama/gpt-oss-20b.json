@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "cloud_model": "gpt-oss:20b",
     "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
@@ -15,6 +14,10 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Gpt Oss 20B",

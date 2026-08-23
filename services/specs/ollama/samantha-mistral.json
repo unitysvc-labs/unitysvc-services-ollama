@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A companion assistant trained in philosophy, psychology, and personal relationships. Based on Mistral.",
     "details": {
       "available_sizes": [

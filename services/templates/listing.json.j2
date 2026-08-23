@@ -83,6 +83,28 @@
       "is_public": true,
       "mime_type": "markdown"
     },
+{#- Embedding models serve /v1/embeddings. Every chat preset below POSTs a
+    chat-completion body, which that endpoint rejects — so the 12 embedding
+    services were shipping an example set none of them can pass, and, worse, a
+    `llm_connectivity` probe. The connectivity test is the document the
+    activation gate keys on (`check_service_tests_passed`), so `embed` would be
+    declared and never proven. Dispatch on service_type. -#}
+{%- if service_type == "embedding" %}
+    "Python code example": {
+      "$doc_preset": {"name": "llm_code_example_embed_requests"{% if not is_installed %}, "meta": {"test": {"status": "skip"}}{% endif %}}
+    },
+    "JavaScript code example": {
+      "$doc_preset": {"name": "llm_code_example_embed_javascript"{% if not is_installed %}, "meta": {"test": {"status": "skip"}}{% endif %}}
+    },
+    "cURL code example": {
+      "$doc_preset": {"name": "llm_code_example_embed_shell"{% if not is_installed %}, "meta": {"test": {"status": "skip"}}{% endif %}}
+    },
+    "Connectivity test": {
+      "$doc_preset": "llm_connectivity_embed"
+    }
+  }
+}
+{%- else %}
     "Python code example": {
 {%- if is_installed %}
       "$doc_preset": "llm_code_example_requests"
@@ -152,3 +174,4 @@
     }
   }
 }
+{%- endif %}

@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Wizard Vicuna is a 13B parameter model based on Llama 2 trained by MelodysDreamj.",
     "details": {
       "available_sizes": [

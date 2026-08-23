@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Falcon2 is an 11B parameters causal decoder-only model built by TII and trained over 5T tokens.",
     "details": {
       "available_sizes": [

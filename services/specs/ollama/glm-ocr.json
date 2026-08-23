@@ -1,12 +1,15 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools"
+      "chat"
     ],
     "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder–decoder architecture.",
     "details": {
       "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Glm Ocr",

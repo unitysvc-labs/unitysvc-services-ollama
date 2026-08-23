@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A 7B and 15B uncensored variant of the Dolphin model family that excels at coding, based on StarCoder2.",
     "details": {
       "available_sizes": [

@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "2.7B uncensored Dolphin model by Eric Hartford, based on the Phi language model by Microsoft Research.",
     "details": {
       "available_sizes": [

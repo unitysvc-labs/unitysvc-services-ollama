@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "DeepSeek Coder is a capable coding model trained on two trillion code and natural language tokens.",
     "details": {
       "available_sizes": [

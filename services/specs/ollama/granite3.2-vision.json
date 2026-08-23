@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools"
+      "chat"
     ],
     "description": "A compact and efficient vision-language model, specifically designed for visual document understanding, enabling automated content extraction from tables, charts, infographics, plots, diagrams, and more.",
     "details": {
@@ -10,6 +9,10 @@
         "2b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Granite3.2 Vision",

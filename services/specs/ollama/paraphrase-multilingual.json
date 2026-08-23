@@ -1,12 +1,15 @@
 {
   "parameters": {
     "capabilities": [
-      "embedding"
+      "embed"
     ],
     "description": "Sentence-transformers model that can be used for tasks like clustering or semantic search.",
     "details": {
       "available_sizes": [
         "278m"
+      ],
+      "ollama_badges": [
+        "embedding"
       ]
     },
     "display_name": "Paraphrase Multilingual",

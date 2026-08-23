@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "An extension of Mistral to support context windows of 64K or 128K.",
     "details": {
       "available_sizes": [

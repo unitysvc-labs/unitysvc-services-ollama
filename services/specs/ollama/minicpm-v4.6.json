@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone",
     "details": {
@@ -9,6 +9,9 @@
         "1b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Minicpm V4.6",

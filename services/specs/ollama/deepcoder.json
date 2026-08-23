@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available.",
     "details": {
       "available_sizes": [

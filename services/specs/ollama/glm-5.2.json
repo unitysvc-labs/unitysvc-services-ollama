@@ -1,8 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.",
     "details": {
@@ -10,6 +9,10 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Glm 5.2",

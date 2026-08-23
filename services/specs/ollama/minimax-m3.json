@@ -1,9 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools",
-      "thinking"
+      "chat"
     ],
     "cloud_model": "minimax-m3",
     "description": "MiniMax M3: Coding & Agentic Frontier. 1M context window. Native Multimodality.",
@@ -12,6 +10,11 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Minimax M3",

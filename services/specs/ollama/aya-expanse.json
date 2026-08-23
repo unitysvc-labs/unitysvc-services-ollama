@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "tools"
+      "chat"
     ],
     "description": "Cohere For AI's language models trained to perform well across 23 different languages.",
     "details": {
@@ -10,6 +10,9 @@
         "32b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "tools"
+      ],
       "parameter_count": null
     },
     "display_name": "Aya Expanse",

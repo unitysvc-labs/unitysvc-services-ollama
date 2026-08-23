@@ -45,9 +45,13 @@
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
   "tags": {{ tags | tojson }},
-{%- if capabilities %}
-  "capabilities": {{ capabilities | tojson }},
-{%- endif %}
+{#- Platform capability vocabulary (unitysvc docs/capabilities.yml) — always
+    present now. Ollama's own library badges (tools / vision / thinking /
+    audio) are attributes, not capabilities, and live in
+    `details.ollama_badges`. The map here is the fallback for a param file
+    written before the populator emitted the vocabulary value. -#}
+{%- set _cap = {"llm": "chat", "embedding": "embed"}.get(service_type, "chat") %}
+  "capabilities": {{ capabilities | default([_cap], true) | tojson }},
 {%- if in_ollama_cloud %}
   {#- R8: the cloud byok channel carries the anthropic->openai translator,
       so advertise both request/response dialects. #}

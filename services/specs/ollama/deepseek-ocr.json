@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "DeepSeek-OCR is a vision-language model that can perform token-efficient OCR.",
     "details": {
@@ -12,6 +12,9 @@
       "metadata_sources": {
         "context_length": "litellm"
       },
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Deepseek Ocr",

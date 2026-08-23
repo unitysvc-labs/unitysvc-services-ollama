@@ -1,7 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision"
+      "chat"
     ],
     "description": "A series of multimodal LLMs (MLLMs) designed for vision-language understanding.",
     "details": {
@@ -9,6 +9,9 @@
         "8b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Minicpm V",

@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Uncensored Llama2 based model with support for a 16K context window.",
     "details": {
       "available_sizes": [

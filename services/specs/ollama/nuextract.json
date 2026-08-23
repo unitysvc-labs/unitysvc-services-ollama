@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A 3.8B model fine-tuned on a private high-quality synthetic dataset for information extraction, based on Phi-3.",
     "details": {
       "available_sizes": [

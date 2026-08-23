@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.",
     "details": {
       "available_sizes": [

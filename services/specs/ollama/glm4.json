@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A strong multi-lingual general language model with competitive performance to Llama 3.",
     "details": {
       "available_sizes": [

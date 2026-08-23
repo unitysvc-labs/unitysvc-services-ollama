@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "A version of the DeepSeek-R1 model that has been post trained to provide unbiased, accurate, and factual information by Perplexity.",
     "details": {
       "available_sizes": [

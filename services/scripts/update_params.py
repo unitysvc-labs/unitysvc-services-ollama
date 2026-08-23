@@ -178,10 +178,22 @@ def determine_service_type(model_name: str, capabilities: list[str]) -> str:
     return "llm"
 
 
+#: ``service_type`` -> platform capability vocabulary
+#: (unitysvc ``docs/capabilities.yml``).
+_SERVICE_TYPE_CAPABILITY = {"llm": "chat", "embedding": "embed"}
+
+
 def _details_for(model_name: str, scraped: dict[str, Any], service_type: str) -> dict[str, Any]:
     details: dict[str, Any] = {}
     if scraped.get("sizes"):
         details["available_sizes"] = scraped["sizes"]
+    # Ollama's own library badges (tools, vision, thinking, audio, embedding).
+    # These are ATTRIBUTES — they qualify what may appear in a request, they do
+    # not name what the caller gets — so they do not belong in `capabilities`.
+    # Kept here because they are scraped, not otherwise recoverable, and
+    # `determine_service_type` reads them.
+    if scraped.get("capabilities"):
+        details["ollama_badges"] = scraped["capabilities"]
     if service_type == "llm":
         _attach_canonical_metadata(details, model_name)
     return details
@@ -195,8 +207,10 @@ def _vars_for(
     scraped: dict[str, Any],
     has_cloud: bool,
 ) -> dict[str, Any]:
-    capabilities = scraped.get("capabilities", [])
-    service_type = determine_service_type(family, capabilities)
+    badges = scraped.get("capabilities", [])
+    service_type = determine_service_type(family, badges)
+    # One entry, from the platform vocabulary: what the caller GETS.
+    capabilities = [_SERVICE_TYPE_CAPABILITY.get(service_type, "chat")]
     display_name = _display_name(routing_model)
     installed_tag = INSTALLED_BYOE_TAGS.get(family)
     byoe_model = routing_model if ":" in routing_model else installed_tag or family

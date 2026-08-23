@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "An open large reasoning model for real-world solutions by the Alibaba International Digital Commerce Group (AIDC-AI).",
     "details": {
       "available_sizes": [

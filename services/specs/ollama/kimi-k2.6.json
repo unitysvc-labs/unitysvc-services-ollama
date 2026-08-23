@@ -1,9 +1,7 @@
 {
   "parameters": {
     "capabilities": [
-      "vision",
-      "tools",
-      "thinking"
+      "chat"
     ],
     "description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
     "details": {
@@ -11,6 +9,11 @@
       "metadata_sources": {
         "context_length": "openrouter"
       },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
       "parameter_count": null
     },
     "display_name": "Kimi K2.6",

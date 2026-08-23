@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Phi 4 mini reasoning is a lightweight open model that balances efficiency with advanced reasoning ability.",
     "details": {
       "available_sizes": [

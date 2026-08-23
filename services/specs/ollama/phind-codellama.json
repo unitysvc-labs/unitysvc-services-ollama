@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Code generation model based on Code Llama.",
     "details": {
       "available_sizes": [

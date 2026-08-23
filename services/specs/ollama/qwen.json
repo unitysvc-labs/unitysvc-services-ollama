@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters",
     "details": {
       "available_sizes": [

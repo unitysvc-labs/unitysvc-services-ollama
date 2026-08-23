@@ -1,6 +1,8 @@
 {
   "parameters": {
-    "capabilities": [],
+    "capabilities": [
+      "chat"
+    ],
     "description": "The Cogito v2.1 LLMs are instruction tuned generative models. All models are released under MIT license for commercial use.",
     "details": {
       "available_sizes": [
