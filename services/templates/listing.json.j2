@@ -2,17 +2,40 @@
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
   "name": "{{ provider_name }}/{{ offering_name }}",
+  {#- Per-channel price copy follows the marketplace description grammar
+      (unitysvc/unitysvc#1886, PR #1887):
+
+          <amount> [ ~<intent> <PILL> ] [ | <hover note> ]
+
+      Both channels cost nothing at the gateway, but for different reasons, and
+      the reason is the useful half of the cell — so it rides the badge slot and
+      renders as a pill beside the amount rather than as a run-on sentence. The
+      two reasons are distinct platform access methods, not synonyms (see
+      `AccessMethod` in frontend/lib/service-utils.ts): `byoe` is bring-your-own
+      ENDPOINT — you point the gateway at a server you already run, and there is
+      no upstream bill at all; `byok` is bring-your-own-KEY — Ollama Cloud runs
+      the model and bills your own Ollama account. Labelling both "BYOK" would
+      collapse that difference.
+
+      A bare `~` selects the default intent (a saving — green fill); `~deal` /
+      `~coupon` / `~info` are the other registers. The routing prose moves behind
+      `|`, which is taken first and consumed to end-of-string, so everything in
+      it is inert and never re-parsed as a unit.
+
+      Note the previous copy used an ASCII hyphen ("Free - route to …"), which is
+      deliberately NOT a separator in the grammar — it protects copy like
+      "Free - $0.001" — so it rendered as one unstyled line. #}
   "list_price": {
     "type": "channel",
     "default": "byoe",
     "channels": {
       "byoe": {
-        "description": "Free - route to your own Ollama-compatible endpoint",
+        "description": "Free ~ BYOE | route to your own Ollama-compatible endpoint",
         "price": "0",
         "type": "constant"
       }{% if in_ollama_cloud %},
       "byok": {
-        "description": "Free - route to Ollama Cloud using your Ollama API key",
+        "description": "Free ~ BYOK | route to Ollama Cloud using your own Ollama API key",
         "price": "0",
         "type": "constant"
       }{% endif %}
