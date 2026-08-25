@@ -1,3 +1,4 @@
 {
-  "service_id": "a1ae77bd-4d49-4320-ace7-0289f745091f"
+  "service_id": "a1ae77bd-4d49-4320-ace7-0289f745091f",
+  "upstream_test_status": "fail"
 }

@@ -12,9 +12,9 @@
         "32b",
         "70b"
       ],
-      "context_length": 128000,
+      "context_length": 163840,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "litellm"
       },
       "ollama_badges": [
         "tools"
