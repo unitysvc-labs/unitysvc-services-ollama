@@ -45,27 +45,6 @@ INSTALLED_BYOE_TAGS: dict[str, str] = {
     "tinyllama": "tinyllama",
 }
 
-# Models advertised by the public Ollama Cloud catalog but rejected by the
-# staging seller-managed key during submit connectivity tests. Keep them BYOE
-# until the managed account can actually route them.
-OLLAMA_CLOUD_EXCLUDED_IDS: set[str] = {
-    "deepseek-v3.1:671b",
-    "deepseek-v3.2",
-    "deepseek-v4-flash",
-    "deepseek-v4-pro",
-    "gemini-3-flash-preview",
-    "glm-5",
-    "glm-5.1",
-    "glm-5.2",
-    "kimi-k2.5",
-    "kimi-k2.6",
-    "kimi-k2.7-code",
-    "minimax-m2.7",
-    "mistral-large-3:675b",
-    "qwen3.5:397b",
-    "rnj-1:8b",
-}
-
 _FETCHER = ModelDataFetcher()
 
 
@@ -238,11 +217,12 @@ def _vars_for(
 
 def iter_models(models: list[dict[str, Any]]) -> Iterator[dict[str, Any]]:
     scraped_by_family = {m["model_name"]: m for m in models}
-    all_cloud_ids = fetch_ollama_cloud_models()
-    cloud_ids = [model_id for model_id in all_cloud_ids if model_id not in OLLAMA_CLOUD_EXCLUDED_IDS]
-    excluded_cloud_ids = [model_id for model_id in all_cloud_ids if model_id in OLLAMA_CLOUD_EXCLUDED_IDS]
+    # Cloud models the seller-managed key cannot actually route are kept
+    # BYOE-only via per-model <name>.override.json companions
+    # ({"parameters": {"in_ollama_cloud": false, ...}}), merged at render
+    # time — this script treats the fetched catalog uniformly.
+    cloud_ids = fetch_ollama_cloud_models()
     cloud_families = {model_id.split(":", 1)[0] for model_id in cloud_ids}
-    excluded_cloud_families = {model_id.split(":", 1)[0] for model_id in excluded_cloud_ids}
 
     for i, cloud_id in enumerate(cloud_ids, 1):
         family = cloud_id.split(":", 1)[0]
@@ -257,23 +237,10 @@ def iter_models(models: list[dict[str, Any]]) -> Iterator[dict[str, Any]]:
             has_cloud=True,
         )
 
-    for i, cloud_id in enumerate(excluded_cloud_ids, 1):
-        family = cloud_id.split(":", 1)[0]
-        service_id = _slugify_model_id(cloud_id)
-        scraped = scraped_by_family.get(family, {})
-        print(f"[cloud-excluded {i}/{len(excluded_cloud_ids)}] {service_id} (routes to {cloud_id!r})")
-        yield _vars_for(
-            service_id=service_id,
-            family=family,
-            routing_model=cloud_id,
-            scraped=scraped,
-            has_cloud=False,
-        )
-
     byoe_models = [
         m
         for m in models
-        if m["model_name"] not in cloud_families and m["model_name"] not in excluded_cloud_families
+        if m["model_name"] not in cloud_families
     ]
     for i, model in enumerate(byoe_models, 1):
         model_name = model["model_name"]
