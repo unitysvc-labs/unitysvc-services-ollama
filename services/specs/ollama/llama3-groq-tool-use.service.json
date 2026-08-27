@@ -1,3 +1,4 @@
 {
-  "service_id": "de380d6b-ab80-4a21-b5e6-0f16096b64df"
+  "service_id": "de380d6b-ab80-4a21-b5e6-0f16096b64df",
+  "upstream_test_status": "fail"
 }

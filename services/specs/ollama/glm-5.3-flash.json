@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "cloud_model": "glm-5.3-flash",
+    "description": "Z.ai's first natively multimodal model, approaching Claude Opus 4.8 on coding and agentic benchmarks with just 18B active parameters.",
+    "details": {
+      "context_length": 1310720,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Glm 5.3 Flash",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "glm-5.3-flash",
+    "ops_testing_model": "glm-5.3-flash",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "ai",
+      "gateway",
+      "byoe",
+      "byok"
+    ]
+  }
+}

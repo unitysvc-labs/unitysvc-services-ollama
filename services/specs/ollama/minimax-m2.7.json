@@ -3,6 +3,7 @@
     "capabilities": [
       "chat"
     ],
+    "cloud_model": "minimax-m2.7",
     "description": "MiniMax's M2-series model for coding, agentic workflows, and professional productivity.",
     "details": {
       "context_length": 204800,
@@ -16,7 +17,7 @@
       "parameter_count": null
     },
     "display_name": "Minimax M2.7",
-    "in_ollama_cloud": false,
+    "in_ollama_cloud": true,
     "is_installed": false,
     "offering_name": "minimax-m2.7",
     "ops_testing_model": "minimax-m2.7",
@@ -26,7 +27,8 @@
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }

@@ -3,6 +3,7 @@
     "capabilities": [
       "chat"
     ],
+    "cloud_model": "kimi-k2.7-code",
     "description": "Kimi K2.7 Code is Moonshot AI's coding-focused agentic model built upon Kimi K2.6, with substantial improvements on real-world long-horizon coding tasks and roughly 30% lower thinking-token usage.",
     "details": {
       "context_length": 262144,
@@ -17,7 +18,7 @@
       "parameter_count": null
     },
     "display_name": "Kimi K2.7 Code",
-    "in_ollama_cloud": false,
+    "in_ollama_cloud": true,
     "is_installed": false,
     "offering_name": "kimi-k2.7-code",
     "ops_testing_model": "kimi-k2.7-code",
@@ -27,7 +28,8 @@
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }

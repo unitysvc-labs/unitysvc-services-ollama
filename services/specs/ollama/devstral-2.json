@@ -8,9 +8,9 @@
       "available_sizes": [
         "123b"
       ],
-      "context_length": 256000,
+      "context_length": 262144,
       "metadata_sources": {
-        "context_length": "litellm"
+        "context_length": "openrouter"
       },
       "ollama_badges": [
         "tools"

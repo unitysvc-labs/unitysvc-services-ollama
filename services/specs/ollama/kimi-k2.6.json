@@ -3,6 +3,7 @@
     "capabilities": [
       "chat"
     ],
+    "cloud_model": "kimi-k2.6",
     "description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
     "details": {
       "context_length": 262144,
@@ -17,7 +18,7 @@
       "parameter_count": null
     },
     "display_name": "Kimi K2.6",
-    "in_ollama_cloud": false,
+    "in_ollama_cloud": true,
     "is_installed": false,
     "offering_name": "kimi-k2.6",
     "ops_testing_model": "kimi-k2.6",
@@ -27,7 +28,8 @@
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }
