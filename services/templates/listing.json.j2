@@ -83,37 +83,50 @@
       "is_public": true,
       "mime_type": "markdown"
     },
-{#- Embedding models serve /v1/embeddings. Every chat preset below POSTs a
-    chat-completion body, which that endpoint rejects — so the 12 embedding
-    services were shipping an example set none of them can pass, and, worse, a
-    `llm_connectivity` probe. The connectivity test is the document the
-    activation gate keys on (`check_service_tests_passed`), so `embed` would be
-    declared and never proven. Dispatch on service_type. -#}
 {%- if service_type == "embedding" %}
-    "Python code example": {
-      "$doc_preset": {"name": "llm_code_example_embed_requests"{% if not is_installed %}, "meta": {"test": {"status": "skip"}}{% endif %}}
-    },
-    "JavaScript code example": {
-      "$doc_preset": {"name": "llm_code_example_embed_javascript"{% if not is_installed %}, "meta": {"test": {"status": "skip"}}{% endif %}}
-    },
-    "cURL code example": {
-      "$doc_preset": {"name": "llm_code_example_embed_shell"{% if not is_installed %}, "meta": {"test": {"status": "skip"}}{% endif %}}
-    },
-    "Connectivity test": {
-      "$doc_preset": "llm_connectivity_embed"
+    {#- BYOE routes to customer-supplied infrastructure, so the platform cannot
+        prove it with catalog tests. BYOE-only services keep examples visible
+        but skipped; if an embedding model later gains Ollama Cloud, executable
+        docs scope to that byok channel. -#}
+    "$llm_example_collection": {
+      "capabilities": ["embed"],
+      "formats": [
+        {
+          "formats": ["openai"],
+{%- if in_ollama_cloud %}
+          "channel": "byok",
+          "interface": "canonical",
+          "primary": true
+{%- else %}
+          "test_status": "skip"
+{%- endif %}
+        }
+      ]
     }
   }
 }
 {%- else %}
-    "Python code example": {
-{%- if is_installed %}
-      "$doc_preset": "llm_code_example_requests"
+    {#- Ollama always exposes BYOE, but BYOE should not be tested: it depends on
+        a customer's own endpoint. Cloud-backed services run examples/probes on
+        byok; BYOE-only services emit skipped examples. The ollama-python entry
+        remains as a repo-specific sibling because the shared collection cannot
+        derive that SDK flavour. -#}
+    "$llm_example_collection": {
+      "capabilities": ["chat"],
+      "formats": [
+        {
+{%- if in_ollama_cloud %}
+          "formats": ["openai", "anthropic"],
+          "channel": "byok",
+          "interface": "canonical",
+          "primary": true
 {%- else %}
-      "$doc_preset": {
-        "name": "llm_code_example_requests",
-        "meta": {"test": {"status": "skip"}}
-      }
+          "formats": ["openai"],
+          "test_status": "skip"
 {%- endif %}
+        }
+      ],
+      "upstream_dialect": "openai"
     },
     "Python ollama-python code example": {
       "category": "code_example",
@@ -123,54 +136,6 @@
       "is_public": true,
       "mime_type": "python",
       "meta": {"test": {"status": "skip"}}
-    },
-    "JavaScript code example": {
-{%- if is_installed %}
-      "$doc_preset": "llm_code_example_javascript"
-{%- else %}
-      "$doc_preset": {
-        "name": "llm_code_example_javascript",
-        "meta": {"test": {"status": "skip"}}
-      }
-{%- endif %}
-    },
-    "cURL code example": {
-{%- if is_installed %}
-      "$doc_preset": "llm_code_example_shell"
-{%- else %}
-      "$doc_preset": {
-        "name": "llm_code_example_shell",
-        "meta": {"test": {"status": "skip"}}
-      }
-{%- endif %}
-    },
-{%- if in_ollama_cloud %}
-    "Python code example (Anthropic-style input)": {
-{%- if is_installed %}
-      "$doc_preset": "llm_code_example_anthropic_to_openai_sdk"
-{%- else %}
-      "$doc_preset": {
-        "name": "llm_code_example_anthropic_to_openai_sdk",
-        "meta": {"test": {"status": "skip"}}
-      }
-{%- endif %}
-    },
-    "cURL code example (Anthropic-style input)": {
-{%- if is_installed %}
-      "$doc_preset": "llm_code_example_anthropic_to_openai_shell"
-{%- else %}
-      "$doc_preset": {
-        "name": "llm_code_example_anthropic_to_openai_shell",
-        "meta": {"test": {"status": "skip"}}
-      }
-{%- endif %}
-    },
-{%- endif %}
-    "Connectivity test": {
-      "$doc_preset": "llm_connectivity"
-    },
-    "Default request body": {
-      "$doc_preset": "llm_request_template"
     }
   }
 }
