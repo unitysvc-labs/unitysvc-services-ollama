@@ -4,6 +4,21 @@
   "homepage": "https://ollama.com/",
   "logo": "https://raw.githubusercontent.com/ollama/ollama/main/docs/favicon.svg",
   "name": "ollama",
+  "rate_limits": [
+    {
+      "description": "Self-imposed ceiling so platform test sweeps cannot saturate the account; not a published provider limit.",
+      "limit": 10,
+      "name": "ollama_concurrency",
+      "unit": "concurrent"
+    },
+    {
+      "description": "Self-imposed ceiling so platform test sweeps cannot saturate the account; not a published provider limit.",
+      "limit": 100,
+      "name": "ollama_rpm",
+      "unit": "requests",
+      "window": "minute"
+    }
+  ],
   "status": "ready",
   "terms_of_service": "https://ollama.com/terms",
   "time_created": "2026-03-09T00:00:00Z"
