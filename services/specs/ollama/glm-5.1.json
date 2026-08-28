@@ -3,6 +3,7 @@
     "capabilities": [
       "chat"
     ],
+    "cloud_model": "glm-5.1",
     "description": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin.",
     "details": {
       "context_length": 204800,
@@ -16,7 +17,7 @@
       "parameter_count": null
     },
     "display_name": "Glm 5.1",
-    "in_ollama_cloud": false,
+    "in_ollama_cloud": true,
     "is_installed": false,
     "offering_name": "glm-5.1",
     "ops_testing_model": "glm-5.1",
@@ -26,7 +27,8 @@
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }

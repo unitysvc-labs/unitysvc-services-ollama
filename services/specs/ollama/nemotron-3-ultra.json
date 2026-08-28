@@ -6,7 +6,7 @@
     "cloud_model": "nemotron-3-ultra",
     "description": "NVIDIA Nemotron 3 Ultra is built for high-throughput reasoning and long-running agent workflows.",
     "details": {
-      "context_length": 512288,
+      "context_length": 262144,
       "metadata_sources": {
         "context_length": "openrouter"
       },

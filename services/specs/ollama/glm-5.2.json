@@ -3,6 +3,7 @@
     "capabilities": [
       "chat"
     ],
+    "cloud_model": "glm-5.2",
     "description": "GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.",
     "details": {
       "context_length": 1048576,
@@ -16,7 +17,7 @@
       "parameter_count": null
     },
     "display_name": "Glm 5.2",
-    "in_ollama_cloud": false,
+    "in_ollama_cloud": true,
     "is_installed": false,
     "offering_name": "glm-5.2",
     "ops_testing_model": "glm-5.2",
@@ -26,7 +27,8 @@
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }

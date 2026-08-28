@@ -3,6 +3,7 @@
     "capabilities": [
       "chat"
     ],
+    "cloud_model": "qwen3.5:397b",
     "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
     "details": {
       "available_sizes": [
@@ -26,7 +27,7 @@
       "parameter_count": null
     },
     "display_name": "Qwen3.5 397B",
-    "in_ollama_cloud": false,
+    "in_ollama_cloud": true,
     "is_installed": false,
     "offering_name": "qwen3.5-397b",
     "ops_testing_model": "qwen3.5:397b",
@@ -36,7 +37,8 @@
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }

@@ -3,25 +3,24 @@
     "capabilities": [
       "chat"
     ],
-    "description": "123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
+    "description": "Chirp Chirp! We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement.",
     "details": {
       "available_sizes": [
-        "123b"
+        "9b",
+        "35b",
+        "397b"
       ],
-      "context_length": 262144,
-      "metadata_sources": {
-        "context_length": "openrouter"
-      },
+      "context_length": null,
       "ollama_badges": [
-        "tools"
+        "vision"
       ],
       "parameter_count": null
     },
-    "display_name": "Devstral 2",
+    "display_name": "Ornith 1.5",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "devstral-2",
-    "ops_testing_model": "devstral-2",
+    "offering_name": "ornith-1.5",
+    "ops_testing_model": "ornith-1.5",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

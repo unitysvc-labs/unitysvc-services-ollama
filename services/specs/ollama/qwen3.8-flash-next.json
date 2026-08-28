@@ -3,25 +3,21 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Devstral: the best open source model for coding agents",
+    "description": "This experimental preview of the architecture that will underpin Qwen4.",
     "details": {
-      "available_sizes": [
-        "24b"
-      ],
-      "context_length": 262144,
-      "metadata_sources": {
-        "context_length": "openrouter"
-      },
+      "context_length": null,
       "ollama_badges": [
-        "tools"
+        "vision",
+        "tools",
+        "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Devstral",
+    "display_name": "Qwen3.8 Flash Next",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "devstral",
-    "ops_testing_model": "devstral",
+    "offering_name": "qwen3.8-flash-next",
+    "ops_testing_model": "qwen3.8-flash-next",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

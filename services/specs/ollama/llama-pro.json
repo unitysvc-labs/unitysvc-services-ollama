@@ -5,7 +5,10 @@
     ],
     "description": "An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics.",
     "details": {
-      "context_length": null,
+      "context_length": 512,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
       "parameter_count": null
     },
     "display_name": "Llama Pro",

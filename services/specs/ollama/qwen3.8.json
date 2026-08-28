@@ -3,26 +3,27 @@
     "capabilities": [
       "chat"
     ],
-    "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
+    "description": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks.",
     "details": {
       "available_sizes": [
-        "30b"
+        "27b"
       ],
-      "context_length": 262144,
+      "context_length": 1000000,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "ollama_badges": [
+        "vision",
         "tools",
         "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Nemotron 3.5 Lightning",
+    "display_name": "Qwen3.8",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "nemotron-3.5-lightning",
-    "ops_testing_model": "nemotron-3.5-lightning",
+    "offering_name": "qwen3.8",
+    "ops_testing_model": "qwen3.8",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

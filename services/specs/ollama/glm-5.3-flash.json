@@ -3,33 +3,33 @@
     "capabilities": [
       "chat"
     ],
-    "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
+    "cloud_model": "glm-5.3-flash",
+    "description": "Z.ai's first natively multimodal model, approaching Claude Opus 4.8 on coding and agentic benchmarks with just 18B active parameters.",
     "details": {
-      "available_sizes": [
-        "30b"
-      ],
-      "context_length": 262144,
+      "context_length": 1310720,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "ollama_badges": [
+        "vision",
         "tools",
         "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Nemotron 3.5 Lightning",
-    "in_ollama_cloud": false,
+    "display_name": "Glm 5.3 Flash",
+    "in_ollama_cloud": true,
     "is_installed": false,
-    "offering_name": "nemotron-3.5-lightning",
-    "ops_testing_model": "nemotron-3.5-lightning",
+    "offering_name": "glm-5.3-flash",
+    "ops_testing_model": "glm-5.3-flash",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }

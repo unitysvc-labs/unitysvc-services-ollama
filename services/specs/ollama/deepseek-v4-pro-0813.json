@@ -3,12 +3,10 @@
     "capabilities": [
       "chat"
     ],
-    "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
+    "cloud_model": "deepseek-v4-pro:0813",
+    "description": "DeepSeek-V4-Pro is a frontier Mixture-of-Experts model with a large context window and three reasoning modes.",
     "details": {
-      "available_sizes": [
-        "30b"
-      ],
-      "context_length": 262144,
+      "context_length": 1048576,
       "metadata_sources": {
         "context_length": "openrouter"
       },
@@ -18,18 +16,19 @@
       ],
       "parameter_count": null
     },
-    "display_name": "Nemotron 3.5 Lightning",
-    "in_ollama_cloud": false,
+    "display_name": "Deepseek V4 Pro 0813",
+    "in_ollama_cloud": true,
     "is_installed": false,
-    "offering_name": "nemotron-3.5-lightning",
-    "ops_testing_model": "nemotron-3.5-lightning",
+    "offering_name": "deepseek-v4-pro-0813",
+    "ops_testing_model": "deepseek-v4-pro:0813",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
     "tags": [
       "ai",
       "gateway",
-      "byoe"
+      "byoe",
+      "byok"
     ]
   }
 }
