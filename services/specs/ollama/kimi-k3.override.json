@@ -1,10 +1,5 @@
 {
   "parameters": {
-    "in_ollama_cloud": false,
-    "tags": [
-      "ai",
-      "gateway",
-      "byoe"
-    ]
+    "in_ollama_cloud": false
   }
 }

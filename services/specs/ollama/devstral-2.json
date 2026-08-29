@@ -26,9 +26,7 @@
     "service_type": "llm",
     "status": "ready",
     "tags": [
-      "ai",
-      "gateway",
-      "byoe"
+      "feature:func-call"
     ]
   }
 }
