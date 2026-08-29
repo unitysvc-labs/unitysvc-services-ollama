@@ -3,25 +3,24 @@
     "capabilities": [
       "chat"
     ],
-    "description": "123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
+    "cloud_model": "glm-5.3",
+    "description": "Z.ai's flagship model and the most capable open-weights model for coding, with major gains on long-horizon agentic tasks.",
     "details": {
-      "available_sizes": [
-        "123b"
-      ],
-      "context_length": 262144,
+      "context_length": 1310720,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "ollama_badges": [
-        "tools"
+        "tools",
+        "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Devstral 2",
-    "in_ollama_cloud": false,
+    "display_name": "Glm 5.3",
+    "in_ollama_cloud": true,
     "is_installed": false,
-    "offering_name": "devstral-2",
-    "ops_testing_model": "devstral-2",
+    "offering_name": "glm-5.3",
+    "ops_testing_model": "glm-5.3",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

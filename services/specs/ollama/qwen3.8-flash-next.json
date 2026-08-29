@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "This experimental preview of the architecture that will underpin Qwen4.",
+    "details": {
+      "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Qwen3.8 Flash Next",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "qwen3.8-flash-next",
+    "ops_testing_model": "qwen3.8-flash-next",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

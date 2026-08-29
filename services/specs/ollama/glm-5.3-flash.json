@@ -3,19 +3,10 @@
     "capabilities": [
       "chat"
     ],
-    "cloud_model": "qwen3.5:397b",
-    "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
+    "cloud_model": "glm-5.3-flash",
+    "description": "Z.ai's first natively multimodal model, approaching Claude Opus 4.8 on coding and agentic benchmarks with just 18B active parameters.",
     "details": {
-      "available_sizes": [
-        "0.8b",
-        "2b",
-        "4b",
-        "9b",
-        "27b",
-        "35b",
-        "122b"
-      ],
-      "context_length": 1000000,
+      "context_length": 1310720,
       "metadata_sources": {
         "context_length": "openrouter"
       },
@@ -26,11 +17,11 @@
       ],
       "parameter_count": null
     },
-    "display_name": "Qwen3.5 397B",
+    "display_name": "Glm 5.3 Flash",
     "in_ollama_cloud": true,
     "is_installed": false,
-    "offering_name": "qwen3.5-397b",
-    "ops_testing_model": "qwen3.5:397b",
+    "offering_name": "glm-5.3-flash",
+    "ops_testing_model": "glm-5.3-flash",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

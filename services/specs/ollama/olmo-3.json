@@ -10,9 +10,6 @@
         "32b"
       ],
       "context_length": 65536,
-      "metadata_sources": {
-        "context_length": "openrouter"
-      },
       "ollama_badges": [
         "tools",
         "thinking"
