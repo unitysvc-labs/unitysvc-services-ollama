@@ -195,7 +195,10 @@ def _vars_for(
     byoe_model = routing_model if ":" in routing_model else installed_tag or family
 
     params = {
-        "name": f"{PROVIDER_NAME}/{service_id}",
+        # The service's name, which is also its path under specs/ and its
+        # listing name. Required by unitysvc-sellers 0.3.1; there is no
+        # `name_field` fallback any more.
+        "service_name": f"{PROVIDER_NAME}/{service_id}",
         "offering_name": service_id,
         "display_name": display_name,
         "description": scraped.get("description") or f"{display_name} model via Ollama",
@@ -260,12 +263,40 @@ def main() -> None:
         print("Error: No models found")
         sys.exit(1)
 
+    # ``deprecate_missing`` is OFF for this catalog, unlike its siblings.
+    # Absence from a run does not mean "retired" here, for two independent
+    # reasons:
+    #
+    # 1. The enumeration is an HTML SCRAPE of a single ollama.com/library page,
+    #    keyed on link hrefs and Tailwind badge classes. Upstream has already
+    #    broken this surface once — /search?page=N silently began ignoring its
+    #    page parameter and returning the same first ~20 models — and the next
+    #    such change (pagination, lazy loading, a bot check) yields a PARTIAL
+    #    list that is indistinguishable from a shrunken catalog. With ~235
+    #    committed services, that mis-reads as a mass retirement. The
+    #    `if not models` guard below only catches a total wipeout, and the
+    #    writer's own all-or-nothing check only fires when NOTHING matched.
+    # 2. A service id is not a pure function of the library. `iter_models`
+    #    drops any library family that also appears in the Ollama Cloud catalog
+    #    and re-keys it under the slugified cloud tag (`gpt-oss` becomes
+    #    `gpt-oss-120b`). So the day Ollama Cloud starts hosting a family we
+    #    publish BYOE, that BYOE service falls out of the yielded set — while
+    #    still being listed by Ollama and still perfectly runnable on the
+    #    customer's own endpoint. Deprecating it would be plainly wrong.
+    #
+    # BYOE is this catalog's primary channel: the model runs on infrastructure
+    # the customer owns, so its availability was never Ollama's to withdraw.
+    # Retirements here are rare and are made by deleting the param file.
     stats = write_params_from_iterator(
         iterator=iter_models(models),
         output_dir=SCRIPT_DIR.parent / "specs",
-        prune_missing=True,
+        deprecate_missing=False,
     )
-    print(f"\nWrote {stats['written']} params ({stats['errors']} errors)")
+    print(
+        f"\nWrote {stats['written']} params "
+        f"({stats['new']} new, {stats['preserved']} preserved, "
+        f"{stats['errors']} errors)"
+    )
 
 
 if __name__ == "__main__":
