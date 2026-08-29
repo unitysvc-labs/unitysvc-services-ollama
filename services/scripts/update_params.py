@@ -206,7 +206,21 @@ def _vars_for(
         "status": "ready",
         "capabilities": capabilities,
         "details": _details_for(family, scraped, service_type),
-        "tags": ["ai", "gateway", "byoe"] + (["byok"] if has_cloud else []),
+        # Tags are a CLOSED vocabulary (unitysvc docs/tags.yml); ingest rejects
+        # anything outside it. The old ["ai", "gateway", "byoe"(, "byok")] were
+        # all restatements of facts the platform already owns — `ai` said what
+        # service_type says, `gateway` duplicated the DERIVED gateway_type, and
+        # byoe/byok named the enrollment channel the gateway routes on — so
+        # they are dropped, not translated.
+        #
+        # `feature:func-call` is the only seller-declarable tag, and Ollama does
+        # publish the fact: the library card carries a "tools" badge, already
+        # scraped into `badges` (and kept in details.ollama_badges). A model
+        # whose card we could not scrape has NO badge list, which is absence of
+        # evidence, not evidence of absence — it stays untagged rather than
+        # guessing, because a false func-call badge ships a tool-calling example
+        # that 400s.
+        "tags": ["feature:func-call"] if "tools" in badges else [],
         "provider_name": PROVIDER_NAME,
         "provider_display_name": PROVIDER_DISPLAY_NAME,
         "in_ollama_cloud": has_cloud,

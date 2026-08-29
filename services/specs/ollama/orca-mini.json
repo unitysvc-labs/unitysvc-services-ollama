@@ -25,10 +25,6 @@
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
-    "tags": [
-      "ai",
-      "gateway",
-      "byoe"
-    ]
+    "tags": []
   }
 }

@@ -44,7 +44,13 @@
   "logo": {{ {"$logo_preset": offering_name} | tojson }},
   "status": "{{ status | default('ready') }}",
   "currency": "USD",
+{#- Closed vocabulary (unitysvc docs/tags.yml): `feature:func-call` or nothing.
+    update_params.py sets this from Ollama's own "tools" library badge. Emitted
+    only when non-empty so an untagged model renders no `tags` key at all
+    rather than an empty list. -#}
+{%- if tags %}
   "tags": {{ tags | tojson }},
+{%- endif %}
 {#- Platform capability vocabulary (unitysvc docs/capabilities.yml) — always
     present now. Ollama's own library badges (tools / vision / thinking /
     audio) are attributes, not capabilities, and live in
