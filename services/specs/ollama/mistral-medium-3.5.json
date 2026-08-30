@@ -8,7 +8,7 @@
       "available_sizes": [
         "128b"
       ],
-      "context_length": 256000,
+      "context_length": 262144,
       "metadata_sources": {
         "context_length": "litellm"
       },
