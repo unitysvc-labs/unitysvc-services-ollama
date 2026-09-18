@@ -1,10 +1,14 @@
 name: Upload Data to Production
 
 on:
+  pull_request:
+    types: [closed]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   upload:
+    if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
     uses: unitysvc-labs/.github/.github/workflows/seller-upload-production.yml@main
     secrets: inherit
     permissions:
