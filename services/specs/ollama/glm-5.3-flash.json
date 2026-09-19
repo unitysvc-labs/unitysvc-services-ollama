@@ -6,7 +6,7 @@
     "cloud_model": "glm-5.3-flash",
     "description": "Z.ai's first natively multimodal model, approaching Claude Opus 4.8 on coding and agentic benchmarks with just 18B active parameters.",
     "details": {
-      "context_length": 1310720,
+      "context_length": 1048576,
       "metadata_sources": {
         "context_length": "openrouter"
       },

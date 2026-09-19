@@ -6,7 +6,7 @@
     "cloud_model": "glm-5.3",
     "description": "Z.ai's flagship model and the most capable open-weights model for coding, with major gains on long-horizon agentic tasks.",
     "details": {
-      "context_length": 1310720,
+      "context_length": 1048576,
       "metadata_sources": {
         "context_length": "openrouter"
       },
