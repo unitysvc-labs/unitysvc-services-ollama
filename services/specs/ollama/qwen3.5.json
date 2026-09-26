@@ -3,24 +3,33 @@
     "capabilities": [
       "chat"
     ],
-    "cloud_model": "glm-5.3",
-    "description": "Z.ai's flagship model and the most capable open-weights model for coding, with major gains on long-horizon agentic tasks.",
+    "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
     "details": {
+      "available_sizes": [
+        "0.8b",
+        "2b",
+        "4b",
+        "9b",
+        "27b",
+        "35b",
+        "122b"
+      ],
       "context_length": 1000000,
       "metadata_sources": {
         "context_length": "openrouter"
       },
       "ollama_badges": [
+        "vision",
         "tools",
         "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Glm 5.3",
-    "in_ollama_cloud": true,
+    "display_name": "Qwen3.5",
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "glm-5.3",
-    "ops_testing_model": "glm-5.3",
+    "offering_name": "qwen3.5",
+    "ops_testing_model": "qwen3.5",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

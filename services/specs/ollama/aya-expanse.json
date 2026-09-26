@@ -9,7 +9,10 @@
         "8b",
         "32b"
       ],
-      "context_length": null,
+      "context_length": 128000,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
       "ollama_badges": [
         "tools"
       ],
