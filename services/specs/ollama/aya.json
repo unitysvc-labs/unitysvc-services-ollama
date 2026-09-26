@@ -9,7 +9,7 @@
         "8b",
         "35b"
       ],
-      "context_length": 10000,
+      "context_length": 128000,
       "metadata_sources": {
         "context_length": "litellm"
       },
