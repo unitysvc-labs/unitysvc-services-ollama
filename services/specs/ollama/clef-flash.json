@@ -3,29 +3,26 @@
     "capabilities": [
       "chat"
     ],
-    "description": "A self-improving family of open-source models for agentic coding",
+    "description": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions.",
     "details": {
       "available_sizes": [
-        "9b",
-        "35b"
+        "9b"
       ],
       "context_length": null,
       "ollama_badges": [
-        "tools",
-        "thinking"
+        "vision",
+        "decision"
       ],
       "parameter_count": null
     },
-    "display_name": "Ornith",
+    "display_name": "Clef Flash",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "ornith",
-    "ops_testing_model": "ornith",
+    "offering_name": "clef-flash",
+    "ops_testing_model": "clef-flash",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
-    "tags": [
-      "feature:func-call"
-    ]
+    "tags": []
   }
 }
