@@ -3,26 +3,25 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Cohere For AI's language models trained to perform well across 23 different languages.",
+    "description": "A 4B decision model from Together AI for fast classification.",
     "details": {
       "available_sizes": [
-        "8b",
-        "32b"
+        "0.8b",
+        "4b"
       ],
-      "context_length": 128000,
-      "metadata_sources": {
-        "context_length": "litellm"
-      },
+      "context_length": null,
       "ollama_badges": [
-        "tools"
+        "tools",
+        "decision",
+        "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Aya Expanse",
+    "display_name": "Tev1",
     "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "aya-expanse",
-    "ops_testing_model": "aya-expanse",
+    "offering_name": "tev1",
+    "ops_testing_model": "tev1",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

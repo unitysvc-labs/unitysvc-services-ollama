@@ -9,9 +9,6 @@
         "7b"
       ],
       "context_length": 4096,
-      "metadata_sources": {
-        "context_length": "litellm"
-      },
       "ollama_badges": [
         "tools"
       ],
