@@ -3,24 +3,27 @@
     "capabilities": [
       "chat"
     ],
-    "cloud_model": "glm-5.3",
-    "description": "Z.ai's flagship model and the most capable open-weights model for coding, with major gains on long-horizon agentic tasks.",
+    "description": "A 9B decision model from Bespoke Labs for fast, typed classification.",
     "details": {
-      "context_length": 1000000,
+      "available_sizes": [
+        "9b"
+      ],
+      "context_length": 8192,
       "metadata_sources": {
-        "context_length": "openrouter"
+        "context_length": "litellm"
       },
       "ollama_badges": [
         "tools",
+        "decision",
         "thinking"
       ],
       "parameter_count": null
     },
-    "display_name": "Glm 5.3",
-    "in_ollama_cloud": true,
+    "display_name": "Nimble",
+    "in_ollama_cloud": false,
     "is_installed": false,
-    "offering_name": "glm-5.3",
-    "ops_testing_model": "glm-5.3",
+    "offering_name": "nimble",
+    "ops_testing_model": "nimble",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
