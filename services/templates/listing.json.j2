@@ -28,6 +28,16 @@
   "list_price": {
     "type": "channel",
     "default": "byoe",
+{#- A top-level description, but ONLY when the byok channel is also emitted —
+    tied to the same condition so the two cannot drift apart. With two channels
+    whose headlines differ, `check_channel_price_headline` requires one: the
+    catalog row otherwise falls back to the default channel and shows "Free ~
+    BYOE" as if bring-your-own-endpoint were the whole service, hiding that
+    Ollama Cloud routing exists. Both channels still cost nothing, so the
+    amount stays "Free" and only the badges differ. #}
+{%- if in_ollama_cloud %}
+    "description": "Free ~ BYOE ~ BYOK | route to your own Ollama-compatible endpoint, or to Ollama Cloud using your own Ollama API key",
+{%- endif %}
     "channels": {
       "byoe": {
         "description": "Free ~ BYOE | route to your own Ollama-compatible endpoint",
