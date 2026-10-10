@@ -3,17 +3,10 @@
     "capabilities": [
       "chat"
     ],
-    "description": "The most powerful vision-language model in the Qwen model family to date.",
+    "cloud_model": "mistral-large-4",
+    "description": "Mistral Large 4 is Mistral's open-weight, general-purpose multimodal model. Its granular Mixture-of-Experts design activates 52B of 1.05T total parameters, with a 1.6B vision encoder handling images.",
     "details": {
-      "available_sizes": [
-        "2b",
-        "4b",
-        "8b",
-        "30b",
-        "32b",
-        "235b"
-      ],
-      "context_length": 262144,
+      "context_length": 1048576,
       "metadata_sources": {
         "context_length": "openrouter"
       },
@@ -24,11 +17,11 @@
       ],
       "parameter_count": null
     },
-    "display_name": "Qwen3 Vl",
-    "in_ollama_cloud": false,
+    "display_name": "Mistral Large 4",
+    "in_ollama_cloud": true,
     "is_installed": false,
-    "offering_name": "qwen3-vl",
-    "ops_testing_model": "qwen3-vl",
+    "offering_name": "mistral-large-4",
+    "ops_testing_model": "mistral-large-4",
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",

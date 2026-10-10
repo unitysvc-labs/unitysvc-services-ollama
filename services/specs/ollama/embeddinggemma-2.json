@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "capabilities": [
+      "embed"
+    ],
+    "description": "EmbeddingGemma 2 is a multimodal embedding model from Google built on the Gemma 4 architecture.",
+    "details": {
+      "available_sizes": [
+        "270m",
+        "440m",
+        "570m",
+        "740m"
+      ],
+      "ollama_badges": [
+        "vision",
+        "embedding",
+        "audio"
+      ]
+    },
+    "display_name": "Embeddinggemma 2",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "embeddinggemma-2",
+    "ops_testing_model": "embeddinggemma-2",
+    "provider_display_name": "Ollama",
+    "service_type": "embedding",
+    "status": "ready",
+    "tags": []
+  }
+}
