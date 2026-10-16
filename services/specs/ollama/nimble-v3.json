@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "A 9B decision model from Bespoke Labs for fast classification, routing, and scoring.",
+    "details": {
+      "available_sizes": [
+        "9b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "tools",
+        "decision",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Nimble V3",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "nimble-v3",
+    "ops_testing_model": "nimble-v3",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

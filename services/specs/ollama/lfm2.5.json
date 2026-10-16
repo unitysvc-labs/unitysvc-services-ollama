@@ -6,7 +6,8 @@
     "description": "LFM2.5-8B-A1B, an edge model built for fast, reliable tool calling on consumer hardware.",
     "details": {
       "available_sizes": [
-        "8b"
+        "8b",
+        "24b"
       ],
       "context_length": null,
       "ollama_badges": [

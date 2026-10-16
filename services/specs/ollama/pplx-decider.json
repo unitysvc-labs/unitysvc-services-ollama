@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B",
+    "details": {
+      "available_sizes": [
+        "27b"
+      ],
+      "context_length": 262144,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "ollama_badges": [
+        "vision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Pplx Decider",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "pplx-decider",
+    "ops_testing_model": "pplx-decider",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}
