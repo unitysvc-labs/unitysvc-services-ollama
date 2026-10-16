@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Kev scores answers to structured questions about a supplied text state in a single forward pass.",
+    "details": {
+      "context_length": null,
+      "ollama_badges": [
+        "decision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Kev",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "kev",
+    "ops_testing_model": "kev",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}

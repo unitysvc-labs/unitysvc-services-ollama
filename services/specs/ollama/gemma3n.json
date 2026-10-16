@@ -10,6 +10,9 @@
         "e4b"
       ],
       "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
       "parameter_count": null
     },
     "display_name": "Gemma3N",

@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "cloud_model": "clef:27b",
+    "description": "Clef is a 27B multimodal model created by Cloudflare that turns a state and a schema of typed questions into decisions.",
+    "details": {
+      "available_sizes": [
+        "27b"
+      ],
+      "context_length": 65536,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
+      "ollama_badges": [
+        "vision",
+        "decision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Clef 27B",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "clef-27b",
+    "ops_testing_model": "clef:27b",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}

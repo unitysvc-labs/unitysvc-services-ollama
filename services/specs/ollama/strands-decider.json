@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "A 2B decision model from Strands Agents for fast classification, routing, and scoring.",
+    "details": {
+      "available_sizes": [
+        "2b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "decision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Strands Decider",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "strands-decider",
+    "ops_testing_model": "strands-decider",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}
