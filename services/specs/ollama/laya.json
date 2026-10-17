@@ -1,15 +1,14 @@
 {
   "parameters": {
     "capabilities": [
-      "chat"
+      "embed"
     ],
     "description": "Laya is a 421M decision model from Convai Innovations, fine-tuned from ModernBERT-large.",
     "details": {
-      "context_length": null,
       "ollama_badges": [
+        "embedding",
         "decision"
-      ],
-      "parameter_count": null
+      ]
     },
     "display_name": "Laya",
     "in_ollama_cloud": false,
@@ -17,7 +16,7 @@
     "offering_name": "laya",
     "ops_testing_model": "laya",
     "provider_display_name": "Ollama",
-    "service_type": "llm",
+    "service_type": "embedding",
     "status": "ready",
     "tags": []
   }

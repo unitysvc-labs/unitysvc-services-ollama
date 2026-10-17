@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.",
+    "details": {
+      "available_sizes": [
+        "2b",
+        "4b",
+        "9b",
+        "27b"
+      ],
+      "context_length": 262144,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Bonsai 2",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "bonsai-2",
+    "ops_testing_model": "bonsai-2",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

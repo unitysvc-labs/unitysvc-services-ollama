@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "cloud_model": "beam",
+    "description": "Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage.",
+    "details": {
+      "context_length": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Beam",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "beam",
+    "ops_testing_model": "beam",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}
