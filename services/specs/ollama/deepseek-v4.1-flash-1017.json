@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "cloud_model": "deepseek-v4.1-flash:1017",
+    "description": "Designed for greater capability, faster inference, higher throughput, and scaling to larger models.",
+    "details": {
+      "context_length": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Deepseek V4.1 Flash 1017",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "deepseek-v4.1-flash-1017",
+    "ops_testing_model": "deepseek-v4.1-flash:1017",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

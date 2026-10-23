@@ -8,11 +8,14 @@
       "available_sizes": [
         "9b",
         "35b",
+        "122b",
         "397b"
       ],
       "context_length": null,
       "ollama_badges": [
-        "vision"
+        "vision",
+        "tools",
+        "thinking"
       ],
       "parameter_count": null
     },
@@ -24,6 +27,8 @@
     "provider_display_name": "Ollama",
     "service_type": "llm",
     "status": "ready",
-    "tags": []
+    "tags": [
+      "feature:func-call"
+    ]
   }
 }
