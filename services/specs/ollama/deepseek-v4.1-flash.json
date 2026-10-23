@@ -4,7 +4,7 @@
       "chat"
     ],
     "cloud_model": "deepseek-v4.1-flash",
-    "description": "DeepSeek-V4.1-Flash is an advanced tool designed to enhance search capabilities, providing users with faster and more accurate results.",
+    "description": "Designed for greater capability, faster inference, higher throughput, and scaling to larger models.",
     "details": {
       "context_length": 1048576,
       "metadata_sources": {

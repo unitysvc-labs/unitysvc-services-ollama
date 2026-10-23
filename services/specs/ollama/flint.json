@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Flint is a 39.8 billion-parameter mixture-of-experts model from Recursive, built for coding agents.",
+    "details": {
+      "available_sizes": [
+        "40b"
+      ],
+      "context_length": 262144,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Flint",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "flint",
+    "ops_testing_model": "flint",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

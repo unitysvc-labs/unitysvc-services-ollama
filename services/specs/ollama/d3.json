@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Turn text, structured data, and images into scored choices, yes/no answers, and ratings.",
+    "details": {
+      "available_sizes": [
+        "2b",
+        "4b",
+        "9b",
+        "27b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "decision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "D3",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "d3",
+    "ops_testing_model": "d3",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}

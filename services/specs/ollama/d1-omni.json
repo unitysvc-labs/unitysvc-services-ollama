@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "d1-omni is a multimodal 600M decision model from Liquid AI",
+    "details": {
+      "available_sizes": [
+        "600m"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "vision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "D1 Omni",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "d1-omni",
+    "ops_testing_model": "d1-omni",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}

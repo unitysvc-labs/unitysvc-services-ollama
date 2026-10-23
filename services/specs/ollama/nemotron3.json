@@ -12,7 +12,8 @@
       "ollama_badges": [
         "vision",
         "tools",
-        "thinking"
+        "thinking",
+        "audio"
       ],
       "parameter_count": null
     },

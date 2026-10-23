@@ -13,7 +13,8 @@
         "context_length": "litellm"
       },
       "ollama_badges": [
-        "vision"
+        "vision",
+        "decision"
       ],
       "parameter_count": null
     },
