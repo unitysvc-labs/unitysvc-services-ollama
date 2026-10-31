@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "LFM3-VL-2B is a vision-language model for on-device visual understanding.",
+    "details": {
+      "available_sizes": [
+        "2b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Lfm3 Vl",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "lfm3-vl",
+    "ops_testing_model": "lfm3-vl",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

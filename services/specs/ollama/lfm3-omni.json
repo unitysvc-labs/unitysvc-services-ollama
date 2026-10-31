@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "a single end-to-end model that understands text, images, video and audio, and answers in text and speech",
+    "details": {
+      "available_sizes": [
+        "2b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "audio"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Lfm3 Omni",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "lfm3-omni",
+    "ops_testing_model": "lfm3-omni",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}
