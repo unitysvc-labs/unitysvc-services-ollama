@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "LFM3-1.7B is a tri-hybrid model for local agents and specialized applications.",
+    "details": {
+      "available_sizes": [
+        "1.7b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Lfm3",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "lfm3",
+    "ops_testing_model": "lfm3",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

@@ -5,11 +5,15 @@
     ],
     "description": "Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use.",
     "details": {
+      "available_sizes": [
+        "e4b"
+      ],
       "context_length": null,
       "ollama_badges": [
         "vision",
         "tools",
-        "thinking"
+        "thinking",
+        "audio"
       ],
       "parameter_count": null
     },
