@@ -60,31 +60,6 @@
       }
     }
   },
-  "user_parameters_schema": {
-    "type": "object",
-    "title": "Ollama Endpoint Configuration",
-    "description": "Provide a public URL for your Ollama server for the BYOE channel",
-    "required": ["base_url"],
-    "properties": {
-      "base_url": {
-        "type": "string",
-        "title": "Public Ollama Server URL",
-        "default": "https://ollama.example.com",
-        "description": "Public base URL of your Ollama server. The UnitySVC gateway must be able to reach this DNS name or IP address over the network."
-      }
-    }
-  },
-  "user_parameters_ui_schema": {
-    "base_url": {
-      "ui:placeholder": "https://ollama.example.com",
-      "ui:description": "A public DNS name or IP address that routes to your Ollama server"
-    }
-  },
-  "service_options": {
-    "ops_testing_parameters": {
-      "base_url": "https://mock.unitysvc.dev/openai"
-    }
-  },
   "documents": {
     "How to use this model": {
       "category": "getting_started",
