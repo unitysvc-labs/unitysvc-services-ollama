@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "cloud_model": "kimi-k3.1-pro",
+    "description": "Kimi K3.1 Pro is an open-weight, natively multimodal agentic model and our most capable 3T-class model to date, with a 1M-token context window and major gains in coding, 3D creation, financial research, and factual accuracy.",
+    "details": {
+      "context_length": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Kimi K3.1 Pro",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "kimi-k3.1-pro",
+    "ops_testing_model": "kimi-k3.1-pro",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}
