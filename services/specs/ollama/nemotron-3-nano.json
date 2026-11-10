@@ -1,0 +1,34 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "Nemotron-3-Nano is a new Standard for Efficient, Open, and Intelligent Agentic Models, now updated with a 4B parameter count model.",
+    "details": {
+      "available_sizes": [
+        "4b",
+        "30b"
+      ],
+      "context_length": 256000,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Nemotron 3 Nano",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "nemotron-3-nano",
+    "ops_testing_model": "nemotron-3-nano",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}
