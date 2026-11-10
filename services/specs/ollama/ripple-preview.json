@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "65B dense model built for agentic coding, with up to 1M tokens of context.",
+    "details": {
+      "available_sizes": [
+        "65b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Ripple Preview",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "ripple-preview",
+    "ops_testing_model": "ripple-preview",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}

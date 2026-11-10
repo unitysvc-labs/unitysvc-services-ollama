@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "description": "AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply",
+    "details": {
+      "available_sizes": [
+        "9b",
+        "35b"
+      ],
+      "context_length": null,
+      "ollama_badges": [
+        "vision",
+        "decision"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Autotrust Jev",
+    "in_ollama_cloud": false,
+    "is_installed": false,
+    "offering_name": "autotrust-jev",
+    "ops_testing_model": "autotrust-jev",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": []
+  }
+}
