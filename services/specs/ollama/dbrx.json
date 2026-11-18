@@ -9,9 +9,6 @@
         "132b"
       ],
       "context_length": 32768,
-      "metadata_sources": {
-        "context_length": "litellm"
-      },
       "parameter_count": null
     },
     "display_name": "Dbrx",
