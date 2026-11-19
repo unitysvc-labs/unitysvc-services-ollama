@@ -11,9 +11,6 @@
         "15b"
       ],
       "context_length": 16384,
-      "metadata_sources": {
-        "context_length": "litellm"
-      },
       "parameter_count": null
     },
     "display_name": "Starcoder2",
