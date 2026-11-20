@@ -5,7 +5,10 @@
     ],
     "description": "Kev scores answers to structured questions about a supplied text state in a single forward pass.",
     "details": {
-      "context_length": null,
+      "context_length": 8192,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
       "ollama_badges": [
         "decision"
       ],

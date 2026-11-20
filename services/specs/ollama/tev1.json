@@ -9,7 +9,10 @@
         "0.8b",
         "4b"
       ],
-      "context_length": null,
+      "context_length": 32768,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
       "ollama_badges": [
         "tools",
         "decision",

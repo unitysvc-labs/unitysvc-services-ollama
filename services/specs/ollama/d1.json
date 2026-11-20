@@ -9,7 +9,10 @@
         "2b",
         "3b"
       ],
-      "context_length": null,
+      "context_length": 65536,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
       "ollama_badges": [
         "vision",
         "decision"
