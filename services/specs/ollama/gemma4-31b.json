@@ -13,7 +13,10 @@
         "26b",
         "31b"
       ],
-      "context_length": null,
+      "context_length": 262144,
+      "metadata_sources": {
+        "context_length": "litellm"
+      },
       "ollama_badges": [
         "vision",
         "tools",
