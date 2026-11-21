@@ -6,7 +6,7 @@
     "cloud_model": "mimo-v2.6-flash",
     "description": "Xiaomi's efficiency-balanced MiMo-V2.6 checkpoint, with 309B total parameters, 15B active, omnimodal input, and a 1M token context.",
     "details": {
-      "context_length": 1050000,
+      "context_length": 1048576,
       "metadata_sources": {
         "context_length": "openrouter"
       },
