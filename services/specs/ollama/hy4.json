@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "capabilities": [
+      "chat"
+    ],
+    "cloud_model": "hy4",
+    "description": "Tencent's flagship 770B open-weight model for coding, office work and research, with a 1M-token context and image and video understanding.",
+    "details": {
+      "context_length": 1048576,
+      "metadata_sources": {
+        "context_length": "openrouter"
+      },
+      "ollama_badges": [
+        "vision",
+        "tools",
+        "thinking"
+      ],
+      "parameter_count": null
+    },
+    "display_name": "Hy4",
+    "in_ollama_cloud": true,
+    "is_installed": false,
+    "offering_name": "hy4",
+    "ops_testing_model": "hy4",
+    "provider_display_name": "Ollama",
+    "service_type": "llm",
+    "status": "ready",
+    "tags": [
+      "feature:func-call"
+    ]
+  }
+}
