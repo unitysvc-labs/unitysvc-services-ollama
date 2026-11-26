@@ -3,7 +3,7 @@
     "capabilities": [
       "chat"
     ],
-    "description": "Thinking Machines' small open-weights model that can run on a Mac: 26B parameters, 5.4B active, with looped layers for more computation per token.",
+    "description": "Thinking Machines' small open-weights model: 26B parameters, 5.4B active, with looped layers for more computation per token.",
     "details": {
       "context_length": 1048576,
       "metadata_sources": {
